@@ -1,49 +1,124 @@
-// # SHORT HOWTO
-// ## Sprites
-//     .whatever
-//          +sized-sprite($icons, coderiver) //or
-// 			+s(codedby) //gets default value for spritemap as $icons
-// ### animation example
-//     +include keyframes(rotate)
-//        from
-//           +rotate(0)
-//        to
-//           +rotate(360)
-// ## animation usage
-//     body:hover
-// 	    +animation(rotate 200s linear infinite)
-// ## animations easing, see easings.net for full list and examples, tnx @ai
-//     transition: all 1.2s ceaser($ease-in)
-// ## gradient example
-//     +background-image(linear-gradient(#232323, #5c5c5c));
-//     +g(#232323, #5c5c5c);
-//	   horizontal
-//     +gh(#232323, #5c5c5c);
-// ## making bw-images
-//     img
-//			@extend %gray
-// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
-//     +min-screen(320)
-//			display: none
-// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
-//
-// ## use cycles
-//     @for $i from 1 through 3
-//       .item-#{$i}
-//			width: 2em * $i;
-//     @each $s in a,b,c
-// 	    	#{$s}
-//				display: none
-// ## fonts 
-// Save fonts to /css/fonts, after that write (eot, woff, ttf):
-// +font(book, cytiapro-black-webfont)  
-// =book
-// 	font-family: "book",arial,sans-serif 
-	
+$gray: #565656
+$blue_l: #9bc7ff
+$blue: #1d72bd
++font(roboto-black, roboto-black)  
++font(roboto-bold, roboto-bold)  
++font(roboto-medium, roboto-medium)  
++font(roboto-regular, roboto-regular)  
++font(roboto-italic, roboto-italic)  
++font(roboto-light, roboto-light)
++font(roboto-regular, roboto-regular)
+=fblack
+	font-family: "roboto-black", Arial, sans-serif
+=fbold
+	font-family: "roboto-bold", Arial, sans-serif
+=fmed
+	font-family: "roboto-medium", Arial, sans-serif
+=freg
+	font-family: "roboto-regular", Arial, sans-serif
+=fitalic
+	font-family: "roboto-italic", Arial, sans-serif
+=flight
+	font-family: "roboto-light", Arial, sans-serif
+=freg
+	font-family: "roboto-regular", Arial, sans-serif
 body
-	font-size: 12px 
-	font-family: Arial, sans-serif 
-	line-height: 1.4
+	min-width: 1020px
+	font-weight: normal
+	font-size: 14px
+	line-height: 1.28
+	color: $gray
+	+freg  
+	background: #fff
+a
+	text-decoration: none
+	+fmed  
+	&:hover
+		text-decoration: underline
+.l-layout	 
+	margin: 0 auto -170px
+	position: relative
+	min-height: 100%
+	height: auto !important
+	height: 100% 
+.push
+	clear: both
+	height: 170px
+.wrapper
+	overflow: hidden
+.wrap
+	+clr
+.l-container
+	position: relative
+	width: 940px
+	margin: 0 auto 
+   
+.header
+	min-height: 135px
+	background: url("../img/blue-bg.jpg") 0 0 repeat
 
-
-// common blocks
+.logo
+	position: absolute
+	left: 21px
+	top: 25px
+	+s(logo)
+.search-form
+	position: absolute
+	top: 20px
+	right: 0
+	white-space: nowrap
+	input
+		display: inline-block
+		vertical-align: middle
+.search-form__text
+	margin-left: 4px
+	padding: 0 4px 
+	width: 143px
+	height: 26px
+	color: #000
+	+freg 
+	border: 1px solid rgba(124,124,124,.09)
+	background: rgba(255,255,255,.2)
+	&:focus
+		background: rgba(255,255,255,.5)
+.search-form__btn
+	+s(glass)
+	+hide-text
+.user-enter
+	display: inline-block
+	margin: 0 0 0 8px
+	vertical-align: middle
+	+s(user)
+.menu
+	position: absolute
+	top: 63px
+	left: 239px
+	padding: 0 15px 
+	+clr
+	background: rgb(117,209,154)
+	background: rgba(117,209,154,.65)
+	&:before
+		content: ""
+		position: absolute
+		top: 3px
+		left: -33px
+		+s(menu-left) 
+	&:after
+		content: ""
+		position: absolute
+		top: 3px
+		right: -33px
+		+s(menu-right)   
+	li
+		float: left
+	a
+		display: block
+		padding: 0 10px 
+		height: 32px
+		color: #fff
+		font-size: 12px
+		text-transform: uppercase
+		+fblack 
+		line-height: 32px
+		&:hover
+			text-decoration: none

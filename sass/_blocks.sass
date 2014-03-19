@@ -1,0 +1,426 @@
+.input-wrap
+	position: relative
+	margin-bottom: 8px
+.input
+	display: block
+	width: 100%
+	+box
+	padding: 4px 15px 5px
+	background: #fff
+	border: 1px solid #cbcbcb
+	+freg
+	font-size: 14px
+	color: #000 	
+	+placeholder
+		color: #a9a9a9 
+	&:focus
+		background: #fcd7d7
+		border-color: #f8b8b8
+.input_s
+	padding: 3px 9px 4px 
+	font-size: 12px
+.input_textarea
+	padding: 4px 15px
+	resize: vertical
+	&.input_s
+		padding: 4px 9px
+
+.btn
+	display: inline-block
+	padding: 15px 35px 14px
+	border-bottom: 3px solid #c2451e 
+	text-align: center
+	color: #fff
+	+fbold
+	+box
+	font-size: 16px
+	text-shadow: 0 1px 1px rgba(0,0,0,.48)
+	background: #ff4e00
+	text-decoration: none
+	text-transform: uppercase
+	+box-shadow(inset 0 2px 0 rgba(255,255,255,.26))
+	+background-image(linear-gradient(bottom, #ff4f00 -25%, #ff4f00 5.07%, #ffa263 125%))
+	&:hover
+		text-decoration: none
+		color: #ff8743 
+		text-shadow: 0 0 1px rgba(0,0,0,.45)
+	&:active
+		background: #ffa263
+		+background-image(linear-gradient(bottom, #ffa263 -25%, #ff4f00 94.93%, #ff4f00 125%))
+	&.is-disabled
+		+opacity(.5)
+		cursor: default 
+		&:hover
+			color: #fff
+			text-shadow: 0 1px 1px rgba(0,0,0,.48)
+			+background-image(linear-gradient(bottom, #ff4f00 -25%, #ff4f00 5.07%, #ffa263 125%))
+		&:active
+			color: #fff
+			+background-image(linear-gradient(bottom, #ff4f00 -25%, #ff4f00 5.07%, #ffa263 125%))
+
+.btn-link
+	display: inline-block
+	padding: 11px 24px 10px
+	border-bottom: 3px solid #23839e
+	text-align: center
+	color: #fff
+	+fbold
+	+box
+	font-size: 12px
+	text-transform: uppercase
+	text-shadow: 0 1px 1px rgba(0,0,0,.48)
+	background: #00baff
+	text-decoration: none
+	+box-shadow(inset 0 2px 0 rgba(255,255,255,.26))
+	+background-image(linear-gradient(bottom,#00baff, #00baff 20%, #83ddff))
+	&:hover
+		text-decoration: none
+		color: #9fe1fa
+		text-shadow: 0 0 1px rgba(0,0,0,.45)
+	&:active
+		background: #83ddff
+		+background-image(linear-gradient(top,#00baff, #00baff 20%, #83ddff))
+	&.is-disabled
+		+opacity(.5)
+		cursor: default 
+		&:hover
+			color: #fff
+			text-shadow: 0 1px 1px rgba(0,0,0,.48)
+			+background-image(linear-gradient(bottom,#00baff, #00baff 20%, #83ddff))
+		&:active
+			color: #fff
+			+background-image(linear-gradient(bottom,#00baff, #00baff 20%, #83ddff))
+.btn-action
+	display: inline-block
+	padding: 5px 13px 4px
+	border-bottom: 2px solid #4193ad
+	text-align: center
+	color: #fff
+	+fmed
+	+box
+	font-size: 12px
+	text-transform: uppercase
+	text-shadow: 0 1px 1px rgba(0,0,0,.48)
+	text-decoration: none
+	background: #45c1e9
+	+box-shadow(inset 0 2px 0 rgba(255,255,255,.26))
+	+background-image(linear-gradient(bottom, #45c1e9 -25%, #45c1e9 5.07%, #9ad9ee 125%))
+	&:hover
+		text-decoration: none
+		color: #97d9ef
+		text-shadow: 0 0 1px rgba(0,0,0,.45)
+	&:active
+		background: #83ddff
+		+background-image(linear-gradient(bottom, #9ad9ee -25%, #45c1e9 94.93%, #45c1e9 125%))
+	&.is-disabled
+		+opacity(.5)
+		cursor: default 
+		&:hover
+			color: #fff
+			text-shadow: 0 1px 1px rgba(0,0,0,.48)
+			+background-image(linear-gradient(bottom, #45c1e9 -25%, #45c1e9 5.07%, #9ad9ee 125%))
+		&:active
+			color: #fff
+			+background-image(linear-gradient(bottom, #45c1e9 -25%, #45c1e9 5.07%, #9ad9ee 125%))
+
+.soc-enter
+	text-align: justify
+	&:after
+		content: ""
+		display: inline-block
+		width: 100%
+		height: 0
+		visibility: visible
+	a
+		display: inline-block
+		vertical-align: middle
+		width: 79px
+		height: 52px
+		line-height: 49px
+		+box
+		border-bottom: 3px solid #273762 
+		text-align: center
+		+box-shadow(inset 0 2px 0 rgba(255,255,255,.26))
+		&:hover
+			i
+				+opacity(.5)
+	.soc-enter__od
+		border-bottom-color: #915021 
+	i
+		display: inline-block
+		vertical-align: middle
+.soc-enter__fb
+	background: #4967b7
+	+background-image(linear-gradient(bottom, #4563b3, #658bf3))
+	i
+		+s(soc-enter-fb)
+	&:active
+		background: #658bf3
+		+background-image(linear-gradient(bottom, #658bf3, #4563b3))
+.soc-enter__vk
+	background: #5988e7
+	+background-image(linear-gradient(top, #5988e7, #33538b))
+	i
+		+s(soc-enter-vk)
+	&:active
+		background: #325289
+		+background-image(linear-gradient(bottom, #5988e7, #33538b))
+.soc-enter__od
+	background: #ff7200
+	+background-image(linear-gradient(bottom, #ff7100 -25%, #ff7100 5.07%, #ffbe62 125%))
+
+	i
+		+s(soc-enter-od)
+	&:active
+		background: #ff7100
+		+background-image(linear-gradient(top, #ff7100 -25%, #ff7100 5.07%, #ffbe62 125%))
+		
+.soc-counter
+	+clr
+	a
+		float: left
+		padding: 0 11px 0 11px 
+		+box
+		min-width: 100px
+		height: 42px
+		line-height: 39px
+		font-size: 18px
+		color: #fff
+		+flight 
+		margin-left: 1px
+		i
+			margin-right: 16px
+		i,span
+			display: inline-block
+			vertical-align: middle
+			line-height: 1
+		&:first-child
+			margin-left: 0
+.soc-counter__fb
+	background: #3b5997 
+	i
+		+s(soc-count-fb)
+.soc-counter__vk
+	background: #0a4d85 
+	i 
+		+s(soc-count-vk)
+.soc-counter__od
+	background: #fa7c27 
+	i
+		+s(soc-count-od)
+.soc
+	a
+		display: inline-block
+		vertical-align: middle
+.soc__fb
+	+s(soc-fb)
+.soc__vk
+	+s(soc-vk)
+.soc__od
+	+s(soc-od)
+
+.link-more
+	display: inline-block
+	border: 2px solid #47c3ec
+	padding: 7px 12px 8px 16px 
+	font-size: 14px
+	+fmed
+	color: #2b2b2b 
+	text-transform: uppercase
+	&:hover
+		text-decoration: none
+		background: #47c3ec
+		color: #fff
+		i
+			+s(arr-white) 
+	&:active
+		+opacity(.7)
+
+	i
+		display: inline-block
+		margin: -2px 0 0 10px
+		vertical-align: middle
+		+s(arr-blue)
+.link-more_goto
+	border-color: #ff5b5b
+	&:hover
+		background: #ff5b5b
+		i
+			+s(arr-white-r)
+	i
+		+s(arr-red)
+
+.counter
+	position: relative
+	+clr
+	height: 115px
+	overflow: hidden
+.counter__digit
+	div
+		position: relative
+		float: left
+		margin-left: 27px
+		+clr
+		&:first-child
+			margin-left: 0
+		&:before
+			content: ""
+			position: absolute
+			top: 50%
+			left: 1px
+			right: 1px
+			height: 1px
+			z-index: 2
+	span
+		position: relative
+		z-index: 1
+		display: block
+		width: 81px
+		+fintro
+		+box
+		color: #fff
+		font-size: 45px 
+		text-align: center
+		+border-radius(9px)
+		+box-shadow(0 1px 1px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.2))
+		height: 88px
+		line-height: 88px
+		&:before,
+		&:after
+			content: ""
+			position: absolute
+			top: 50%
+			margin-top: -6px
+			height: 12px
+			width: 1px
+			background: #fff
+			+border-radius(1px)    
+		&:before
+			left: 0
+		&:after
+			right: 0
+.counter__d
+	&:before
+		background: #d3494d
+	span
+		background: #ff5353  
+.counter__h
+	&:before
+		background: #55a00e
+	span
+		background: #6cb823 
+.counter__m
+	&:before
+		background: #ff975f
+	span
+		background: #fb7228
+.counter__wrap
+	position: absolute
+	left: 0
+	right: 0
+	bottom: 3px
+.counter__label
+	float: left
+	color: #000
+	width: 81px
+	text-align: center
+	margin-left: 27px 
+	font-size: 13px
+	color: #6f7786
+	+fbold
+	text-transform: uppercase 
+	&:first-child  
+		margin-left: 0
+	
+.title
+	position: relative
+	margin: 0 auto 
+	overflow: hidden
+	text-transform: uppercase
+	text-align: center
+	span	
+		display: inline-block
+		position: relative
+		+fblack
+		line-height: 1
+		&:before,
+		&:after
+			content: ""
+			position: absolute
+			height: 8px
+			width: 1000px
+	&.is-orange
+		span
+			&:before,  
+			&:after
+				background: url(../img/title-orange.png) 0 0 repeat-x 
+	&.is-red
+		span
+			&:before,  
+			&:after
+				background: url(../img/title-red.png) 0 0 repeat-x 
+	&.is-green
+		span
+			&:before,  
+			&:after
+				background: url(../img/title-green.png) 0 0 repeat-x 
+.title_570
+	max-width: 570px
+.title_h1
+	margin: 0 auto 
+	max-width: 745px
+	span
+		font-size: 30px
+		&:before,
+		&:after
+			top: 10px
+		&:before
+			left: -1012px
+		&:after
+			right: -1012px
+	
+.title_h2
+	span
+		font-size: 20px
+		&:before,
+		&:after
+			top: 5px
+		&:before
+			left: -1022px
+		&:after
+			right: -1022px
+
+.title_h4
+	max-width: 340px
+	span
+		font-size: 14px
+		&:before,
+		&:after
+			top: 4px
+		&:before
+			left: -1022px
+		&:after
+			right: -1022px
+			
+.banner
+	text-align: center
+	img
+		display: block
+		margin: 0 auto
+		max-width: 100% 
+		
+.pager
+	font-size: 0
+	button
+		display: inline-block
+		margin-left: 11px
+		vertical-align: middle
+		width: 9px
+		height: 9px
+		+border-radius(50%)
+		background: #fff
+		&:first-child
+			margin-left: 0
+		&.is-active
+			background: none
+			+box-shadow(0 0 0 2px #fff)

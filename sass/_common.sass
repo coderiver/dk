@@ -4,16 +4,20 @@ $blue: #1d72bd
 +font(roboto-black, roboto-black)  
 +font(roboto-bold, roboto-bold)  
 +font(roboto-medium, roboto-medium)  
++font(roboto-mediumitalic, roboto-mediumitalic)  
 +font(roboto-regular, roboto-regular)  
 +font(roboto-italic, roboto-italic)  
 +font(roboto-light, roboto-light)
 +font(roboto-regular, roboto-regular)
++font(intro, intro)
 =fblack
 	font-family: "roboto-black", Arial, sans-serif
 =fbold
 	font-family: "roboto-bold", Arial, sans-serif
 =fmed
 	font-family: "roboto-medium", Arial, sans-serif
+=fmedit
+	font-family: "roboto-mediumitalic", Arial, sans-serif
 =freg
 	font-family: "roboto-regular", Arial, sans-serif
 =fitalic
@@ -22,6 +26,8 @@ $blue: #1d72bd
 	font-family: "roboto-light", Arial, sans-serif
 =freg
 	font-family: "roboto-regular", Arial, sans-serif
+=fintro
+	font-family: "intro", Arial, sans-serif
 body
 	min-width: 1020px
 	font-weight: normal
@@ -36,14 +42,14 @@ a
 	&:hover
 		text-decoration: underline
 .l-layout	 
-	margin: 0 auto -170px
+	margin: 0 auto -503px
 	position: relative
 	min-height: 100%
 	height: auto !important
 	height: 100% 
 .push
 	clear: both
-	height: 170px
+	height: 503px
 .wrapper
 	overflow: hidden
 .wrap
@@ -122,3 +128,71 @@ a
 		line-height: 32px
 		&:hover
 			text-decoration: none
+			text-shadow: 0 0 2px rgba(0,0,0,.2)
+			
+.footer
+	position: relative
+	min-height: 503px
+	overflow: hidden
+	background: #47c3eb url(../img/blue-bg.jpg) 0 0 repeat 
+	&:after
+		content: ""
+		position: absolute
+		bottom: 46px
+		left: -1000px
+		right: -1000px
+		height: 3000px 
+		+border-radius(100%)
+		background: #fff
+	.l-container
+		z-index: 2
+		+box
+		padding-bottom: 30px
+		min-height: 503px
+	.banner
+		margin-bottom: 19px
+.footer__partners
+	margin-bottom: 53px
+	text-align: center
+	.title
+		margin-bottom: 12px
+.footer__col
+	float: left
+	height: 176px
+	border-right: 1px solid #ececec 
+.footer__cont
+	margin-right: 38px
+	border-left: 0
+	width: 230px
+	.footer__title
+		margin-bottom: 9px
+	div
+		margin-bottom: 22px
+.footer__soc
+	width: 340px
+.footer__feedback
+	float: right
+	width: 186px
+	border-right: 0 
+	.input-wrap
+		margin-bottom: 7px
+	.input
+		width: 156px
+		font-size: 12px
+	.input_textarea
+		resize: none
+		height: 53px
+		width: 100%
+.footer__title
+	margin-bottom: 9px
+	font-size: 14px
+	text-transform: uppercase
+	color: #000
+	+fbold 
+
+.footer__copy
+	position: absolute
+	bottom: 30px
+	left: 0
+	color: #fff
+	font-size: 12px 

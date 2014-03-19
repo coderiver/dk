@@ -1,0 +1,166 @@
+.slider
+	position: relative
+	height: 372px
+	background: url("../img/blue-bg.jpg") 0 0 repeat
+	.l-container
+		+clr
+		&:before
+			content: ""
+			position: absolute
+			left: 0
+			width: 652px
+			height: 429px
+			background: url("../img/slider-glow.png") 0 0 repeat
+	.cycle-slideshow
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+	.pager
+		position: absolute
+		left: 380px
+		bottom: 23px
+		z-index: 300
+.slider__item
+	width: 100%
+	div
+		position: relative
+		width: 1020px
+		margin: 0 auto 
+		height: 372px
+		img
+			position: absolute
+			left: 0
+			bottom: 0
+.reg-form
+	float: right
+	position: relative
+	z-index: 300
+	min-height: 408px
+	margin-top: -36px
+	+box
+	padding: 13px 30px 10px
+	width: 326px
+	background: #fff
+	+box-shadow(0 0 0 1px rgba(0,0,0,.19))
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: -19px
+		+arr(19,19,#efe9e9,br) 
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		left: -1px
+		width: 1px
+		height: 19px
+		background: #d9d3d3  
+	.btn
+		margin-top: 12px
+.reg-form__title
+	margin-bottom: 15px
+	text-align: center
+	color: #2b2b2b
+	font-size: 14px
+	text-transform: uppercase 
+.reg-form__soc
+	margin-top: 11px
+	.reg-form__title
+		+fitalic
+.reg-form__line
+	overflow: hidden
+	margin-bottom: 12pxs
+	text-align: center
+	span
+		position: relative
+		display: inline-block
+		text-align: center
+		width: 34px
+		&:before,
+		&:after
+			content: ""
+			position: absolute
+			top: 9px 
+			width: 300px
+			height: 4px
+			background: url(../img/wave-orange.png) 0 0 repeat-x 
+		&:before
+			left: -300px
+		&:after
+			right: -300px
+	i
+		display: inline-block
+		vertical-align: middle
+		+s(rocket) 
+	
+.main
+	position: relative
+	margin: 0 auto 
+	width: 940px
+.start
+	position: relative
+	margin-bottom: 22px
+	padding: 41px 0 82px 
+	background: #f9fadf 
+	&:before
+		content: ""
+		position: absolute
+		bottom: 0
+		left: -24px
+		+arr(24,22,#e6e7c1,tr)   
+.start__in
+	margin: 0 auto 
+	+clr
+	width: 740px
+	.counter
+		float: right
+		margin-top: 48px
+.start__img
+	float: left
+.post-item-wrap
+	margin: 23px -155px 36px 0
+	+clr
+.post-item
+	float: left  
+	height: 237px
+	overflow: hidden
+	margin-right: 73px
+	padding-right: 80px
+	width: 290px
+	border-right: 1px solid #ededed
+	+box
+	font-size: 12px
+.post-item__title
+	color: $gray
+	font-size: 24px
+	+flight 
+.post-item__descr
+	margin: 4px 0 10px
+	height: 120px
+	overflow: hidden
+.post-item__more
+	text-align: right
+	a
+		color: #2b2b2b
+		+fmedit
+		font-size: 12px
+		text-transform: uppercase 
+
+.org
+	margin: 31px 0 34px 
+	text-align: center
+	a
+		display: inline-block
+		margin-left: 50px
+		vertical-align: middle
+		&:first-child
+			margin-left: 0
+		&:hover
+			img
+				+gray-zero
+		img
+			+gray
+			+tr(all .2s linear)

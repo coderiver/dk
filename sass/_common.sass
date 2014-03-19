@@ -98,9 +98,10 @@ a
 .menu
 	position: absolute
 	top: 63px
-	left: 239px
+	right: 34px
 	padding: 0 15px 
-	+clr
+	font-size: 0
+	white-space: nowrap
 	background: rgb(117,209,154)
 	background: rgba(117,209,154,.65)
 	&:before
@@ -116,10 +117,10 @@ a
 		right: -33px
 		+s(menu-right)   
 	li
-		float: left
+		display: inline-block
 	a
 		display: block
-		padding: 0 10px 
+		padding: 0 8px 
 		height: 32px
 		color: #fff
 		font-size: 12px

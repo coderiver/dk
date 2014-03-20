@@ -1,6 +1,10 @@
 .input-wrap
 	position: relative
 	margin-bottom: 8px
+	&.has-valid-error
+		.input
+			background: #fcd7d7
+			border-color: #f8b8b8
 .input
 	display: block
 	width: 100%
@@ -14,8 +18,9 @@
 	+placeholder
 		color: #a9a9a9 
 	&:focus
-		background: #fcd7d7
-		border-color: #f8b8b8
+		//background: #fcd7d7
+		border-color: #aaa
+	
 .input_s
 	padding: 3px 9px 4px 
 	font-size: 12px
@@ -31,7 +36,7 @@
 	border-bottom: 3px solid #c2451e 
 	text-align: center
 	color: #fff
-	+fbold
+	+fbold    
 	+box
 	font-size: 16px
 	text-shadow: 0 1px 1px rgba(0,0,0,.48)

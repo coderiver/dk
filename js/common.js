@@ -10,5 +10,17 @@ $(document).ready(function() {
         });
     }
 
+    $(".js-target").on("click", function (){
+	 	var el = $(this).attr("href");
+        $('html, body').animate({
+            scrollTop: $("."+el).offset().top
+        }, 500);
+	 	return false;
+    });
+    $(".js-to-reg").on("click", function (){
+	 	$(".js-reg .input-wrap").first().find("input").focus();
+	 	return false;
+    });
+
 
 });

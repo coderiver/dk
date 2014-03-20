@@ -370,11 +370,22 @@
 			&:before,  
 			&:after
 				background: url(../img/title-green.png) 0 0 repeat-x 
+	&.is-green-dark
+		span
+			&:before,  
+			&:after
+				background: url(../img/title-green-dark.png) 0 0 repeat-x 
 	&.is-blue
 		span
 			&:before,  
 			&:after
 				background: url(../img/title-blue.png) 0 0 repeat-x 
+	&.is-yellow
+		span
+			&:before,  
+			&:after
+				background: url(../img/title-yellow.png) 0 0 repeat-x 
+
 .title_570
 	max-width: 570px
 .title_h1
@@ -396,11 +407,31 @@
 		font-size: 20px
 		&:before,
 		&:after
-			top: 5px
+			top: 6px
 		&:before
 			left: -1022px
 		&:after
 			right: -1022px
+	&.title_collapse
+		text-align: left
+		padding-left: 36px
+		span
+			cursor: pointer
+			+unselectable
+			padding: 0 36px 0 10px 
+			&:before
+				left: -1000px
+			&:after
+				right: -1000px
+			&.is-inactive
+				i
+					+rotate(90)
+		i
+			position: absolute
+			top: 7px
+			right: 10px
+			+s(arr-dark)
+			+tr(all .1s linear)
 
 .title_h4
 	max-width: 340px

@@ -22,5 +22,10 @@ $(document).ready(function() {
 	 	return false;
     });
 
+    $(".js-collapse-title").on("click", function (){
+	 	$(this).toggleClass("is-inactive");
+	 	$(this).parent().next().slideToggle("fast");
+	 	return false;
+    });
 
 });

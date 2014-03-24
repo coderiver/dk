@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+     $(document).click(function() {
+        $(".js-select-list").hide();
+        $(".js-select").removeClass("is-active");
+    });
+
     if ($(".js-counter").length) {
         $(".js-counter").countdown({
             until: new Date(2014, 3, 22, 23, 55),
@@ -26,6 +31,40 @@ $(document).ready(function() {
 	 	$(this).toggleClass("is-inactive");
 	 	$(this).parent().next().slideToggle("fast");
 	 	return false;
+    });
+
+    function select() {
+        $(".js-select").each(function(){
+            var select_list = $(this).find(".js-select-list");
+            //var text = select_list.find("li").first().text();
+            //$(this).find(".js-select-text").text(text);
+            $(this).click(function(event){
+                if ($(this).hasClass("is-active")) {
+                    $(this).removeClass("is-active");
+                    select_list.hide();
+                }
+                else {
+                    $(".js-select").removeClass("is-active");
+                    $(".js-select-list").hide();
+                    select_list.show();
+                    $(this).addClass("is-active");
+                }
+                event.stopPropagation();
+            });
+            select_list.find("li").click(function(event) {
+                var id = $(this).attr("data-id");
+                var text = $(this).text();
+                $(this).parent().parent().find(".js-select-text").text(text);
+                $(this).parent().parent().find(".js-select-input").val(id);
+                $(this).parent().hide();
+                $(this).parents(".js-select").removeClass("is-active");
+                event.stopPropagation();
+            });
+        });
+    }
+    select();
+    $('.js-select').click(function(event){
+        event.stopPropagation();
     });
 
 });

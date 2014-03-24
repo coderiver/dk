@@ -44,14 +44,14 @@ a
 	&:hover
 		text-decoration: underline    
 .l-layout	 
-	margin: 0 auto -503px
+	margin: 0 auto -250px
 	position: relative
 	min-height: 100%
 	height: auto !important
 	height: 100% 
 .push
 	clear: both
-	height: 503px
+	height: 250px
 .wrapper
 	overflow: hidden
 .wrap
@@ -96,6 +96,16 @@ a
 	display: inline-block
 	margin: 0 0 0 8px
 	vertical-align: middle
+	font-size: 12px
+	color: #fff
+	strong
+		display: inline-block
+		margin-left: 5px
+		+fbold
+.user-enter__img
+	display: inline-block
+	margin-right: 6px
+	vertical-align: middle
 	+s(user)
 .menu
 	position: absolute
@@ -135,7 +145,9 @@ a
 			
 .footer
 	position: relative
-	min-height: 503px
+	padding-top: 4px
+	min-height: 250px
+	+box
 	overflow: hidden
 	background: #47c3eb url(../img/blue-bg.jpg) 0 0 repeat 
 	&:after
@@ -146,15 +158,12 @@ a
 		right: -1000px
 		height: 1800px 
 		+border-radius(100%)
-		background: #fff
+		background: #fafafa
 	.l-container
 		z-index: 2
 		+box
-		padding-bottom: 30px
-		min-height: 503px
-	.banner
-		margin-bottom: 19px
-.footer__partners
+		padding-bottom: 70px
+.partners
 	margin-bottom: 53px
 	text-align: center
 	.title

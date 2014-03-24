@@ -5,6 +5,8 @@
 		.input
 			background: #fcd7d7
 			border-color: #f8b8b8
+	&.is-disabled
+		+opacity(.5)
 .input
 	display: block
 	width: 100%
@@ -12,23 +14,128 @@
 	padding: 4px 15px 5px
 	background: #fff
 	border: 1px solid #cbcbcb
-	+freg
+	+fmed
 	font-size: 14px
+	+border-radius(1px)
 	color: #000 	
 	+placeholder
 		color: #a9a9a9 
+		+fitalic
 	&:focus
-		//background: #fcd7d7
 		border-color: #aaa
-	
+
+		
+input[type="file"]
+	position: relative
+	padding: 0
+	height: 30px
+	line-height: 30px 
+	+clr
+	font-size: 0
+	// &:before
+	// 	content: ""
+	// 	position: absolute
+	// 	width: 10px
+	// 	height: 10px
+	// 	background: #000
+	// 	right: 0
+	// 	top: 0  
+	// 	font-size: 14px
+	// 	+fmed
+	// 	background: #e3f2f7
+	&::-webkit-file-upload-button
+		position: absolute
+		top: -1px
+		right: -1px
+		bottom: -1px
+		padding: 0 13px 
+		font-size: 14px
+		+fmed
+		background: #e3f2f7
+		border: 1px solid #adadad
+		border-left: 1px solid #d2d2d2 
+		&:focus
+			outline: none
 .input_s
 	padding: 3px 9px 4px 
 	font-size: 12px
 .input_textarea
 	padding: 4px 15px
 	resize: vertical
+	&.is-no-resize
+		resize: none
 	&.input_s
 		padding: 4px 9px
+.input-label
+	display: block
+.input-label__text
+	display: block
+	margin-bottom: 8px
+	font-size: 14px
+	+fmed
+	sup
+		display: inline-block
+		position: relative
+		top: -3px
+		color: #ff2828 
+
+.select
+	position: relative
+	cursor: pointer
+	font-size: 12px
+	+fmed
+	font-size: 14px
+	&.is-active
+		.select__text
+			border-color: #aaa
+			+border-radius(1px 1px 0 0)
+.select__text
+	position: relative
+	display: block
+	width: 100%
+	+box
+	+border-radius(1px)
+	height: 30px
+	padding: 5px 15px 5px
+	background: #fff
+	border: 1px solid #cbcbcb
+	white-space: nowrap
+	overflow: hidden
+	+unselectable
+	text-overflow: ellipsis
+	&:after
+		content: ""
+		position: absolute
+		top: 8px
+		right: 10px
+		+arr(7,4,#4e4e4e,t)
+	&:before
+		content: ""
+		position: absolute
+		bottom: 8px
+		right: 10px
+		+arr(7,4,#4e4e4e,b)
+.select__list
+	position: absolute
+	display: none
+	left: 0
+	right: 0
+	top: 100%
+	z-index: 100
+	max-height: 150px
+	overflow: auto
+	border: 1px solid #aaa
+	border-top: 0 
+	background: #fff
+	+border-radius(0 0 1px 1px)  
+	+gpu
+	li
+		padding: 5px 15px 
+		cursor: pointer
+		line-height: 1
+		&:hover
+			background: #6dcdec
+			color: #fff 		
 
 .btn
 	display: inline-block
@@ -95,6 +202,10 @@
 		&:active
 			color: #fff
 			+background-image(linear-gradient(bottom,#00baff, #00baff 20%, #83ddff))
+.btn-link_big
+	padding: 14px 28px 13px 
+	font-size: 16px			
+
 .btn-action
 	display: inline-block
 	padding: 5px 13px 4px
@@ -446,6 +557,7 @@
 			right: -1022px
 			
 .banner
+	margin-bottom: 19px
 	text-align: center
 	img
 		display: block

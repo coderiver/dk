@@ -35,9 +35,9 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 @font-face { font-family: intro; src: url("../fonts/intro.eot"); src: url("../fonts/intro.eot?#iefix") format("embedded-opentype"), url("../fonts/intro.woff") format("woff"), url("../fonts/intro.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
-html ::-moz-scrollbar { width: 10px; border: 1px solid #d5d5d5; background: #ececec; -webkit-box-shadow: inset 0 0 3px rgba(44, 44, 44, 0.2); -moz-box-shadow: inset 0 0 3px rgba(44, 44, 44, 0.2); box-shadow: inset 0 0 3px rgba(44, 44, 44, 0.2); }
-html ::-webkit-scrollbar { width: 10px; border: 1px solid #d5d5d5; background: #ececec; -webkit-box-shadow: inset 0 0 3px rgba(44, 44, 44, 0.2); -moz-box-shadow: inset 0 0 3px rgba(44, 44, 44, 0.2); box-shadow: inset 0 0 3px rgba(44, 44, 44, 0.2); }
-html ::scrollbar { width: 10px; border: 1px solid #d5d5d5; background: #ececec; -webkit-box-shadow: inset 0 0 3px rgba(44, 44, 44, 0.2); -moz-box-shadow: inset 0 0 3px rgba(44, 44, 44, 0.2); box-shadow: inset 0 0 3px rgba(44, 44, 44, 0.2); }
+html ::-moz-scrollbar { width: 12px; height: 12px; border: 1px solid #d5d5d5; background: #ececec; -webkit-box-shadow: inset 0 0 3px rgba(44, 44, 44, 0.2); -moz-box-shadow: inset 0 0 3px rgba(44, 44, 44, 0.2); box-shadow: inset 0 0 3px rgba(44, 44, 44, 0.2); }
+html ::-webkit-scrollbar { width: 12px; height: 12px; border: 1px solid #d5d5d5; background: #ececec; -webkit-box-shadow: inset 0 0 3px rgba(44, 44, 44, 0.2); -moz-box-shadow: inset 0 0 3px rgba(44, 44, 44, 0.2); box-shadow: inset 0 0 3px rgba(44, 44, 44, 0.2); }
+html ::scrollbar { width: 12px; height: 12px; border: 1px solid #d5d5d5; background: #ececec; -webkit-box-shadow: inset 0 0 3px rgba(44, 44, 44, 0.2); -moz-box-shadow: inset 0 0 3px rgba(44, 44, 44, 0.2); box-shadow: inset 0 0 3px rgba(44, 44, 44, 0.2); }
 html ::-moz-scrollbar-thumb { border: 1px solid #2694bf; background: #2babdb; }
 html ::-webkit-scrollbar-thumb { border: 1px solid #2694bf; background: #2babdb; }
 html ::scrollbar-thumb { border: 1px solid #2694bf; background: #2babdb; }

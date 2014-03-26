@@ -67,4 +67,8 @@ $(document).ready(function() {
         event.stopPropagation();
     });
 
+    $(".js-input-file input").on("change",function(){
+        var val = $(this).val();
+        $(this).parent().find(".js-input-file-text").text(val);
+    });
 });

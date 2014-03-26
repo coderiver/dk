@@ -1,0 +1,335 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>participant cab</title>
+	<meta name="viewport" content="initial-scale=1"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.cycle2.js"></script>
+	<script src="js/jquery.countdown.js"></script>
+	<script src="js/common.js"></script>
+</head>   
+<body>
+
+<!-- BEGIN  l-layout-->
+<div class="l-layout">
+	<!-- BEGIN  header-->
+	<header class="header">
+		<div class="l-container">
+			<a href="#" class="logo"></a>
+			<div class="search-form">
+				<input type="submit" class="search-form__btn">
+				<input type="text" class="search-form__text">
+				<div class="user-enter">
+					<a href="#" class="user-enter__img"></a>
+					<span>Вы вошли как</span> 
+					<strong>Вильгель Штейн</strong>
+				</div>
+			</div>
+			<ul class="menu">
+				<li class="is-active"><a href="#">Главная</a></li>
+				<li><a href="#">О премии</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Ход голосования</a></li>
+				<li><a href="#">Каталог участников</a></li>
+				<li><a href="#">База знаний</a></li>
+				<li><a href="#">Пресс рум</a></li>
+			</ul>
+			
+		</div>
+	</header>
+	<!-- END header-->
+	<div class="main">
+		<h1 class="page-title">личный кабинет участника</h1>
+		<div class="img-box img-box_no-padding">
+			<div class="img-box__in">
+				<a href="#"><img src="img/logo1.png" alt="" width="200" height="50"></a>
+				<a href="#"><img src="img/logo2.png" alt="" width="70"></a>
+				<a href="#"><img src="img/logo3.png" alt="" width="74" height="82"></a>
+			</div>
+		</div>
+		<h2 class="title title_h2 is-green-dark to-left"><span>Собственный рейтинг</span></h2>
+		<div class="rating">
+			<div class="rating__left">
+				<div class="logo-item">
+					<img src="img/logo5.png" alt="">
+				</div>
+				<a href="#" class="btn btn_s">сменить логотип</a>
+			</div>
+			<div class="rating__right">
+				<div class="wrap">
+					<div class="rating__current">ТЕКУШИЙ РЕЙТИНГ <span>112389</span> голосов</div>
+					<div class="rating__max">максимальный результат <span>112389</span> голосов</div>
+				</div>
+				<div class="wrap">
+					<ul class="rating__list">
+						<li>
+							Позиция в номинации
+							<div><span>2</span> <sub>из</sub> 1078</div>
+						</li>
+						<li>
+							Позиция в кластере
+							<div><span>4</span> <sub>из</sub> 342</div>
+						</li>
+						<li>
+							Позиция в малой группе
+							<div><span>1</span> <sub>из</sub> 34</div>
+						</li>
+					</ul>
+					<ul class="rating__list">
+						<li>
+							число участников в номинации
+							<div>1078</div>
+						</li>
+						<li>
+							число прямых конкурентов в малой группе
+							<div>34</div>
+						</li>
+						<li>
+							Общее число участников
+							<div>890987</div>
+						</li>
+					</ul>
+				</div>
+				<div class="soc">
+					<div class="soc__title">рассказать в социальных сетях</div>
+					<a href="#" class="soc__fb"></a>
+					<a href="#" class="soc__vk"></a>
+					<a href="#" class="soc__od"></a>
+				</div>
+			</div>  	
+		</div>
+		<ul class="step step_nav">
+			<li class="step__item">
+				<a href="#"><span>Опрос дня</span></a>
+			</li>
+			<li class="step__item">
+				<a href="#"><span>картинки и документы</span></a>
+			</li>
+			<li class="step__item">
+				<a href="#"><span>НОВОСТИ</span></a>
+			</li>
+			<li class="step__item is-active">
+				<a href="#"><span>АНКЕТА УЧАСТНИКА</span></a>
+			</li>
+			<li class="step__item">
+				<a href="#"><span>макеты для печати</span></a>
+			</li>
+			<li class="step__item">
+				<a href="#"><span>макеты для интернета</span></a>
+			</li>
+		</ul>
+		<div class="form form_width">
+			<form action="">
+				<div class="form__left">
+					<div class="input-wrap">
+						<label class="input-label">
+							<span class="input-label__text">Название компании <sup>*</sup></span>
+							<input type="text" class="input">
+						</label>
+					</div>
+					<div class="input-wrap">
+						<label class="input-label js-input-file">
+							<span class="input-label__text">Логотип</span>
+							<span class="input-label__url js-input-file-text"></span> 
+							<input type="file" class="input">
+						</label>
+					</div>
+					<div class="input-wrap">
+						<label class="input-label">
+							<span class="input-label__text">Форма собственности <sup>*</sup></span>
+							<div class="select js-select">
+								<span class="select__text js-select-text">ИП</span>
+								<input type="hidden" class="js-select-input" value="0">
+								<ul class="select__list js-select-list">
+									<li data-id="0">ИП</li>
+									<li data-id="1">Форма собственности1</li>
+									<li data-id="2">Форма собственности2</li>
+									<li data-id="3">Форма собственности3</li>
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="input-wrap">
+						<label class="input-label">
+							<span class="input-label__text">ИНН <sup>*</sup></span>
+							<input type="text" class="input">
+						</label>
+					</div>
+					<div class="input-wrap">
+						<label class="input-label">
+							<span class="input-label__text">Официальное название <sup>*</sup></span>
+							<input type="text" class="input">
+						</label>
+					</div>
+					<div class="input-wrap">
+						<label class="input-label">
+							<span class="input-label__text">Номинация <sup>*</sup></span>
+							<div class="select js-select">
+								<span class="select__text js-select-text"></span>
+								<input type="hidden" class="js-select-input" value="0">
+								<ul class="select__list js-select-list">
+									<li data-id="0">Номинация0</li>
+									<li data-id="1">Номинация1</li>
+									<li data-id="2">Номинация2</li>
+									<li data-id="3">Номинация3</li>
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="input-wrap">
+						<label class="input-label">
+							<span class="input-label__text">Размер бизнеса <sup>*</sup></span>
+							<div class="select js-select">
+								<span class="select__text js-select-text"></span>
+								<input type="hidden" class="js-select-input" value="0">
+								<ul class="select__list js-select-list">
+									<li data-id="0">Малый</li>
+									<li data-id="1">Средний</li>
+									<li data-id="2">Большой</li>
+									<li data-id="3">Ваще огромный</li>
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="input-wrap">
+						<label class="input-label">
+							<span class="input-label__text">Описание компании <sup>*</sup></span>
+							<textarea class="input input_textarea is-no-resize"></textarea>
+						</label>
+					</div>
+					<div class="input-wrap">
+						<label class="input-label">
+							<span class="input-label__text">Город / Населенный пункт <sup>*</sup></span>
+							<div class="select js-select">
+								<span class="select__text js-select-text"></span>
+								<input type="hidden" class="js-select-input" value="0">
+								<ul class="select__list js-select-list">
+									<li data-id="0">Малый</li>
+									<li data-id="1">Средний</li>
+									<li data-id="2">Большой</li>
+									<li data-id="3">Ваще огромный</li>
+									<li data-id="4">Малый</li>
+									<li data-id="5">Средний</li>
+									<li data-id="6">Большой</li>
+									<li data-id="7">Ваще огромный</li>
+									<li data-id="8">Малый</li>
+									<li data-id="9">Средний</li>
+									<li data-id="10">Большой</li>
+									<li data-id="11">Ваще огромный</li>
+								</ul>
+							</div>
+						</label>
+					</div>
+				</div>
+				<div class="form__right">
+					<div class="input-wrap">
+						<label class="input-label">
+							<span class="input-label__text">Адрес компании (юридический) <sup>*</sup></span>
+							<input type="text" class="input">
+						</label>
+					</div>
+					<div class="input-wrap">
+						<label class="input-label">
+							<span class="input-label__text">Телефон <sup>*</sup></span>
+							<input type="tel" class="input">
+						</label>
+					</div>
+					<div class="input-wrap">
+						<label class="input-label">
+							<span class="input-label__text">ФИО контактного лица <sup>*</sup></span>
+							<input type="text" class="input">
+						</label>
+					</div>
+					<div class="input-wrap">
+						<label class="input-label">
+							<span class="input-label__text">Должность контактного лица</span>
+							<input type="text" class="input">
+						</label>
+					</div>
+					<div class="input-wrap">
+						<label class="input-label">
+							<span class="input-label__text">Телефон контактного лица <sup>*</sup></span>
+							<input type="tel" class="input">
+						</label>
+					</div>
+					<div class="input-wrap is-disabled">
+						<label class="input-label">
+							<span class="input-label__text">ФИО генерального директора организации <sup>*</sup></span>
+							<input type="text" class="input" disabled>
+						</label>
+					</div>
+					<div class="input-wrap">
+						<label class="input-label">
+							<span class="input-label__text">Веб-сайт организации</span>
+							<input type="text" class="input" placeholder="http://">
+						</label>
+					</div>
+					<div class="input-wrap">
+						<label class="input-label">
+							<span class="input-label__text">Ссылка на страницу компании в Facebook</span>
+							<input type="text" class="input" placeholder="http://">
+						</label>
+					</div>
+					<div class="input-wrap">
+						<label class="input-label">
+							<span class="input-label__text">Ccылка на страницу компании в Вконтакте</span>
+							<input type="text" class="input" placeholder="http://">
+						</label>
+					</div>
+				</div>
+				<div class="wrap">
+					<button class="btn btn_s">Сменить пароль</button>
+					<button class="btn btn_s is-disabled">Cохранить изменения</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- BEGIN  push-->
+	<div class="push"></div>
+	<!-- END push-->
+</div>
+<!-- END l-layout-->
+<footer class="footer">
+	<div class="l-container">
+		<div class="wrap">
+			<div class="footer__col footer__cont">
+				<div class="footer__title">КОНТАКТНАЯ ИНФОРМАЦИЯ</div>
+				<div>
+					<p>Paseo de las Illetas, 7 </p>
+					<p>Majorca - Illetas 07184</p>
+				</div>
+				<div>
+					<p>Тел: (044) 971 402511 </p>
+					<p>Факс: (044) 971 405852</p>
+				</div>
+			</div>
+			<div class="footer__col footer__soc">
+				<div class="footer__title">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</div>
+				<div class="soc-counter">
+					<a href="#" class="soc-counter__fb"><i></i><span>2564</span></a>
+					<a href="#" class="soc-counter__vk"><i></i><span>2564</span></a>
+					<a href="#" class="soc-counter__od"><i></i><span>2564</span></a>
+				</div>
+			</div>
+			<div class="footer__col footer__feedback">
+				<div class="footer__title">ОБРАТНАЯ СВЯЗЬ</div>
+				<div class="input-wrap">
+					<input type="email" class="input input_s" placeholder="Email">
+				</div>
+				<div class="input-wrap">
+					<textarea class="input input_s input_textarea"></textarea>
+				</div>
+				<input type="submit" class="btn-action" value="ОТПРАВИТЬ">
+			</div>
+		</div>
+		<div class="footer__copy">
+			&copy; 2014 Все права защищены
+		</div>
+	</div>
+</footer>
+</body>
+</html>  

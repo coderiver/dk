@@ -99,8 +99,8 @@ $(document).ready(function() {
         $(this).parents(".js-news").find(".js-news-title").attr("contenteditable","true").addClass("input");
         $(this).parents(".js-news").find(".js-news-btn").removeAttr("hidden");
     });
-    
-    $( "#tabs" ).tabs({
+
+    $(".js-tab").tabs({
       beforeLoad: function( event, ui ) {
         ui.jqXHR.error(function() {
           ui.panel.html(

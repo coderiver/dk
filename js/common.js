@@ -108,9 +108,10 @@ $(document).ready(function() {
             "If this wouldn't be a demo." );
         });
       },
-      activate: function(event, ui) { 
-       window.location.hash=ui.newPanel.selector; 
-    }
+        activate: function(event, ui) { 
+            window.location.hash=ui.newPanel.selector; 
+        },
+        hide: function(event, ui) { effect: "explode", duration: 1000 } 
     });
 
 

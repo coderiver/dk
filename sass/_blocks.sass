@@ -23,30 +23,64 @@
 		+fitalic
 	&:focus
 		border-color: #aaa
-
-		
-input[type="file"]
+.input-file
 	position: relative
-	padding: 0
-	height: 30px
-	line-height: 30px 
-	+clr
-	font-size: 0
+	height: 30px  
 	cursor: pointer
-	&::-webkit-file-upload-button
+	input
 		position: absolute
-		top: -1px
-		right: -1px
-		bottom: -1px
-		padding: 0 13px 
-		font-size: 14px
-		+fmed
-		cursor: pointer
-		background: #e3f2f7
-		border: 1px solid #adadad
-		border-left: 1px solid #d2d2d2 
-		&:focus
-			outline: none
+		left: 0
+		bottom: 0
+		z-index: 2
+		opacity: 0
+.input-file__text
+	position: absolute
+	left: 15px
+	top: 0
+	bottom: 0
+	line-height: 30px
+	right: 85px
+	overflow: hidden
+	text-overflow: ellipsis
+	white-space: nowrap
+	z-index: 2
+	font-size: 14px
+	+fmed
+.input-file__btn
+	position: absolute
+	top: -1px
+	right: -1px
+	bottom: -1px
+	padding: 0 13px 
+	line-height: 30px
+	font-size: 14px
+	+fmed
+	background: #e3f2f7
+	border: 1px solid #adadad
+	border-left: 1px solid #d2d2d2 
+
+// input[type="file"]
+// 	position: relative
+// 	padding: 0
+// 	height: 30px
+// 	line-height: 30px 
+// 	+clr
+// 	font-size: 0
+// 	cursor: pointer
+// 	&::-webkit-file-upload-button
+// 		position: absolute
+// 		top: -1px
+// 		right: -1px
+// 		bottom: -1px
+// 		padding: 0 13px 
+// 		font-size: 14px
+// 		+fmed
+// 		cursor: pointer
+// 		background: #e3f2f7
+// 		border: 1px solid #adadad
+// 		border-left: 1px solid #d2d2d2 
+// 		&:focus
+// 			outline: none
 .input_s
 	padding: 3px 9px 4px 
 	font-size: 12px

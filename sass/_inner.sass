@@ -303,7 +303,7 @@
 	font-size: 20px
 	text-transform: uppercase
 	+flight 
-.poll__title
+.item-title
 	margin-bottom: 15px
 	text-transform: uppercase
 	+fmed
@@ -345,3 +345,123 @@
 		position: absolute
 		top: 6px
 		right: 6px
+		
+.news-wrap
+	margin-right: -120px
+.news
+	position: relative
+	margin: 0 95px 17px 0
+	padding-bottom: 30px
+	display: inline-block
+	vertical-align: top
+	width: 420px  
+	font-size: 12px
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		bottom: 0
+		right: -50px
+		width: 1px
+		background: #ececec  
+	.input
+		height: 63px
+		color: #565656
+		font-size: 24px
+		text-transform: uppercase
+		+flight 
+	.input_textarea
+		height: 145px
+		font-size: 14px
+		+freg
+		font-size: 12px
+		text-transform: none
+	.btn,
+	.btn-link
+		padding: 11px 5px 10px 
+		width: 154px
+		height: 39px
+	
+.news_add
+	padding-top: 22px
+	border-top: 1px solid #efefef 
+	&:after
+		display: none
+.news__title
+	margin-bottom: 6px
+	color: #565656
+	font-size: 24px
+	text-transform: uppercase
+	+flight   
+	&.input
+		padding-top: 17px
+.news__title,
+.news__text
+	&:focus
+		outline: none   
+.news__btn
+	text-align: right
+	margin-top: 20px
+	.btn-link
+		margin-right: 16px
+.btn-edit
+	display: inline-block
+	vertical-align: middle
+	margin: -3px 0 0 5px
+	+s(edit)
+.img-templ-wrap
+	+clr
+	margin-right: -30px
+	+ .btn
+		margin-top: 11px
+.img-templ
+	position: relative
+	float: left
+	margin: 0 20px 20px 0
+.img-templ_web
+	display: inline-block
+	vertical-align: top
+	float: none
+	width: 340px
+	+clr
+	.img-templ__pic
+		float: left
+		margin-right: 20px
+	.img-templ__info
+		overflow: hidden
+.img-templ__pic
+	height: 100px
+	width: 100px
+	line-height: 100px
+	text-align: center
+	overflow: hidden
+	img
+		display: inline-block
+		vertical-align: middle
+		max-width: 100%
+		max-height: 100%
+		height: auto
+	a
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background: rgba(#ff5b5b, 0.64)
+		+opacity(0)
+		+tr(opacity .2s linear)
+		&:after
+			content: ""
+			position: absolute
+			top: 50%
+			left: 50%
+			margin: -16px 0 0 -16px
+			+s(download) 
+		&:hover
+			+opacity(1)
+.img-templ__info
+	.input-wrap
+		margin-top: 7px
+	.input-label__text,
+	.input
+		+freg

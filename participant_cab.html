@@ -8,6 +8,7 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.js"></script>
 	<script src="js/jquery.cycle2.js"></script>
 	<script src="js/jquery.countdown.js"></script>
 	<script src="js/common.js"></script>
@@ -102,300 +103,32 @@
 				</div>
 			</div>  	
 		</div>
-		<ul class="step step_nav js-tab">
-			<li class="step__item">
-				<a href="js-tab1"><span>Опрос дня</span></a>
-			</li>
-			<li class="step__item">
-				<a href="js-tab2"><span>картинки и документы</span></a>
-			</li>
-			<li class="step__item">
-				<a href="js-tab3"><span>НОВОСТИ</span></a>
-			</li>
-			<li class="step__item">
-				<a href="js-tab4"><span>АНКЕТА УЧАСТНИКА</span></a>
-			</li>
-			<li class="step__item">
-				<a href="js-tab5"><span>макеты для печати</span></a>
-			</li>
-			<li class="step__item">
-				<a href="js-tab6"><span>макеты для интернета</span></a>
-			</li>
-		</ul>
-		<div class="poll js-tab-cont js-tab1">
-			<div class="poll__question">От чего и почему черт летает на луну?</div>
-			<div class="poll__title">варианты ответа</div>
-			<div class="radio-wrap">
-				<label class="radio">
-					<input type="radio" name="name1" checked>
-					<span>Алла Пугачева</span>
-				</label>
-			</div>
-			<div class="radio-wrap">
-				<label class="radio">
-					<input type="radio" name="name1">
-					<span>Корпускулярно-волновой дуализм</span>
-				</label>
-			</div>
-			<div class="radio-wrap">
-				<label class="radio">
-					<input type="radio" name="name1">
-					<span>Хурма</span>
-				</label>
-			</div>
-			<div class="radio-wrap">
-				<label class="radio">
-					<input type="radio" name="name1">
-					<span>Складки сладки</span>
-				</label>
-			</div>
-			<div class="radio-wrap">
-				<label class="radio">
-					<input type="radio" name="name1">
-					<span>Броуновское движение</span>
-				</label>
-			</div>
-			<button class="btn btn_s">узнать результат</button>
+		<div id="tabs">
+			<ul class="step step_nav">
+				<li class="step__item">
+					<a href="ajax/ajax-tab1.htm"><span>Опрос дня</span></a>
+				</li>
+				<li class="step__item">
+					<a href="ajax/ajax-tab2.html"><span>картинки и документы</span></a>
+				</li>
+				<li class="step__item">
+					<a href="ajax/ajax-tab3.html"><span>НОВОСТИ</span></a>
+				</li>
+				<li class="step__item">
+					<a href="ajax/ajax-tab4.html"><span>АНКЕТА УЧАСТНИКА</span></a>
+				</li>
+				<li class="step__item">
+					<a href="ajax/ajax-tab5.html"><span>макеты для печати</span></a>
+				</li>
+				<li class="step__item">
+					<a href="ajax/ajax-tab6.html"><span>макеты для интернета</span></a>
+				</li>
+			</ul>
+			<!-- <div class="js-tab-cont">
+				
+			</div> -->
+			
 		</div>
-		 <div class="js-tab-cont js-tab1"></div>
-		 <div class="form form_width form_no-border js-tab-cont js-tab2 ">
-			<form action="">
-				<div class="form__left">
-					<div class="input-wrap">
-						<div class="input-label js-input-file">
-							<span class="input-label__text">Загрузить фотоотчет о размещении маркетинговых материалов</span>
-							<div class="input input-file">
-								<input type="file" class="input">
-								<span class="input-file__text js-input-file-text"></span>
-								<span class="input-file__btn">Обзор...</span>
-							</div> 
-							<div class="input-label__info">допустимые форматы: zip, rar</div>
-						</div>
-					</div>
-					<div class="input-wrap">
-						<div class="input-label js-input-file">
-							<span class="input-label__text">Сканы документов</span>
-							<div class="input input-file">
-								<input type="file" class="input">
-								<span class="input-file__text js-input-file-text"></span>
-								<span class="input-file__btn">Обзор...</span>
-							</div> 
-							<div class="input-label__info">допустимые форматы: png, jpeg, jpg, tiff, zip, rar</div>
-						</div>
-					</div>
-				</div>
-				<div class="form__right">
-					<div class="input-wrap">
-						<div class="input-label js-input-file">
-							<span class="input-label__text">Загрузить принтскрины по размещению баннеров</span>
-							<div class="input input-file">
-								<input type="file" class="input">
-								<span class="input-file__text js-input-file-text"></span>
-								<span class="input-file__btn">Обзор...</span>
-							</div> 
-							<div class="input-label__info">допустимые форматы: png, jpeg, jpg, gif</div>
-						</div>
-					</div>
-				</div>
-			</form>
-			<div class="img-upload">
-				<div class="img-upload__title">загруженные ранее</div>
-				<div class="img-upload__item">
-					<div><img src="http://lorempixel.com/100/100" alt=""></div>
-					Doc_Scan.png
-					<button class="btn-del"></button>
-				</div>
-				<div class="img-upload__item">
-					<div><img src="http://lorempixel.com/102/100" alt=""></div>
-					Doc_Scan.png
-					<button class="btn-del"></button>
-				</div>
-				<div class="img-upload__item">
-					<div><img src="img/zip.png" alt=""></div>
-					Doc_Scan.png
-					<button class="btn-del"></button>
-				</div>
-				<div class="img-upload__item">
-					<div><img src="http://lorempixel.com/200/200" alt=""></div>
-					Снимок экрана 2014-02-04 в 17.28.35.png
-					<button class="btn-del"></button>
-				</div>
-				<div class="img-upload__item">
-					<div><img src="http://lorempixel.com/300/300" alt=""></div>
-					Doc_Scan.png
-					<button class="btn-del"></button>
-				</div>
-			</div>
-		</div>
-		<div class="form form_width js-tab-cont js-tab4 ">
-			<form action="">
-				<div class="form__left">
-					<div class="input-wrap">
-						<label class="input-label">
-							<span class="input-label__text">Название компании <sup>*</sup></span>
-							<input type="text" class="input">
-						</label>
-					</div>
-					<div class="input-wrap">
-						<div class="input-label js-input-file">
-							<span class="input-label__text">Логотип</span>
-							<div class="input input-file">
-								<input type="file" class="input">
-								<span class="input-file__text js-input-file-text"></span>
-								<span class="input-file__btn">Обзор...</span>
-							</div> 
-						</div>
-					</div>
-					<div class="input-wrap">
-						<div class="input-label">
-							<span class="input-label__text">Форма собственности <sup>*</sup></span>
-							<div class="select js-select">
-								<span class="select__text js-select-text">ИП</span>
-								<input type="hidden" class="js-select-input" value="0">
-								<ul class="select__list js-select-list">
-									<li data-id="0">ИП</li>
-									<li data-id="1">Форма собственности1</li>
-									<li data-id="2">Форма собственности2</li>
-									<li data-id="3">Форма собственности3</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="input-wrap">
-						<label class="input-label">
-							<span class="input-label__text">ИНН <sup>*</sup></span>
-							<input type="text" class="input">
-						</label>
-					</div>
-					<div class="input-wrap">
-						<label class="input-label">
-							<span class="input-label__text">Официальное название <sup>*</sup></span>
-							<input type="text" class="input">
-						</label>
-					</div>
-					<div class="input-wrap">
-						<div class="input-label">
-							<span class="input-label__text">Номинация <sup>*</sup></span>
-							<div class="select js-select">
-								<span class="select__text js-select-text"></span>
-								<input type="hidden" class="js-select-input" value="0">
-								<ul class="select__list js-select-list">
-									<li data-id="0">Номинация0</li>
-									<li data-id="1">Номинация1</li>
-									<li data-id="2">Номинация2</li>
-									<li data-id="3">Номинация3</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="input-wrap">
-						<div class="input-label">
-							<span class="input-label__text">Размер бизнеса <sup>*</sup></span>
-							<div class="select js-select">
-								<span class="select__text js-select-text"></span>
-								<input type="hidden" class="js-select-input" value="0">
-								<ul class="select__list js-select-list">
-									<li data-id="0">Малый</li>
-									<li data-id="1">Средний</li>
-									<li data-id="2">Большой</li>
-									<li data-id="3">Ваще огромный</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="input-wrap">
-						<label class="input-label">
-							<span class="input-label__text">Описание компании <sup>*</sup></span>
-							<textarea class="input input_textarea is-no-resize"></textarea>
-						</label>
-					</div>
-					<div class="input-wrap">
-						<div class="input-label">
-							<span class="input-label__text">Город / Населенный пункт <sup>*</sup></span>
-							<div class="select js-select">
-								<span class="select__text js-select-text"></span>
-								<input type="hidden" class="js-select-input" value="0">
-								<ul class="select__list js-select-list">
-									<li data-id="0">Малый</li>
-									<li data-id="1">Средний</li>
-									<li data-id="2">Большой</li>
-									<li data-id="3">Ваще огромный</li>
-									<li data-id="4">Малый</li>
-									<li data-id="5">Средний</li>
-									<li data-id="6">Большой</li>
-									<li data-id="7">Ваще огромный</li>
-									<li data-id="8">Малый</li>
-									<li data-id="9">Средний</li>
-									<li data-id="10">Большой</li>
-									<li data-id="11">Ваще огромный</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="form__right">
-					<div class="input-wrap">
-						<label class="input-label">
-							<span class="input-label__text">Адрес компании (юридический) <sup>*</sup></span>
-							<input type="text" class="input">
-						</label>
-					</div>
-					<div class="input-wrap">
-						<label class="input-label">
-							<span class="input-label__text">Телефон <sup>*</sup></span>
-							<input type="tel" class="input">
-						</label>
-					</div>
-					<div class="input-wrap">
-						<label class="input-label">
-							<span class="input-label__text">ФИО контактного лица <sup>*</sup></span>
-							<input type="text" class="input">
-						</label>
-					</div>
-					<div class="input-wrap">
-						<label class="input-label">
-							<span class="input-label__text">Должность контактного лица</span>
-							<input type="text" class="input">
-						</label>
-					</div>
-					<div class="input-wrap">
-						<label class="input-label">
-							<span class="input-label__text">Телефон контактного лица <sup>*</sup></span>
-							<input type="tel" class="input">
-						</label>
-					</div>
-					<div class="input-wrap is-disabled">
-						<label class="input-label">
-							<span class="input-label__text">ФИО генерального директора организации <sup>*</sup></span>
-							<input type="text" class="input" disabled>
-						</label>
-					</div>
-					<div class="input-wrap">
-						<label class="input-label">
-							<span class="input-label__text">Веб-сайт организации</span>
-							<input type="text" class="input" placeholder="http://">
-						</label>
-					</div>
-					<div class="input-wrap">
-						<label class="input-label">
-							<span class="input-label__text">Ссылка на страницу компании в Facebook</span>
-							<input type="text" class="input" placeholder="http://">
-						</label>
-					</div>
-					<div class="input-wrap">
-						<label class="input-label">
-							<span class="input-label__text">Ccылка на страницу компании в Вконтакте</span>
-							<input type="text" class="input" placeholder="http://">
-						</label>
-					</div>
-				</div>
-				<div class="wrap">
-					<button class="btn btn_s">Сменить пароль</button>
-					<button class="btn btn_s is-disabled">Cохранить изменения</button>
-				</div>
-			</form>
-		</div>
-	
 	</div>
 	<!-- BEGIN  push-->
 	<div class="push"></div>

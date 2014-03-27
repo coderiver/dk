@@ -73,24 +73,42 @@ $(document).ready(function() {
     });
 
 
-    function tab() {
-       $(".js-tab").each(function(){
-            var tab_link = $(this).find("a");
-            var tab_item = $(this).find("li");
-            var tab_cont = $(this).parents(".js-tab-group").find(".js-tab-cont");
-            tab_cont.hide();
-            tab_item.first().addClass("is-active");
-            $(this).parents(".js-tab-group").find(".js-tab1").show();
-            tab_link.on("click", function() {
-                var index = $(this).attr("href");
-                tab_item.removeClass("is-active");
-                $(this).parent().addClass("is-active");
-                tab_cont.hide();
-                $(this).parents(".js-tab-group").find("."+index).show();
-                return false;
-          });
-       });
-    }
-    tab();
+    // function tab() {
+    //    $(".js-tab").each(function(){
+    //         var tab_link = $(this).find("a");
+    //         var tab_item = $(this).find("li");
+    //         var tab_cont = $(this).parents(".js-tab-group").find(".js-tab-cont");
+    //         tab_cont.hide();
+    //         tab_item.first().addClass("is-active");
+    //         $(this).parents(".js-tab-group").find(".js-tab1").show();
+    //         tab_link.on("click", function() {
+    //             var index = $(this).attr("href");
+    //             tab_item.removeClass("is-active");
+    //             $(this).parent().addClass("is-active");
+    //             tab_cont.hide();
+    //             $(this).parents(".js-tab-group").find("."+index).show();
+    //             return false;
+    //       });
+    //    });
+    // }
+    // tab();
+
+    $(".js-edit-news").on("click", function(){
+        $(this).hide();
+        $(this).parents(".js-news").find(".js-news-text").attr("contenteditable","true").addClass("input input_textarea");
+        $(this).parents(".js-news").find(".js-news-title").attr("contenteditable","true").addClass("input");
+        $(this).parents(".js-news").find(".js-news-btn").removeAttr("hidden");
+    });
+    
+    $( "#tabs" ).tabs({
+      beforeLoad: function( event, ui ) {
+        ui.jqXHR.error(function() {
+          ui.panel.html(
+            "Couldn't load this tab. We'll try to fix this as soon as possible. " +
+            "If this wouldn't be a demo." );
+        });
+      }
+    });
+
 
 });

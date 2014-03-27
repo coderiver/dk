@@ -42,7 +42,7 @@
 		</div>
 	</header>
 	<!-- END header-->
-	<div class="main">
+	<div class="main tab-group js-tab-group">
 		<h1 class="page-title">личный кабинет участника</h1>
 		<div class="img-box img-box_no-padding">
 			<div class="img-box__in">
@@ -102,27 +102,132 @@
 				</div>
 			</div>  	
 		</div>
-		<ul class="step step_nav">
+		<ul class="step step_nav js-tab">
 			<li class="step__item">
-				<a href="#"><span>Опрос дня</span></a>
+				<a href="js-tab1"><span>Опрос дня</span></a>
 			</li>
 			<li class="step__item">
-				<a href="#"><span>картинки и документы</span></a>
+				<a href="js-tab2"><span>картинки и документы</span></a>
 			</li>
 			<li class="step__item">
-				<a href="#"><span>НОВОСТИ</span></a>
-			</li>
-			<li class="step__item is-active">
-				<a href="#"><span>АНКЕТА УЧАСТНИКА</span></a>
+				<a href="js-tab3"><span>НОВОСТИ</span></a>
 			</li>
 			<li class="step__item">
-				<a href="#"><span>макеты для печати</span></a>
+				<a href="js-tab4"><span>АНКЕТА УЧАСТНИКА</span></a>
 			</li>
 			<li class="step__item">
-				<a href="#"><span>макеты для интернета</span></a>
+				<a href="js-tab5"><span>макеты для печати</span></a>
+			</li>
+			<li class="step__item">
+				<a href="js-tab6"><span>макеты для интернета</span></a>
 			</li>
 		</ul>
-		<div class="form form_width">
+		<div class="poll js-tab-cont js-tab1">
+			<div class="poll__question">От чего и почему черт летает на луну?</div>
+			<div class="poll__title">варианты ответа</div>
+			<div class="radio-wrap">
+				<label class="radio">
+					<input type="radio" name="name1" checked>
+					<span>Алла Пугачева</span>
+				</label>
+			</div>
+			<div class="radio-wrap">
+				<label class="radio">
+					<input type="radio" name="name1">
+					<span>Корпускулярно-волновой дуализм</span>
+				</label>
+			</div>
+			<div class="radio-wrap">
+				<label class="radio">
+					<input type="radio" name="name1">
+					<span>Хурма</span>
+				</label>
+			</div>
+			<div class="radio-wrap">
+				<label class="radio">
+					<input type="radio" name="name1">
+					<span>Складки сладки</span>
+				</label>
+			</div>
+			<div class="radio-wrap">
+				<label class="radio">
+					<input type="radio" name="name1">
+					<span>Броуновское движение</span>
+				</label>
+			</div>
+			<button class="btn btn_s">узнать результат</button>
+		</div>
+		 <div class="js-tab-cont js-tab1"></div>
+		 <div class="form form_width form_no-border js-tab-cont js-tab2 ">
+			<form action="">
+				<div class="form__left">
+					<div class="input-wrap">
+						<div class="input-label js-input-file">
+							<span class="input-label__text">Загрузить фотоотчет о размещении маркетинговых материалов</span>
+							<div class="input input-file">
+								<input type="file" class="input">
+								<span class="input-file__text js-input-file-text"></span>
+								<span class="input-file__btn">Обзор...</span>
+							</div> 
+							<div class="input-label__info">допустимые форматы: zip, rar</div>
+						</div>
+					</div>
+					<div class="input-wrap">
+						<div class="input-label js-input-file">
+							<span class="input-label__text">Сканы документов</span>
+							<div class="input input-file">
+								<input type="file" class="input">
+								<span class="input-file__text js-input-file-text"></span>
+								<span class="input-file__btn">Обзор...</span>
+							</div> 
+							<div class="input-label__info">допустимые форматы: png, jpeg, jpg, tiff, zip, rar</div>
+						</div>
+					</div>
+				</div>
+				<div class="form__right">
+					<div class="input-wrap">
+						<div class="input-label js-input-file">
+							<span class="input-label__text">Загрузить принтскрины по размещению баннеров</span>
+							<div class="input input-file">
+								<input type="file" class="input">
+								<span class="input-file__text js-input-file-text"></span>
+								<span class="input-file__btn">Обзор...</span>
+							</div> 
+							<div class="input-label__info">допустимые форматы: png, jpeg, jpg, gif</div>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="img-upload">
+				<div class="img-upload__title">загруженные ранее</div>
+				<div class="img-upload__item">
+					<div><img src="http://lorempixel.com/100/100" alt=""></div>
+					Doc_Scan.png
+					<button class="btn-del"></button>
+				</div>
+				<div class="img-upload__item">
+					<div><img src="http://lorempixel.com/102/100" alt=""></div>
+					Doc_Scan.png
+					<button class="btn-del"></button>
+				</div>
+				<div class="img-upload__item">
+					<div><img src="img/zip.png" alt=""></div>
+					Doc_Scan.png
+					<button class="btn-del"></button>
+				</div>
+				<div class="img-upload__item">
+					<div><img src="http://lorempixel.com/200/200" alt=""></div>
+					Снимок экрана 2014-02-04 в 17.28.35.png
+					<button class="btn-del"></button>
+				</div>
+				<div class="img-upload__item">
+					<div><img src="http://lorempixel.com/300/300" alt=""></div>
+					Doc_Scan.png
+					<button class="btn-del"></button>
+				</div>
+			</div>
+		</div>
+		<div class="form form_width js-tab-cont js-tab4 ">
 			<form action="">
 				<div class="form__left">
 					<div class="input-wrap">
@@ -132,14 +237,14 @@
 						</label>
 					</div>
 					<div class="input-wrap">
-						<label class="input-label js-input-file">
+						<div class="input-label js-input-file">
 							<span class="input-label__text">Логотип</span>
 							<div class="input input-file">
 								<input type="file" class="input">
 								<span class="input-file__text js-input-file-text"></span>
 								<span class="input-file__btn">Обзор...</span>
 							</div> 
-						</label>
+						</div>
 					</div>
 					<div class="input-wrap">
 						<div class="input-label">
@@ -290,6 +395,7 @@
 				</div>
 			</form>
 		</div>
+	
 	</div>
 	<!-- BEGIN  push-->
 	<div class="push"></div>

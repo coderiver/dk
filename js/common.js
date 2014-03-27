@@ -107,7 +107,10 @@ $(document).ready(function() {
             "Couldn't load this tab. We'll try to fix this as soon as possible. " +
             "If this wouldn't be a demo." );
         });
-      }
+      },
+      activate: function(event, ui) { 
+       window.location.hash=ui.newPanel.selector; 
+    }
     });
 
 

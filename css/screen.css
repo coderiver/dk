@@ -542,3 +542,5 @@ a:hover { text-decoration: underline; }
 
 .img-templ__info .input-wrap { margin-top: 7px; }
 .img-templ__info .input-label__text, .img-templ__info .input { font-family: "roboto-regular", Arial, sans-serif; }
+
+.tab { position: static !important; }

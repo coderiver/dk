@@ -101,7 +101,6 @@ $(document).ready(function() {
     });
 
     $(".js-tab").tabs({
-        fx: { height: 'toggle', duration: '500' },
         // beforeLoad: function( event, ui ) {
         //     ui.jqXHR.error(function() {
         //       ui.panel.html(
@@ -109,16 +108,16 @@ $(document).ready(function() {
         //         "If this wouldn't be a demo." );
         //     });
         // },
-        activate: function(event, ui) { 
+        beforeActivate: function(event, ui) { 
             window.location.hash=ui.newPanel.selector; 
-        }
-        
+        },
+        // load: function( event, ui ) {}
+        // show: { effect: "blind", duration: 800 },
+         
 
     });  
 
-    // $(".js-tab").tabs({ 
-    //     fx: { height: 'toggle', opacity: 'toggle' } 
-    // });
+    // $(".js-tab").tabs( { show: { effect: "blind", duration: 800 } } );  
 
 
 });  

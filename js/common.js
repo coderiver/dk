@@ -102,13 +102,13 @@ $(document).ready(function() {
 
     $(".js-tab").tabs({
         fx: { height: 'toggle', duration: '500' },
-        beforeLoad: function( event, ui ) {
-            ui.jqXHR.error(function() {
-              ui.panel.html(
-                "Couldn't load this tab. We'll try to fix this as soon as possible. " +
-                "If this wouldn't be a demo." );
-            });
-        },
+        // beforeLoad: function( event, ui ) {
+        //     ui.jqXHR.error(function() {
+        //       ui.panel.html(
+        //         "Couldn't load this tab. We'll try to fix this as soon as possible. " +
+        //         "If this wouldn't be a demo." );
+        //     });
+        // },
         activate: function(event, ui) { 
             window.location.hash=ui.newPanel.selector; 
         }
@@ -117,7 +117,6 @@ $(document).ready(function() {
     });  
 
     // $(".js-tab").tabs({ 
-
     //     fx: { height: 'toggle', opacity: 'toggle' } 
     // });
 

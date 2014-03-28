@@ -100,21 +100,26 @@ $(document).ready(function() {
         $(this).parents(".js-news").find(".js-news-btn").removeAttr("hidden");
     });
 
-    // $(".js-tab").tabs({
-    //     beforeLoad: function( event, ui ) {
-    //         ui.jqXHR.error(function() {
-    //           ui.panel.html(
-    //             "Couldn't load this tab. We'll try to fix this as soon as possible. " +
-    //             "If this wouldn't be a demo." );
-    //         });
-    //     },
-    //     activate: function(event, ui) { 
-    //         window.location.hash=ui.newPanel.selector; 
-    //     },
-    //     fx: { height: 'toggle', duration: '500' }
+    $(".js-tab").tabs({
+        fx: { height: 'toggle', duration: '500' },
+        beforeLoad: function( event, ui ) {
+            ui.jqXHR.error(function() {
+              ui.panel.html(
+                "Couldn't load this tab. We'll try to fix this as soon as possible. " +
+                "If this wouldn't be a demo." );
+            });
+        },
+        activate: function(event, ui) { 
+            window.location.hash=ui.newPanel.selector; 
+        }
+        
 
-    // });  
-$(".js-tab").tabs( { fx: { height: 'toggle', opacity: 'toggle' } } );
+    });  
+
+    // $(".js-tab").tabs({ 
+
+    //     fx: { height: 'toggle', opacity: 'toggle' } 
+    // });
 
 
 });  

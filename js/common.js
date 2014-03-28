@@ -111,6 +111,8 @@ $(document).ready(function() {
         activate: function(event, ui) { 
             window.location.hash=ui.newPanel.selector; 
         },
+        effect: "blind", 
+        duration: 800
 
     });
 

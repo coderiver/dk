@@ -436,9 +436,12 @@ a:hover { text-decoration: underline; }
 .step__item span { line-height: 1.2; }
 
 .step_nav .step__item { background: #6dcdec; border-top: 1px solid #45c1e9; border-bottom: 1px solid #45c1e9; }
+.step_nav .step__item:last-child { border-right: 1px solid #45c1e9; }
 .step_nav a { display: inline-block; vertical-align: middle; padding: 0 17px; text-align: left; color: white; }
 .step_nav .is-active, .step_nav .ui-tabs-active { background: white; }
 .step_nav .is-active a, .step_nav .ui-tabs-active a { color: #313131; }
+
+.ui-tabs-panel { -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 
 .form { margin-bottom: 75px; width: 342px; *zoom: 1; }
 .form:after { content: " "; display: table; clear: both; }

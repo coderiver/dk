@@ -177,6 +177,8 @@
 		background: #6dcdec 
 		border-top: 1px solid #45c1e9
 		border-bottom: 1px solid #45c1e9
+		&:last-child
+			border-right: 1px solid  #45c1e9
 	a
 		display: inline-block
 		vertical-align: middle
@@ -188,7 +190,8 @@
 		background: #fff
 		a
 			color: #313131 
-
+.ui-tabs-panel
+	+tr(all .2s linear)  
 .form
 	margin-bottom: 75px
 	width: 342px
@@ -211,7 +214,7 @@
 		padding: 11px 20px 10px 
 		&:first-child
 			margin-left: 0
-.form__left,
+.form__left,       
 .form__right
 	float: left
 	width: 411px

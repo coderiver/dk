@@ -1,0 +1,127 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>public profile</title>
+	<meta name="viewport" content="initial-scale=1"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.cycle2.js"></script>
+	<script src="js/jquery.countdown.js"></script>
+	<script src="js/common.js"></script>
+</head>   
+<body class="landing-page">
+
+<!-- BEGIN  l-layout-->
+<div class="l-layout">
+	<!-- BEGIN  header-->
+	<header class="header">
+		<div class="l-container">
+			<a href="#" class="logo"></a>
+			<div class="search-form">
+				<input type="submit" class="search-form__btn">
+				<input type="text" class="search-form__text">
+				<div class="user-enter"><a href="#" class="user-enter__img"></a></div>
+			</div>
+			<ul class="menu">
+				<li class="is-active"><a href="#">Главная</a></li>
+				<li><a href="#">О премии</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Ход голосования</a></li>
+				<li><a href="#">Каталог участников</a></li>
+				<li><a href="#">База знаний</a></li>
+				<li><a href="#">Пресс рум</a></li>
+			</ul>
+		</div>
+	</header>
+	<!-- END header-->
+	<div class="slider">
+		<div class="cycle-slideshow" 
+		    data-cycle-fx="scrollHorz"
+		    data-cycle-speed="500"
+		    data-cycle-timeout="5000"
+		    data-cycle-slides=".js-slider-item"
+		    data-cycle-pager=".js-slider-pager"
+		    data-cycle-pager-template="<button></button>"
+		    data-cycle-pager-active-class="is-active"
+		    >
+		    <div class="slider__item js-slider-item">
+		    	<div><img src="img/slide1.png" alt=""></div>
+		    </div>
+		    <div class="slider__item js-slider-item">
+		    	<div><img src="img/slide2.png" alt=""></div>
+		    </div>
+		    <div class="slider__item js-slider-item">
+		    	<div><img src="img/slide3.png" alt=""></div>
+		    </div>
+		    <div class="slider__item js-slider-item">
+		    	<div><img src="img/slide4.png" alt=""></div>
+		    </div>
+		    <div class="slider__item js-slider-item">
+		    	<div><img src="img/slide5.png" alt=""></div>
+		    </div>
+		    <div class="slider__item js-slider-item">
+		    	<div><img src="img/slide6.png" alt=""></div>
+		    </div>
+		</div>
+	</div>
+	<div class="main">
+		
+	</div>
+	<div class="write">
+		<h4 class="title title_h4 is-green"><span>НАПИСАТЬ УЧАСТНИКУ</span></h4>
+		<div class="input-wrap">
+			<input type="text" class="input" placeholder="Ваш email">
+		</div>
+		<div class="input-wrap">
+			<textarea class="input input_textarea is-no-resize"></textarea>
+		</div>
+		<input type="submit" class="btn-link" value="ОТПРАВИТЬ">
+	</div>
+	<!-- BEGIN  push-->
+	<div class="push"></div>
+	<!-- END push-->
+</div>
+<!-- END l-layout-->
+<footer class="footer">
+	<div class="l-container">
+		<div class="wrap">
+			<div class="footer__col footer__cont">
+				<div class="footer__title">КОНТАКТНАЯ ИНФОРМАЦИЯ</div>
+				<div>
+					<p>Paseo de las Illetas, 7 </p>
+					<p>Majorca - Illetas 07184</p>
+				</div>
+				<div>
+					<p>Тел: (044) 971 402511 </p>
+					<p>Факс: (044) 971 405852</p>
+				</div>
+			</div>
+			<div class="footer__col footer__soc">
+				<div class="footer__title">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</div>
+				<div class="soc-counter">
+					<a href="#" class="soc-counter__fb"><i></i><span>2564</span></a>
+					<a href="#" class="soc-counter__vk"><i></i><span>2564</span></a>
+					<a href="#" class="soc-counter__od"><i></i><span>2564</span></a>
+				</div>
+			</div>
+			<div class="footer__col footer__feedback">
+				<div class="footer__title">ОБРАТНАЯ СВЯЗЬ</div>
+				<div class="input-wrap">
+					<input type="email" class="input input_s" placeholder="Email">
+				</div>
+				<div class="input-wrap">
+					<textarea class="input input_s input_textarea"></textarea>
+				</div>
+				<input type="submit" class="btn-action" value="ОТПРАВИТЬ">
+			</div>
+		</div>
+		<div class="footer__copy">
+			&copy; 2014 Все права защищены
+		</div>
+	</div>
+</footer>
+</body>
+</html>  

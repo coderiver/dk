@@ -132,7 +132,7 @@ a:hover { text-decoration: underline; }
 
 .input_s { padding: 3px 9px 4px; font-size: 12px; }
 
-.input_textarea { padding: 4px 15px; resize: vertical; }
+.input_textarea { padding: 4px 9px; resize: vertical; }
 .input_textarea.is-no-resize { resize: none; }
 .input_textarea.input_s { padding: 4px 9px; }
 
@@ -547,3 +547,9 @@ a:hover { text-decoration: underline; }
 .img-templ__info .input-label__text, .img-templ__info .input { font-family: "roboto-regular", Arial, sans-serif; }
 
 .tab { position: static !important; }
+
+.write { padding: 25px 15px 15px; text-align: center; background: url(../img/gray-bg.jpg) 0 0 repeat; }
+.write .title_h4 { margin-bottom: 21px; max-width: 400px; }
+.write .input-wrap { margin: 0 auto 7px; width: 330px; }
+.write .input_textarea { height: 117px; }
+.write .btn-link { margin-top: 3px; }

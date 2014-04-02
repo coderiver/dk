@@ -35,7 +35,6 @@ html
 		border: 1px solid #d5d5d5
 		background: #ececec
 		+box-shadow(inset 0 0 3px rgba(44,44,44,.2))
-
 	+scrollbar-thumb
 		border: 1px solid #2694bf
 		background: #2babdb 
@@ -54,6 +53,11 @@ a
 	+fmed  
 	&:hover
 		text-decoration: underline    
+.l-columns
+	margin-bottom: 23px
+	+column-count(3)
+	+column-gap(18px)
+	+column-width(300px)
 .l-layout	 
 	margin: 0 auto -250px
 	position: relative

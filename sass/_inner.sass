@@ -620,6 +620,13 @@
 	
 .catalog-search
 	+clr
+	+scrollbar
+		border: 1px solid #d5d5d5
+		background: #ececec
+		width: 8px
+	+scrollbar-thumb
+		border: 1px solid #2694bf
+		background: #2babdb 
 	.img-box
 		float: right
 		margin-top: -37px
@@ -657,14 +664,7 @@
 	border: 1px solid #d2d2d2
 	border-top: 0
 	overflow: auto
-	overflow-x: hidden
-	+scrollbar
-		border: 1px solid #d5d5d5
-		background: #ececec
-		width: 4px          
-	+scrollbar-thumb
-		border: 1px solid #2694bf
-		background: #2babdb 
+	overflow-x: hidden  
 	+gpu
 	li
 		padding: 5px 8px 
@@ -677,4 +677,106 @@
 				color: #fff 
 	a
 		color: #000 
-	 
+.cat-nav-wrap
+	margin: 24px 0 21px
+	font-size: 0
+.cat-nav
+	display: inline-block
+	width: 134px  	
+	vertical-align: top
+	text-align: center
+	color: #565656
+	font-size: 12px
+	+fmed 
+	text-transform: uppercase
+	&:hover
+		text-decoration: none
+		.icon
+			+animation(anim-1 .3s linear)  
+	span
+		display: inline-block
+		width: 90%
+.cat-nav__icon
+	margin-bottom: 16px
+	height: 70px
+	line-height: 70px
+	.icon
+		display: inline-block
+		//+tr(all .2s linear)
+		vertical-align: middle
+$cat: cat-car,cat-store,cat-food,cat-cosmetics,cat-clothes,cat-home,cat-service,cat-pizza,cat-taxi,cat-tour,cat-finance,cat-realty,cat-edu,cat-health
+@each $i in $cat
+	.icon_#{$i}     
+		+s(#{$i})    
++keyframes(anim-1)
+	0%
+		-webkit-transform: rotate(0deg)
+	25%
+		-webkit-transform: rotate(10deg)
+	50%
+		-webkit-transform: rotate(0deg)
+	75%
+		-webkit-transform: rotate(10deg)
+	100%
+		-webkit-transform: rotate(0deg)
+		
+.filter-nav
+	margin-bottom: 10px
+	font-size: 12px
+	+fbold
+	height: 40px
+	line-height: 40px
+	text-align: center
+	span,a
+		display: inline-block
+		vertical-align: middle
+		text-transform: uppercase
+		color: #565656  
+	a
+		margin-left: 7px
+		+freg
+		+opacity(.6)
+		&:hover
+			text-decoration: none
+		&.is-active
+			+fbold  
+			+opacity(1)
+		span
+			position: relative
+			margin: -3px 6px 0 0
+			border: 2px solid #636363
+			width: 28px
+			height: 28px
+			overflow: hidden
+			text-align: center
+			+border-radius(50%)
+	.icon-sort-ab
+		position: absolute
+		top: 5px
+		left: 6px
+		+s(sort-ab)
+	.icon-sort-reg
+		position: absolute
+		top: -1px
+		left: -3px
+		+s(sort-reg)
+
+.catalog-item
+	margin-bottom: 5px
+	text-transform: uppercase
+	font-size: 14px
+	strong
+		display: block
+		margin-bottom: 5px
+		color: #565656
+		font-size: 18px
+		+fmed
+	li
+		position: relative
+		padding-left: 7px
+		&:before
+			content: "•" 
+			position: absolute
+			left: 0
+			top: 0
+			

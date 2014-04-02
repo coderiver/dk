@@ -473,6 +473,7 @@
 	position: static !important
 	
 .write
+	margin-top: 25px
 	padding: 25px 15px 15px
 	text-align: center
 	background: url(../img/gray-bg.jpg) 0 0 repeat  
@@ -480,9 +481,136 @@
 		margin-bottom: 21px
 		max-width: 400px
 	.input-wrap
-		margin: 0 auto 7px 
+		margin: 0 auto 7px     
 		width: 330px
 	.input_textarea
 		height: 117px
 	.btn-link
 		margin-top: 3px
+		
+.l-col-text
+	float: left
+	margin-right: -1px
+	width: 470px
+	border-left: 0
+	+box
+	border-right: 1px solid #ededed
+	padding-right: 70px
+.l-col-text_right
+	padding: 0 0 0 70px
+	border-right: 0  
+	border-left: 1px solid #ededed
+.post-item-slider
+	position: relative
+	width: 220px
+	min-height: 237px
+	.cycle-slideshow
+		overflow: hidden
+	.post-item
+		border-right: 0
+	.btn-prev,
+	.btn-next
+		position: absolute
+		z-index: 300
+		top: 50%
+		margin-top: -17px
+	.btn-prev
+		left: -50px
+	.btn-next
+		right: -80px
+		
+.profile
+	background: url("../img/blue-bg.jpg") 0 0 repeat
+	.l-container
+		position: relative
+		height: 370px
+	.rating
+		color: #fff 
+		span
+			color: #ffdf91 
+	.rating__current,
+	.rating__max
+		display: block
+	.rating__max
+		padding-left: 0
+		margin-left: 0
+		&:before
+			display: none
+	.rating__list
+		font-size: 12px
+		text-transform: uppercase
+		+fbold
+.profile__bg
+	position: absolute
+	bottom: 0
+	left: -6px
+	img
+		display: block
+.profile__main
+	position: absolute
+	top: 53px
+	right: 15px
+	+clr
+.profile__left
+	position: relative
+	margin-right: 42px
+	padding-right: 32px
+	float: left
+	&:after
+		content: ""
+		position: absolute
+		top: 50%
+		right: -7px
+		margin-top: -54px
+		height: 108px
+		width: 1px
+		border-right: 1px solid #6acdee
+		background: #43b7dd  
+	.soc__title
+		color: #fff
+		text-transform: uppercase 
+	.btn
+		margin-top: 28px
+.profile__right
+	float: right
+	margin-top: 19px
+.profile__logo
+	position: absolute
+	left: 57px
+	top: 86px
+	border: 4px solid #ff9494
+	width: 220px
+	height: 220px
+	text-align: center
+	line-height: 220px
+	background: #fff 
+	overflow: hidden
+	+border-radius(50%)
+	img
+		display: inline-block
+		vertical-align: middle
+		max-width: 100%
+		max-height: 100%
+		height: auto
+.profile__name
+	margin-bottom: 4px
+	font-size: 30px
+	+fbold
+	color: #fff 
+	line-height: 1
+	
+.profile__rate
+	color: #fff
+	text-transform: uppercase
+	+fbold
+	font-size: 12px
+	div
+		&:first-child
+			margin-bottom: 16px
+	span
+		color: #ffdf91 
+	img
+		vertical-align: middle
+.profile__vote
+	font-size: 30px
+	+fmed

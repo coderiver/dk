@@ -99,25 +99,14 @@ $(document).ready(function() {
         $(this).parents(".js-news").find(".js-news-title").attr("contenteditable","true").addClass("input");
         $(this).parents(".js-news").find(".js-news-btn").removeAttr("hidden");
     });
+    if ($(".js-tab").length) {
+        $(".js-tab").tabs({
+            beforeActivate: function(event, ui) { 
+                window.location.hash=ui.newPanel.selector; 
+            },
 
-    $(".js-tab").tabs({
-        // beforeLoad: function( event, ui ) {
-        //     ui.jqXHR.error(function() {
-        //       ui.panel.html(
-        //         "Couldn't load this tab. We'll try to fix this as soon as possible. " +
-        //         "If this wouldn't be a demo." );
-        //     });
-        // },
-        beforeActivate: function(event, ui) { 
-            window.location.hash=ui.newPanel.selector; 
-        },
-        // load: function( event, ui ) {}
-        // show: { effect: "blind", duration: 800 },
-         
-
-    });  
-
-    // $(".js-tab").tabs( { show: { effect: "blind", duration: 800 } } );  
-
+        });  
+    }
+        
 
 });  

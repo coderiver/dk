@@ -12,7 +12,7 @@
 	<script src="js/jquery.countdown.js"></script>
 	<script src="js/common.js"></script>
 </head>   
-<body class="landing-page">
+<body>
 
 <!-- BEGIN  l-layout-->
 <div class="l-layout">
@@ -37,38 +37,91 @@
 		</div>
 	</header>
 	<!-- END header-->
-	<div class="slider">
-		<div class="cycle-slideshow" 
-		    data-cycle-fx="scrollHorz"
-		    data-cycle-speed="500"
-		    data-cycle-timeout="5000"
-		    data-cycle-slides=".js-slider-item"
-		    data-cycle-pager=".js-slider-pager"
-		    data-cycle-pager-template="<button></button>"
-		    data-cycle-pager-active-class="is-active"
-		    >
-		    <div class="slider__item js-slider-item">
-		    	<div><img src="img/slide1.png" alt=""></div>
-		    </div>
-		    <div class="slider__item js-slider-item">
-		    	<div><img src="img/slide2.png" alt=""></div>
-		    </div>
-		    <div class="slider__item js-slider-item">
-		    	<div><img src="img/slide3.png" alt=""></div>
-		    </div>
-		    <div class="slider__item js-slider-item">
-		    	<div><img src="img/slide4.png" alt=""></div>
-		    </div>
-		    <div class="slider__item js-slider-item">
-		    	<div><img src="img/slide5.png" alt=""></div>
-		    </div>
-		    <div class="slider__item js-slider-item">
-		    	<div><img src="img/slide6.png" alt=""></div>
-		    </div>
+	<div class="profile">
+		<div class="l-container">
+			<div class="profile__bg"><img src="img/img1.png" alt=""></div>
+			<div class="profile__logo">
+				<img src="img/logo5.png" alt="">
+			</div>
+			<div class="profile__main">
+				<div class="profile__left">
+					<h1 class="profile__name">BOSTON <br> SEAFOOD & BAR</h1>	
+					<div class="profile__rate">
+						<div>ID УЧАСТНИКА: <span>123390</span></div>
+						<div>НОМИНАЦИЯ <img src="img/icon-pizza.png" alt=""> НоReCa и досуг</div>
+						<div>ТЕКУШИЙ РЕЙТИНГ <span class="profile__vote">112389</span> голосов</div>
+					</div>
+					<div class="soc">
+						<div class="soc__title">рассказать в социальных сетях</div>
+						<a href="#" class="soc__fb"></a>
+						<a href="#" class="soc__vk"></a>
+						<a href="#" class="soc__od"></a>
+					</div>
+					<a href="#" class="btn">ГОЛОСОВАТЬ</a>
+				</div>
+				<div class="profile__right">
+					<div class="rating">
+						<div class="wrap">
+							<ul class="rating__list">
+								<li>
+									место в  <span>Grand prix</span>
+									<div><span>2</span> <sub>из</sub> 1078</div>
+								</li>
+								<li>
+									Позиция в <span>кластере</span>
+									<div><span>4</span> <sub>из</sub> 342</div>
+								</li>
+								<li>
+									Позиция в <span>малой группе</span>
+									<div><span>1</span> <sub>из</sub> 34</div>
+								</li>
+							</ul>
+						</div>
+							
+					</div>
+				</div>
+			</div>
+			
 		</div>
 	</div>
 	<div class="main">
-		
+		<h2 class="title title_h2 title_570 is-orange"><span>ПОДРОБНЕЕ</span></h2>
+		<div class="wrap">
+			<div class="l-col-text">
+				<p>Ресторан с лобстерами, креветками, рыбой 
+					и другими морепродуктами за приемлемые деньги от владельцев сети стейк-хаусов Torro Grill. Кирилл Мартыненко и Антон Лялин, владельцы сети мясных ресторанов Torro Grill, открыли через дорогу от своего флагманского стейк-хауса — Boston Seafood & Bar — рыбный ресторан, девяносто процентов меню которого составляют морепродукты и рыба. Цены в Boston, если сопоставить их с качеством местной еды, для Москвы, можно сказать, демократичные. А интерьер — наверное, лучший в городе среди рыбных ресторанов. </p>
+			</div>
+			<div class="l-col-text l-col-text_right">
+				<div class="post-item-slider">
+					<div class="cycle-slideshow" 
+					    data-cycle-fx="scrollHorz"
+					    data-cycle-speed="500"
+					    data-cycle-timeout="6000"
+					    data-cycle-slides=".post-item"
+					    data-cycle-next=".js-post-next"
+					    data-cycle-auto-height=container
+					    >
+						<div class="post-item">
+							<a href="#" class="post-item__title">ТОРГОВЛЯ КАК УСЛУГА </a>
+							<div class="post-item__descr">Значит, главное  для  нас  - не  уподобляться овцам,  которые всегда бегут вслед  за стадом, направляясь не туда, куда  нужно, а  туда,  куда все идут. Нет на свете вещи, навлекающей  на нас больше зол и бед,  чем привычка сообразовываться   с общественным</div>
+							<div class="post-item__more"><a href="#">Читать дальше ...</a></div>
+						</div>
+						<div class="post-item">
+							<a href="#" class="post-item__title">ТОРГОВЛЯ КАК УСЛУГА </a>
+							<div class="post-item__descr">Значит, главное  для  нас  - не  уподобляться овцам,  которые всегда бегут вслед  за стадом, направляясь не туда, куда  нужно, а  туда,  куда все идут. Нет на свете вещи, навлекающей  на нас больше зол и бед,  чем привычка сообразовываться   с общественным</div>
+							<div class="post-item__more"><a href="#">Читать дальше ...</a></div>
+						</div>
+						<div class="post-item">
+							<a href="#" class="post-item__title">ТОРГОВЛЯ КАК УСЛУГА </a>
+							<div class="post-item__descr">Значит, главное  для  нас  - не  уподобляться овцам,  которые всегда бегут вслед  за стадом, направляясь не туда, куда  нужно, а  туда,  куда все идут. Нет на свете вещи, навлекающей  на нас больше зол и бед,  чем привычка сообразовываться   с общественным</div>
+							<div class="post-item__more"><a href="#">Читать дальше ...</a></div>
+						</div>
+					</div>
+					<!-- <button class="btn-prev js-post-prev"></button> -->
+					<button class="btn-next js-post-next"></button>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="write">
 		<h4 class="title title_h4 is-green"><span>НАПИСАТЬ УЧАСТНИКУ</span></h4>

@@ -180,50 +180,18 @@
 	"buffers":
 	[
 		{
-			"file": "public-profile.html",
+			"file": "news.html",
 			"settings":
 			{
-				"buffer_size": 7092,
+				"buffer_size": 7525,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "participant_cab.html",
+			"file": "js/common.js",
 			"settings":
 			{
-				"buffer_size": 5287,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "ajax/ajax-tab3.html",
-			"settings":
-			{
-				"buffer_size": 4246,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "sass/lib/_animations.scss",
-			"settings":
-			{
-				"buffer_size": 5408,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "sass/lib/_demo.scss",
-			"settings":
-			{
-				"buffer_size": 869,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "catalog.html",
-			"settings":
-			{
-				"buffer_size": 3687,
+				"buffer_size": 3852,
 				"line_ending": "Windows"
 			}
 		},
@@ -231,15 +199,7 @@
 			"file": "sass/_common.sass",
 			"settings":
 			{
-				"buffer_size": 4321,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "sass/_inner.sass",
-			"settings":
-			{
-				"buffer_size": 10002,
+				"buffer_size": 4497,
 				"line_ending": "Windows"
 			}
 		},
@@ -247,7 +207,31 @@
 			"file": "sass/_blocks.sass",
 			"settings":
 			{
-				"buffer_size": 12213,
+				"buffer_size": 12651,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sass/_inner.sass",
+			"settings":
+			{
+				"buffer_size": 13087,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sass/_index.sass",
+			"settings":
+			{
+				"buffer_size": 2850,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sass/_icons.sass",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		}
@@ -284,16 +268,34 @@
 	},
 	"file_history":
 	[
-		"/M/Projects/dk/about - копия.html",
+		"/M/Projects/dk/sass/_common.sass",
+		"/M/Projects/dk/index.html",
+		"/M/Projects/dk/landing.html",
+		"/M/Projects/dk/participant_cab.html",
+		"/M/Projects/dk/public-profile.html",
+		"/M/Projects/dk/reg_step1.html",
+		"/M/Projects/dk/reg_step2.html",
+		"/M/Projects/dk/reg_step3.html",
+		"/M/Projects/dk/reg_step4.html",
+		"/M/Projects/dk/_blocks.html",
+		"/M/Projects/dk/about.html",
+		"/M/Projects/dk/catalog.html",
+		"/M/Projects/dk/ajax/ajax-tab3.html",
 		"/M/Projects/dk/sass/lib/_demo.scss",
+		"/M/Projects/dk/news.html",
+		"/M/Projects/dk/sass/lib/_animations.scss",
+		"/M/Projects/podarkov/sass/_index.scss",
+		"/M/Projects/podarkov/sass/_common.scss",
+		"/M/Projects/podarkov/sass/_sidebar.scss",
+		"/M/Projects/dk/sass/_index.sass",
+		"/M/Projects/podarkov/sass/_base.scss",
+		"/M/Projects/podarkov/sass/_inner.scss",
+		"/M/Projects/dk/sass/_blocks.sass",
+		"/M/Projects/dk/about - копия.html",
 		"/M/Projects/dk/sass/lib/_keyframes.sass",
 		"/M/Projects/d4f/sass/common.scss",
 		"/M/Projects/dk/js/jquery-ui-1.10.4.custom.js",
-		"/M/Projects/dk/public-profile.html",
-		"/M/Projects/dk/sass/_index.sass",
 		"/M/Projects/dk/sass/_inner.sass",
-		"/M/Projects/dk/sass/_blocks.sass",
-		"/M/Projects/dk/sass/_common.sass",
 		"/M/Projects/gettable_bootstrap/card.html",
 		"/M/Projects/gettable_bootstrap/search_result.html",
 		"/M/Projects/gettable_bootstrap/js/common.js",
@@ -314,7 +316,6 @@
 		"/M/Projects/gettable_bootstrap/search_error.html",
 		"/M/Projects/dobovo/index.html",
 		"/C/Users/Splinter/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/M/Projects/dk/participant_cab.html",
 		"/M/Projects/dk/js/common.js",
 		"/M/Projects/gettable_bootstrap/sass/lib/_sprites.scss",
 		"/M/SSD/Desktop/OrganicTabsReplaceState/index.html",
@@ -333,13 +334,7 @@
 		"/M/Projects/dk/ajax-tab1.html",
 		"/M/Projects/gettable_bootstrap/sass/lib/_mixins.sass",
 		"/M/Projects/gettable_bootstrap/sass/lib/_base.scss",
-		"/M/Projects/dk/reg_step4.html",
-		"/M/Projects/dk/reg_step3.html",
-		"/M/Projects/dk/reg_step2.html",
-		"/M/Projects/dk/reg_step1.html",
 		"/C/Users/Splinter/YandexDisk/task5/index.html",
-		"/M/Projects/dk/about.html",
-		"/M/Projects/dk/_blocks.html",
 		"/C/Users/Splinter/YandexDisk/task5/index.psd",
 		"/M/Projects/smart/popup_photo.html",
 		"/M/Projects/smart/search.html",
@@ -359,8 +354,6 @@
 		"/M/Projects/gettable_bootstrap/sass/_reset.sass",
 		"/M/SSD/Desktop/text-pages/offerta.html",
 		"/M/Projects/smart/index.html",
-		"/M/Projects/dk/index.html",
-		"/M/Projects/dk/landing.html",
 		"/M/Projects/dk/reg.html",
 		"/M/Projects/smart/catalog.html",
 		"/M/Projects/smart/sass/_jquery-ui-1.10.3.custom.sass",
@@ -402,16 +395,7 @@
 		"/M/Projects/gfc/sass/_clients-list.sass",
 		"/M/SSD/Desktop/1",
 		"/M/Projects/bekker/tovar-description.html",
-		"/M/Projects/gfc/css/jquery-ui-1.css",
-		"/M/Projects/bekker/js/common.js",
-		"/M/Projects/gfc/sass/_table.sass",
-		"/M/Projects/gfc/sass/_alerts.sass",
-		"/M/Projects/gfc/sass/_popups.sass",
-		"/M/Projects/gfc/sass/_filter.sass",
-		"/M/Projects/gfc/sass/lib/_mixins.sass",
-		"/M/Projects/gfc/js/chosen.js",
-		"/M/Projects/sass/sass/lib/_mixins.sass",
-		"/M/Projects/gfc/js/jquery.multiselect.js"
+		"/M/Projects/gfc/css/jquery-ui-1.css"
 	],
 	"find":
 	{
@@ -422,6 +406,7 @@
 		"height": 247.0,
 		"where_history":
 		[
+			"M:\\Projects\\dk",
 			"M:\\Projects\\avox",
 			"M:\\Projects\\smart",
 			"M:\\Projects\\gfc",
@@ -448,6 +433,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"post-item",
+			"post-",
+			"pos",
+			"post-",
+			"	<link rel=\"stylesheet\" media=\"screen\" href=\"css/screen.css\">",
+			"<meta name=\"viewport\" content=\"initial-scale=1\"/>\n	<link rel=\"stylesheet\" media=\"screen\" href=\"css/screen.css\" >",
+			"l.col",
+			"title",
+			"Эмоциональный рэп о жизни - Україна має талант-6",
+			"fmed",
+			"cat-car",
+			"$tab",
+			"select__list",
+			"js-select",
+			"file",
 			".title",
 			"wind",
 			".popup",
@@ -560,22 +560,7 @@
 			"compare",
 			"js-cycle",
 			"js-slide",
-			".pager",
-			".item-row_action",
-			"js-cancel-filter",
-			"js-color-choser",
-			"item__view",
-			"slide",
-			".item_catalog",
-			".item__top",
-			".page-title_m",
-			".main",
-			".l-main",
-			"box_product",
-			".item_catalog",
-			"pagin",
-			"input-wrap ",
-			".input-wrap"
+			".pager"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -583,6 +568,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"<link rel=\"stylesheet\" media=\"screen\" href=\"css/screen.css\">",
+			"	<link rel=\"stylesheet\" media=\"screen\" href=\"css/screen.css\">",
 			"scroll-pane",
 			"",
 			"\"#\">Борат</a>",
@@ -624,24 +611,24 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "public-profile.html",
+					"file": "news.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7092,
+						"buffer_size": 7525,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2123,
-								2123
+								4698,
+								4698
 							]
 						],
 						"settings":
@@ -650,231 +637,175 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 324.0,
+						"translation.y": 756.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 0,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 3,
+			"sheets":
+			[
 				{
 					"buffer": 1,
-					"file": "participant_cab.html",
+					"file": "js/common.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5287,
+						"buffer_size": 3852,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1443,
-								1443
+								2256,
+								2256
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1296.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "ajax/ajax-tab3.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4246,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3523,
-								3523
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 378.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "sass/lib/_animations.scss",
+					"buffer": 2,
+					"file": "sass/_common.sass",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5408,
+						"buffer_size": 4497,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1564,
+								1564
 							]
 						],
 						"settings":
 						{
+							"auto_indent": true,
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1044.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "sass/lib/_demo.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 869,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								582,
-								546
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "catalog.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3687,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2357,
-								2357
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 540.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 1,
-			"sheets":
-			[
-				{
-					"buffer": 6,
-					"file": "sass/_common.sass",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4321,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4321,
-								4321
-							]
-						],
-						"settings":
-						{
-							"auto_indent": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 4104.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "sass/_inner.sass",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10002,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10002,
-								10002
-							]
-						],
-						"settings":
-						{
-							"auto_indent": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 10460.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
+					"buffer": 3,
 					"file": "sass/_blocks.sass",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12213,
+						"buffer_size": 12651,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12109,
+								12112
+							]
+						],
+						"settings":
+						{
+							"auto_indent": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 11435.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "sass/_inner.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13087,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12915,
+								12915
+							]
+						],
+						"settings":
+						{
+							"auto_indent": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 13675.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "sass/_index.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2850,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2287,
+								2287
+							]
+						],
+						"settings":
+						{
+							"auto_indent": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2039.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "sass/_icons.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -887,14 +818,13 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]

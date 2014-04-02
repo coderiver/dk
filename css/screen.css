@@ -569,7 +569,7 @@ a:hover { text-decoration: underline; }
 .post-item-slider .btn-prev { left: -50px; }
 .post-item-slider .btn-next { right: -80px; }
 
-.profile { background: url("../img/blue-bg.jpg") 0 0 repeat; }
+.profile { margin-bottom: 28px; background: url("../img/blue-bg.jpg") 0 0 repeat; }
 .profile .l-container { position: relative; height: 370px; }
 .profile .rating { color: white; }
 .profile .rating span { color: #ffdf91; }
@@ -602,3 +602,5 @@ a:hover { text-decoration: underline; }
 .profile__rate img { vertical-align: middle; }
 
 .profile__vote { font-size: 30px; font-family: "roboto-medium", Arial, sans-serif; }
+
+.btn-link_more { display: block; width: 200px; margin: 20px 0 40px; }

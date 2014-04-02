@@ -352,6 +352,8 @@
 		
 .news-wrap
 	margin-right: -120px
+	.link-more
+		margin: 20px 0 40px 
 .news
 	position: relative
 	margin: 0 95px 17px 0
@@ -613,10 +615,66 @@
 	img
 		vertical-align: middle
 .profile__vote
-	font-size: 30px
-	+fmed
-
-.btn-link_more
-	display: block
-	width: 200px
-	margin: 20px 0 40px
+	font-size: 30px 
+	+fmed     
+	
+.catalog-search
+	+clr
+	.img-box
+		float: right
+		margin-top: -37px
+		padding-top: 0
+		width: 660px
+		+clr
+	.img-box__in
+		float: right
+		margin-right: 50px
+		width: 86%
+.catalog-search__main
+	float: left
+	position: relative
+	width: 264px
+	.input
+		padding-right: 30px
+		&:focus
+			+ .catalog-search__btn
+				display: none
+.catalog-search__btn
+	position: absolute
+	top: 5px  
+	right: 10px
+	+s(glass-blue)
+	+hide-text
+.catalog-search__drop
+	position: absolute
+	top: 100%
+	left: 0
+	right: 0
+	z-index: 1000
+	width: 262px
+	max-height: 160px
+	background: #fff
+	border: 1px solid #d2d2d2
+	border-top: 0
+	overflow: auto
+	overflow-x: hidden
+	+scrollbar
+		border: 1px solid #d5d5d5
+		background: #ececec
+		width: 4px          
+	+scrollbar-thumb
+		border: 1px solid #2694bf
+		background: #2babdb 
+	+gpu
+	li
+		padding: 5px 8px 
+		cursor: pointer
+		line-height: 1
+		&:hover
+			background: #6dcdec
+			color: #fff 
+			a
+				color: #fff 
+	a
+		color: #000 
+	 

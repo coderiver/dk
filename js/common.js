@@ -105,5 +105,14 @@ $(document).ready(function() {
         });  
     }
         
+    var overlay = $(".js-overlay");
+    var popup = $(".js-popup");
+    overlay.on("click", function(){
+        $(this).fadeOut("fast");
+        popup.slideUp("fast"); 
+    });
+    popup.on("click", function(event){
+        event.stopPropagation();
+    });
 
 });  

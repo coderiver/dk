@@ -4,7 +4,7 @@
 	&.has-valid-error
 		.input
 			background: #fcd7d7
-			border-color: #f8b8b8
+			border-color: #dd9d9d
 	&.is-disabled
 		+opacity(.5)
 .input
@@ -23,6 +23,32 @@
 		+fitalic
 	&:focus
 		border-color: #aaa
+.input-error
+	display: none
+	position: absolute
+	top: 32px
+	left: 0
+	right: 0
+	height: 1px
+	z-index: 500
+	padding-top: 5px
+	text-align: center
+	span
+		position: relative
+		display: inline-block
+		padding: 12px 34px
+		color: #fff
+		font-size: 14px  
+		+fbold
+		background: #ff3d3d   
+		&:after
+			content: ""
+			position: absolute
+			top: -7px
+			left: 50%
+			margin-left: -8px
+			+arr(16,7,#ff3d3d,t) 
+	
 .input-file
 	position: relative
 	height: 30px  
@@ -60,28 +86,6 @@
 	border: 1px solid #adadad
 	border-left: 1px solid #d2d2d2 
 
-// input[type="file"]
-// 	position: relative
-// 	padding: 0
-// 	height: 30px
-// 	line-height: 30px 
-// 	+clr
-// 	font-size: 0
-// 	cursor: pointer
-// 	&::-webkit-file-upload-button
-// 		position: absolute
-// 		top: -1px
-// 		right: -1px
-// 		bottom: -1px
-// 		padding: 0 13px 
-// 		font-size: 14px
-// 		+fmed
-// 		cursor: pointer
-// 		background: #e3f2f7
-// 		border: 1px solid #adadad
-// 		border-left: 1px solid #d2d2d2 
-// 		&:focus
-// 			outline: none
 .input_s
 	padding: 3px 9px 4px 
 	font-size: 12px
@@ -305,6 +309,20 @@
 	i
 		display: inline-block
 		vertical-align: middle
+.soc-enter_width
+	a
+		display: block
+		width: 100%
+		+box
+		line-height: 52px
+		color: #fff
+		font-size: 16px
+		+fbold
+		text-transform: uppercase
+		text-shadow: 0 1px 1px rgba(0,0,0,.48)
+		&:hover
+			text-decoration: none
+
 .soc-enter__fb
 	background: #4967b7
 	+background-image(linear-gradient(bottom, #4563b3, #658bf3))

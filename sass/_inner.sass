@@ -26,6 +26,7 @@
 	margin: 30px 0 14px 
 	font-size: 26px
 	+flight
+	text-transform: uppercase
 	font-weight: normal
 .article__meta
 	font-size: 12px
@@ -801,6 +802,8 @@ $cat: cat-car,cat-store,cat-food,cat-cosmetics,cat-clothes,cat-home,cat-service,
 	width: 250px
 	.post-item__descr
 		height: auto
+.post-item_article
+	width: 220px
 .post-item_width
 	width: 400px
 .post-item_vertical
@@ -840,3 +843,40 @@ $cat: cat-car,cat-store,cat-food,cat-cosmetics,cat-clothes,cat-home,cat-service,
 		+fbold
 		color: #f44242
 		font-size: 16px
+		
+.article-group
+	float: left
+	margin-right: -1px
+	border-right: 1px solid #dedede 
+	width: 730px
+	+box
+.video-group
+	float: right
+	padding-left: 30px
+	width: 211px
+	+box
+.video
+	margin-bottom: 26px
+	width: 180px
+.video__img
+	display: block
+	position: relative
+	overflow: hidden
+	img
+		max-width: 100%
+		height: auto
+.video__title
+	color: $gray
+	font-size: 12px
+	line-height: 1.1
+	text-transform: uppercase 
+.btn-play
+	position: absolute  
+	top: 50%
+	left: 50%
+	margin: -32px 0 0 -32px
+	+s(play)
+	+opacity(.85)
+	+tr(opacity .2s linear)
+	&:hover
+		+opacity(1)

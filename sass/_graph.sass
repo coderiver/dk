@@ -1,0 +1,62 @@
+.table-result-wrap
+    overflow-x: auto
+    +scrollbar
+        width: 8px
+        height: 8px
+        overflow: hidden
+        background: #ececec
+    +scrollbar-thumb
+        border: 1px solid #2694bf
+        background: #2babdb
+    +scrollbar-track-piece 
+        width: 8px 
+        height: 8px
+    // +scrollbar
+    //     width: 6px
+    // +scrollbar-thumb
+    //     border-radius: 3px
+    //     background: #535353
+    // +scrollbar-track-piece 
+    //     width: 6px 
+    //     border-radius: 3px
+.table-result
+    width: auto
+    table-layout: fixed
+    color: #2b2b2b 
+    border: 1px solid rgba(220,220,220,.68)
+    td,th
+        border-left: 1px solid #ebecec 
+        border-top: 1px solid #ebecec 
+.table-result__head
+    th
+        padding: 9px 
+        text-align: center
+        +fbold
+        font-size: 11px
+        text-transform: uppercase
+        background: #e4f6fd
+        vertical-align: middle
+        +box-shadow(-1px 0 0 #fff)
+        +background-image(linear-gradient(bottom, #e4f6fd 0%, #f8fdff 100%))
+        &:first-child
+            width: 27px
+        &:last-child
+            width: 27px
+.table-result__body
+    font-size: 12px
+    +fmed
+    tr
+        &:nth-child(2n)
+            td
+                background: #fff
+                +background-image(linear-gradient(bottom, rgba(228,247,253,.26) 0%, rgba(248,253,255,.26) 100%))
+
+    td
+        padding: 9px 
+        +box-shadow(-1px 0 0 #fff, inset 0 1px 0 #fff)
+        background: rgba(250,248,248,.7)
+        +background-image(linear-gradient(bottom, rgba(228,247,253,.26) 0%, rgba(248,253,255,.26) 100%))
+        vertical-align: middle
+        &:first-child
+            text-align: center
+            border-left: 0

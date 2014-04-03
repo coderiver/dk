@@ -183,7 +183,23 @@
 			"file": "news.html",
 			"settings":
 			{
-				"buffer_size": 7525,
+				"buffer_size": 10953,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "news_separate.html",
+			"settings":
+			{
+				"buffer_size": 7152,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_blocks.html",
+			"settings":
+			{
+				"buffer_size": 4391,
 				"line_ending": "Windows"
 			}
 		},
@@ -199,7 +215,7 @@
 			"file": "sass/_common.sass",
 			"settings":
 			{
-				"buffer_size": 4497,
+				"buffer_size": 4759,
 				"line_ending": "Windows"
 			}
 		},
@@ -207,7 +223,7 @@
 			"file": "sass/_blocks.sass",
 			"settings":
 			{
-				"buffer_size": 12651,
+				"buffer_size": 12855,
 				"line_ending": "Windows"
 			}
 		},
@@ -215,7 +231,7 @@
 			"file": "sass/_inner.sass",
 			"settings":
 			{
-				"buffer_size": 13087,
+				"buffer_size": 13244,
 				"line_ending": "Windows"
 			}
 		},
@@ -223,7 +239,7 @@
 			"file": "sass/_index.sass",
 			"settings":
 			{
-				"buffer_size": 2850,
+				"buffer_size": 2831,
 				"line_ending": "Windows"
 			}
 		},
@@ -433,6 +449,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"+gpu",
+			"arcti",
+			"prev",
 			"post-item",
 			"post-",
 			"pos",
@@ -557,10 +576,7 @@
 			"page-title",
 			"partners",
 			"landing-page",
-			"compare",
-			"js-cycle",
-			"js-slide",
-			".pager"
+			"compare"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -611,7 +627,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -620,15 +636,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7525,
+						"buffer_size": 10953,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4698,
-								4698
+								8902,
+								6943
 							]
 						],
 						"settings":
@@ -637,10 +653,68 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 756.0,
+						"translation.y": 2988.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "news_separate.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7152,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3096,
+								3096
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 874.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_blocks.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4391,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2314,
+								2180
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 702.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -650,7 +724,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 1,
+					"buffer": 3,
 					"file": "js/common.js",
 					"semi_transient": false,
 					"settings":
@@ -676,24 +750,24 @@
 						"translation.y": 378.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 4,
 					"file": "sass/_common.sass",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4497,
+						"buffer_size": 4759,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1564,
-								1564
+								1407,
+								1407
 							]
 						],
 						"settings":
@@ -703,27 +777,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 540.0,
+						"translation.y": 378.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 5,
 					"file": "sass/_blocks.sass",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12651,
+						"buffer_size": 12855,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								12109,
-								12112
+								34,
+								36
 							]
 						],
 						"settings":
@@ -733,27 +807,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 11435.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 6,
 					"file": "sass/_inner.sass",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 13087,
+						"buffer_size": 13244,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								12915,
-								12915
+								11170,
+								11170
 							]
 						],
 						"settings":
@@ -763,27 +837,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 13675.0,
+						"translation.y": 12261.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 7,
 					"file": "sass/_index.sass",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2850,
+						"buffer_size": 2831,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2287,
-								2287
+								2305,
+								2305
 							]
 						],
 						"settings":
@@ -796,11 +870,11 @@
 						"translation.y": 2039.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 8,
 					"file": "sass/_icons.sass",
 					"semi_transient": false,
 					"settings":
@@ -824,7 +898,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 8,
 					"type": "text"
 				}
 			]

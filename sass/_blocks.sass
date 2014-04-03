@@ -487,8 +487,23 @@
 .counter__m
 	&:before
 		background: #ff975f
-	span
+	span    
 		background: #fb7228
+.counter__visit
+	&:before
+		background: #e04d4f
+	span
+		background: #ff5353
+.counter__comp
+	&:before
+		background: #40d399
+	span
+		background: #75d19a
+.counter__vote
+	&:before
+		background: #46bbe2
+	span
+		background: #48c4ed
 .counter__wrap
 	position: absolute
 	left: 0
@@ -506,7 +521,20 @@
 	text-transform: uppercase 
 	&:first-child  
 		margin-left: 0
-	
+.counter_stat
+	.counter__label	
+		position: absolute
+		bottom: -26px
+		left: 0
+		right: 0
+		margin: 0
+		text-align: center
+		width: auto
+		font-style: normal	
+	.counter__digit
+		span
+			padding: 0 22px 
+			width: auto
 .title
 	position: relative
 	margin: 0 auto 

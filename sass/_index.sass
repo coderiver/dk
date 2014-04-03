@@ -101,8 +101,27 @@
 	position: relative
 	margin: 0 auto 
 	width: 940px
+.start-wrap
+	position: relative
+	padding-bottom: 50px
+	width: 100%
+	z-index: 100
+	overflow: hidden
+	.l-container
+		background: #fff 
+		&:after
+			content: ""
+			position: absolute
+			bottom: -58px
+			left: -1500px
+			z-index: -1
+			right: -1500px
+			height: 1000px 
+			+border-radius(100%)
+			background: #fff
 .start
 	position: relative
+	z-index: 2
 	margin-bottom: 22px
 	padding: 41px 0 82px 
 	background: #f9fadf 
@@ -111,16 +130,31 @@
 		position: absolute
 		bottom: 0
 		left: -24px
-		+arr(24,22,#e6e7c1,tr)   
+		+arr(24,22,#e6e7c1,tr) 
+	.counter
+		float: right
+		margin-top: 48px  
+	.counter__digit
+		div
+			float: none
+			display: inline-block
+			vertical-align: middle
 .start__in
 	margin: 0 auto 
 	+clr
 	width: 740px
-	.counter
-		float: right
-		margin-top: 48px
 .start__img
 	float: left
+.start_began
+	padding: 23px 0 27px
+	.start__img
+		text-align: center
+		float: none	
+	.counter
+		float: none
+		text-align: center
+		margin: 15px auto 0
+		
 .post-item-wrap
 	margin: 23px -155px 36px 0
 	+clr

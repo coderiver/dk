@@ -640,6 +640,8 @@
 			left: -1006px
 		&:after
 			right: -1006px
+	&.to-center
+		padding-left: 0
 .title_h4
 	max-width: 340px
 	span
@@ -656,7 +658,10 @@
 .title_370
 	max-width: 370px
 	margin-top: 35px	
-
+.title_740
+	max-width: 740px
+	margin-left: 0
+	+box
 .banner
 	margin-bottom: 19px
 	text-align: center
@@ -726,6 +731,8 @@
 	+s(prev)
 .btn-next
 	+s(next)
+.btn-next-arr
+	+s(next-blue)
 
 .to-prev
 	display: inline-block

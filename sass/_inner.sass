@@ -846,14 +846,20 @@ $cat: cat-car,cat-store,cat-food,cat-cosmetics,cat-clothes,cat-home,cat-service,
 		
 .article-group
 	float: left
+	font-size: 0
 	margin-right: -1px
 	border-right: 1px solid #dedede 
 	width: 730px
 	+box
+	.title
+		margin-right: 20px
+		font-size: 16px		
+.article-group_small
+	border-right: 0
+	width: 480px
 .video-group
 	float: right
-	padding-left: 30px
-	width: 211px
+	width: 180px
 	+box
 .video
 	margin-bottom: 26px
@@ -880,3 +886,100 @@ $cat: cat-car,cat-store,cat-food,cat-cosmetics,cat-clothes,cat-home,cat-service,
 	+tr(opacity .2s linear)
 	&:hover
 		+opacity(1)
+.advice-group
+	float: left 
+	width: 260px
+	text-align: center
+	.btn-next-arr
+		display: block
+		margin: 20px auto 0 
+	.cycle-slideshow
+		width: 100%
+		overflow: hidden
+		background: #fff 
+.advice
+	padding: 21px 15px 0
+	margin: 0 auto 
+	width: 90%
+	background: #fff 
+	+fmed
+	font-size: 12px
+.advice__item
+	position: relative
+	margin-top: 27px
+	&:first-child
+		margin-top: 0
+		&:before
+			display: none
+	&:before
+		content: ""
+		position: absolute
+		top: -13px
+		left: 50%
+		margin-left: -65px
+		width: 130px
+		height: 1px
+		background: #d9d9d9  
+
+.advice-group__in
+	padding-bottom: 20px
+	background: #fff 
+	
+.filter
+	margin: 0 0 35px 
+.filter__title
+	margin-bottom: 15px
+	font-size: 14px
+	+fbold
+	text-transform: uppercase
+.filter__row
+	margin-bottom: 18px
+	+clr
+.filter__left
+	float: left
+	width: 265px
+.filter__right
+	float: left
+	width: 305px
+	.select__text
+		text-transform: uppercase
+.filter__icon
+	display: inline-block
+	margin-right: 9px
+	vertical-align: middle
+	height: 28px
+	width: 28px
+	line-height: 28px
+	border: 2px solid #555
+	text-align: center
+	+border-radius(50%)
+	i
+		display: inline-block
+		vertical-align: middle
+.filter__name
+	display: inline-block
+	vertical-align: middle
+	font-size: 12px
+	+fmed  
+	text-transform: uppercase
+.icon-cup
+	+s(cup)
+.icon-pointer
+	+s(pointer)
+.icon-diamond
+	+s(diamond) 
+
+.sort-nav
+	margin-bottom: 25px
+	text-align: center
+	text-transform: uppercase
+	font-size: 12px
+	+fbold
+	a
+		display: inline-block
+		margin-left: 15px
+		color: $gray
+		&:first-child
+			margin-left: 0
+	.is-active
+		color: #b3b3b3 

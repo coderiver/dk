@@ -48,7 +48,8 @@
 	+fbold
 	text-transform: uppercase
 		
-
+.tab-content
+	margin-bottom: 50px
 .item-info	
 	margin-bottom: 30px
 	img
@@ -445,6 +446,11 @@
 		margin-right: 20px
 	.img-templ__info
 		overflow: hidden
+.img-templ_width
+	.img-templ__pic
+		width: 220px
+		height: 210px
+		line-height: 210px
 .img-templ__pic
 	height: 100px
 	width: 100px
@@ -791,6 +797,44 @@ $cat: cat-car,cat-store,cat-food,cat-cosmetics,cat-clothes,cat-home,cat-service,
 			
 .news-list-wrap
 	margin-right: -40px
+.post-item-wrap
+	margin: 23px -155px 36px 0
+	+clr
+.post-item
+	float: left  
+	height: 237px
+	overflow: hidden
+	margin-right: 73px
+	padding-right: 80px
+	width: 290px
+	border-right: 1px solid #ededed
+	+box
+	font-size: 12px
+.post-item__img
+	position: relative
+	display: block
+	margin-bottom: 6px
+	overflow: hidden
+	img
+		max-width: 100%
+		max-height: 100%
+		height: auto
+.post-item__title
+	color: $gray
+	font-size: 24px
+	+flight 
+.post-item__descr  
+	margin: 4px 0 10px
+	height: 120px
+	overflow: hidden
+.post-item__more
+	text-align: right
+	a
+		color: #2b2b2b
+		+fmedit
+		font-size: 12px
+		text-transform: uppercase 
+
 .post-item_news
 	display: inline-block
 	vertical-align: top
@@ -817,7 +861,8 @@ $cat: cat-car,cat-store,cat-food,cat-cosmetics,cat-clothes,cat-home,cat-service,
 		width: 220px
 .post-item_project
 	width: 300px
-	
+.post-item_video
+
 .google-map
 	position: relative
 	margin-top: -200px
@@ -983,3 +1028,40 @@ $cat: cat-car,cat-store,cat-food,cat-cosmetics,cat-clothes,cat-home,cat-service,
 			margin-left: 0
 	.is-active
 		color: #b3b3b3 
+		
+.speaker-group
+	font-size: 0
+.speaker
+	display: inline-block
+	vertical-align: top
+	margin-right: 75px
+	width: 128px
+	font-size: 12px
+	color: #2b2b2b 
+	&:nth-child(5n)
+		margin-right: 0
+.speaker__pic
+	display: block
+	margin-bottom: 0
+	font-size: 12px
+	img
+		max-width: 100%
+		height: auto
+.speaker__name
+	font-size: 16px
+	color: #2b2b2b 
+	+fmed
+
+.contacts
+	+clr
+.contacts__col
+	float: left
+	padding: 10px 30px 
+	min-height: 105px
+	border-left: 1px solid rgba(255,255,255,.8) 
+	&:first-child
+		padding-left: 0
+	&:last-child
+		padding-right: 0
+	div
+		margin-bottom: 5px

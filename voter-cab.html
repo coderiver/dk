@@ -9,6 +9,8 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.cycle2.js"></script>
 	<script src="js/jquery.countdown.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -81,7 +83,52 @@
 		<h2 class="title title_h2 to-left is-blue"><span>История личной АКТИВНОСТИ</span></h2>
 		<div class="graph">
 			<div class="graph__main">
-				<img src="img/graph5.png" alt="">
+				<div id="donutchart" style="width: 350px; height: 350px;"></div>
+				<script>
+					var 
+						azure = '#47c2eb';
+						lime = '#79e89b';
+						orange = '#f77e35';
+						blue = '#5a8fe0';
+						green = '#aed852';
+						pink = '#ff74ac';
+						red = '#ff8686';
+						yellow = '#fff448';
+				    google.load("visualization", "1", {packages:["corechart"]});
+				    google.setOnLoadCallback(drawChart);
+				    function drawChart() {
+				        var data = google.visualization.arrayToDataTable([
+				          ['Task', 'Hours per Day'],
+				          ['Work',     11],
+				          ['Eat',      2],
+				          ['Commute',  2],
+				          ['Watch TV', 2],
+				          ['Sleep',    7],
+				          ['Sleep',    7],
+				          ['Sleep',    7],
+				          ['Sleep',    7]
+				        ]);
+
+				        var options = {
+				          	//title: 'My Daily Activities',
+				          	pieHole: 0.7,
+				          	legend: 'none',
+				          	colors: [
+				          		azure,
+								lime,
+								orange,
+								blue,
+								green,
+								pink,
+								red,
+								yellow
+							]
+				        };
+
+				        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+				        chart.draw(data, options);
+				    }
+				</script>
 			</div>
 			<div class="graph__table">
 				<table class="table">

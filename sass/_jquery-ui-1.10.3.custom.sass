@@ -1,125 +1,77 @@
-// .ui-widget-content
-// 	position: relative
-// .ui-widget
-// 	position: absolute
-// 	left: 5px
-// 	right: 5px
-// 	top: 4px
-// 	height: 7px
-// 	+border-radius(3px)
-// 	background: #f0f1f1
-// 	+box-shadow(0 1px 0 #fff, inset 0 2px 2px rgba(0,0,0,.08))
-// 	+g(#d3d6db, #d3d6db)
+.ui-datepicker
+	z-index: 1000
+	margin-top: 2px
+	padding: 5px    
+	background: #fff
+	border: 1px solid #aaa
+	.ui-state-default
+		display: block
+		width: 30px
+		height: 30px
+		text-align: center
+		line-height: 30px
+		border-right: 1px solid #cbcbcb 
+		border-bottom: 1px solid #cbcbcb 
+		color: $gray
+		+freg
+		&:hover
+			position: relative
+			z-index: 2
+			text-decoration: none
+			background: #6dcdec
+			color: #fff  
+	.ui-datepicker-today
+		.ui-state-default
+			background: #46c2ea
+			color: #fff  
+	.ui-state-active
+		color: #46c2ea
 
-// .ui-slider__main
-// 	position: relative
-// 	padding: 0 5px  
-// 	height: 15px
-// 	width: 196px
-// 	+box  
-// 	+border-radius(8px)
-// 	background: #fff
-// 	+box-shadow(0 1px 0 rgba(255,255,255,.88), inset 0 2px 2px rgba(0,0,0,.1))
-// 	+g(#e9ecf1, #e9ecf1)
-// .ui-slider__min,
-// .ui-slider__max
-// 	position: absolute
-// 	bottom: -15px
-// 	font-size: 10px
-// 	color: #6c6c6c
-// .ui-slider__min
-// 	left: -5px
-// .ui-slider__max
-// 	right: -13px
-// .ui-slider-handle
-// 	position: absolute
-// 	top: 50%
-// 	z-index: 2
-// 	margin: -12px 0 0 -11px 
-// 	width: 22px
-// 	height: 22px
-// 	border: 1px solid rgba(122,122,122,.35)
-// 	+border-radius(50%)
-// 	+box
-// 	+box-shadow(0 1px 3px rgba(0,0,0,.2))
-// 	+g(#fff, #dfdfdf)
-// 	&:before
-// 		content: ""
-// 		position: absolute
-// 		top: 50%
-// 		left: 50%
-// 		margin: -4px 0 0 -4px  
-// 		width: 8px
-// 		height: 8px
-// 		+border-radius(4px)
-// 		background: #bcbcbc
-// 		+box-shadow(0 1px 0 #fff, inset 0 1px 1px rgba(0,0,0,.5), inset 0 0 5px rgba(0,0,0,.06))
-// 		+background-image(linear-gradient(bottom, rgba(255,255,255,.1) -14.17%, rgba(0,0,0,.1) 60.83%))
-		
-// 	&:hover
-// 		&:before
-// 			background: #60a2ef
-
-// 		span
-// 			display: block
-// 	span
-// 		display: none
-// 		position: absolute
-// 		left: 50%
-// 		top: -35px
-// 		margin-left: -35px !important
-// 		width: 70px
-// 		height: 23px
-// 		line-height: 23px
-// 		color: #5c5c5c
-// 		font-size: 12px
-// 		font-weight: bold
-// 		text-shadow: 0 1px 0 #fff
-// 		text-align: center  
-// 		border-bottom: 1px solid #c5c6ca 
-// 		+border-radius(3px)
-// 		background: #d1d1d1
-// 		+box-shadow(0 2px 4px rgba(0,0,0,.11))
-// 		+g(#f7f7f9, #e2e4e9)
-// 		&:before
-// 			content: ""
-// 			position: absolute
-// 			left: 50%
-// 			margin-left: -5px
-// 			bottom: -5px
-// 			z-index: 2
-// 			+arr(10,5,#e2e4e9,b) 
-// 		&:after
-// 			content: ""
-// 			position: absolute
-// 			left: 50%
-// 			margin-left: -6px
-// 			bottom: -6px
-// 			z-index: 1
-// 			+arr(12,6,#c5c6ca,b) 
-	
-
-// .ui-slider-range
-// 	position: absolute
-// 	z-index: 1
-// 	top: 0px
-// 	left: 0
-// 	height: 7px
-// 	+border-radius(3px)
-// 	background: #f39f03
-// 	+box-shadow(0 1px 0 rgba(0,0,0,.05), inset 0 1px 0 #ffda65)
-// 	+g(#f5c506, #f48401)
-
-
-// .ui-slider__top
-// 	margin-bottom: 22px
-// 	font-weight: bold
-// 	span, .input
-// 		display: inline-block
-// 		vertical-align: middle
-// 	.input
-// 		height: 28px
-// 		width: 73px
-// 		padding: 0 7px
-// 		font-size: 13px 
-// 		font-weight: bold
+	tbody
+		td
+			&:first-child
+				a,span
+					border-left: 1px solid #cbcbcb
+	thead
+		span
+			display: block
+			height: 25px
+			line-height: 25px
+			text-align: center
+			+fbold
+			border: 1px solid #cbcbcb 
+			border-left: 0
+			font-weight: normal
+		th
+			&:first-child
+				span
+					border-left: 1px solid #cbcbcb
+	.ui-state-disabled
+		a,span
+			color: #f0f0f0 
+.ui-datepicker-next,
+.ui-datepicker-prev
+	+hide-text
+	position: absolute
+	top: 5px
+	width: 20px
+	height: 20px
+.ui-datepicker-prev
+	left: 5px
+	+s(prev-blue)
+.ui-datepicker-next
+	right: 5px  
+	+s(next-blue)
+.ui-datepicker-title
+	padding: 0 0 5px
+	+clr
+	text-align: center
+.ui-datepicker-month,
+.ui-datepicker-year
+	margin-left: 5px
+	text-align: center
+	height: 25px
+	width: 75px
+	border-color: #cbcbcb
+.ui-datepicker-month
+	margin-left: 0

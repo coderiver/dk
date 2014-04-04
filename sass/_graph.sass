@@ -1,3 +1,11 @@
+$azure: #47c2eb
+$lime: #79e89b
+$orange: #f77e35
+$blue: #5a8fe0
+$green: #aed852
+$pink: #ff74ac
+$red: #ff8686
+$yellow: #fff448
 .table-result-wrap
     position: relative
     padding-bottom: 33px
@@ -86,3 +94,135 @@
         &:nth-child(2n)
             td
                 +g(rgba(#fdfeff, .9), rgba(#f8fdfe, .9))
+            
+.graph-section__top
+    margin-bottom: 10px
+    overflow: hidden
+.choose-date
+    float: left
+    margin-bottom: 10px
+    span,
+    .input-date
+        display: inline-block
+        vertical-align: middle
+    span
+        margin: 0 5px
+        font-size: 10px
+        text-transform: uppercase
+        color: #343434
+        +fbold 
+        &:first-child
+            margin-left: 0  
+    .input-date
+        position: relative
+        width: 105px 
+        i
+            position: absolute
+            top: 50%
+            right: 7px
+            margin-top: -7px
+            +s(cal)
+    .input
+        font-size: 13px
+        +freg
+        padding-right: 25px
+.graph-section__meta
+    float: right
+    font-size: 12px
+    text-transform: uppercase
+    span
+        display: block
+        text-transform: uppercase
+        +fbold
+
+.graph
+    overflow: hidden
+    margin: 20px 0 
+.graph__main
+    float: left
+    margin: 20px 35px 0 0
+.graph__table
+    overflow: hidden
+    .table
+        width: 100%
+        td
+            padding: 6px 0 6px 13px
+            &:last-child
+                width: auto
+.table
+    width: auto
+    color: #343434
+    font-size: 12px
+    tr
+        &:nth-child(2n)
+            td
+                background: #f6feff 
+    th,td
+        border-bottom: 1px solid #ebebeb 
+        border-left: 1px solid #ebebeb
+        vertical-align: middle
+        &:first-child
+            border-left: 0
+    th
+        +fbold
+        height: 55px
+        text-transform: uppercase  
+        border-left: 0
+    td
+        
+        padding: 8px 0 8px 13px
+        +fmed   
+        &:last-child
+            width: 95px
+            text-align: center
+.table-wrap
+    position: relative
+    margin-bottom: 40px  
+    width: 585px
+    height: 170px
+    overflow: hidden
+    .table
+        width: 100%
+        th
+            &:first-child
+                text-align: left
+                
+.btn-full-table
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 20px
+    background: #f6feff 
+    &:after
+        content: ""
+        position: absolute
+        left: 50%
+        height: 20px
+        margin-left: -6px
+        bottom: 5px
+        +s(arr-dark) 
+
+.color
+    display: inline-block
+    margin-right: 15px
+    vertical-align: middle
+    width: 19px
+    height: 19px
+    +border-radius(50%)
+    &.is-azure
+        background: $azure
+    &.is-lime
+        background: $lime
+    &.is-orange
+        background: $orange
+    &.is-blue
+        background: $blue
+    &.is-green
+        background: $green
+    &.is-pink
+        background: $pink
+    &.is-red
+        background: $red
+    &.is-yellow
+        background: $yellow

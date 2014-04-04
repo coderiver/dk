@@ -201,8 +201,19 @@
 		background: #fff
 		a
 			color: #313131 
-.ui-tabs-panel
-	+tr(all .2s linear)  
+.step_vertical 
+	height: auto
+	.step__item
+		float: none
+		width: 100%
+		border-top-width: 0
+		text-align: left
+		+box
+		border-right: 1px solid #45c1e9 
+		font-size: 12px
+		&:first-child
+			border-top-width: 1px 
+
 .form
 	margin-bottom: 75px
 	width: 342px
@@ -1129,3 +1140,12 @@ $popup_enter_width: 374px
 .graph-section
 	+clr
 	margin: 20px 0 30px 
+	
+.sidebar
+	float: left
+	margin-right: 44px
+	width: 212px
+	.btn_s
+		margin-bottom: 11px
+		padding: 11px 0 10px 
+		width: 100%  	

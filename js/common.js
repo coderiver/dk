@@ -136,4 +136,46 @@ $(document).ready(function() {
     }
     tableHeight();
 
+    // if ($(".js-date").length) {
+    //     $(".js-date").datepicker({
+    //         dateFormat: 'yy-mm-dd',
+    //         firstDay: 1,
+    //         changeMonth: true,
+    //         changeYear: true,
+    //         showOtherMonths: true,
+    //         //showTimezone: true,
+    //         selectOtherMonths: true,
+    //         yearRange: '-10:+3',
+    //     });
+    // }
+    if ($(".js-date-from").length) {
+        $(".js-date-from").datepicker({
+            dateFormat: 'yy-mm-dd',
+            firstDay: 1,
+            changeMonth: true,
+            changeYear: true,
+            showOtherMonths: true,
+            selectOtherMonths: true,
+            yearRange: '-10:+3',
+            onClose: function( selectedDate ) {
+                $( ".js-date-to" ).datepicker( "option", "minDate", selectedDate );
+            }
+        });
+    }
+    if ($(".js-date-to").length) {
+        $(".js-date-to").datepicker({
+            dateFormat: 'yy-mm-dd',
+            firstDay: 1,
+            changeMonth: true,
+            changeYear: true,
+            showOtherMonths: true,
+            selectOtherMonths: true,
+            yearRange: '-10:+3',
+            showButtonPanel: false,
+            onClose: function( selectedDate ) {
+                $( ".js-date-from" ).datepicker( "option", "maxDate", selectedDate );
+            }
+        });
+    }
+
 });  

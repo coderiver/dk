@@ -115,4 +115,25 @@ $(document).ready(function() {
         event.stopPropagation();
     });
 
+    function tableHeight() {
+        var tr = $(".js-table tbody tr");
+        var tr_fixed = $(".js-table-fixed tbody tr");
+
+        tr_fixed.each(function(){
+            var index = $(this).index();
+            $(this).addClass("js-tr"+index);
+        });
+
+        tr.each(function(){
+            var index = $(this).index();
+            $(this).addClass("js-tr"+index);
+            var height = $(this).find("td:first").height();
+            $(".js-table-fixed .js-tr"+index+" td").css({
+                height: height
+            });
+        });
+
+    }
+    tableHeight();
+
 });  

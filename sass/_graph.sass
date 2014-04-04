@@ -1,5 +1,20 @@
 .table-result-wrap
+    position: relative
+    padding-bottom: 33px
+    z-index: 2
+    &:after
+        content: ""
+        position: absolute
+        bottom: -7px 
+        left: 0
+        right: 0
+        height: 7px
+        background: url(../img/section-bg2.png) 0 0 repeat 
+    .l-container
+        position: relative
+.table-result-wrap__in
     overflow-x: auto
+    padding-left: 26px
     +scrollbar
         width: 8px
         height: 8px
@@ -11,14 +26,6 @@
     +scrollbar-track-piece 
         width: 8px 
         height: 8px
-    // +scrollbar
-    //     width: 6px
-    // +scrollbar-thumb
-    //     border-radius: 3px
-    //     background: #535353
-    // +scrollbar-track-piece 
-    //     width: 6px 
-    //     border-radius: 3px
 .table-result
     width: auto
     table-layout: fixed
@@ -27,36 +34,55 @@
     td,th
         border-left: 1px solid #ebecec 
         border-top: 1px solid #ebecec 
+
 .table-result__head
     th
         padding: 9px 
+        height: 50px
         text-align: center
         +fbold
         font-size: 11px
         text-transform: uppercase
-        background: #e4f6fd
         vertical-align: middle
         +box-shadow(-1px 0 0 #fff)
-        +background-image(linear-gradient(bottom, #e4f6fd 0%, #f8fdff 100%))
         &:first-child
             width: 27px
         &:last-child
-            width: 27px
+            width: 27px    
 .table-result__body
     font-size: 12px
     +fmed
-    tr
-        &:nth-child(2n)
-            td
-                background: #fff
-                +background-image(linear-gradient(bottom, rgba(228,247,253,.26) 0%, rgba(248,253,255,.26) 100%))
-
     td
         padding: 9px 
+        text-align: center
         +box-shadow(-1px 0 0 #fff, inset 0 1px 0 #fff)
-        background: rgba(250,248,248,.7)
-        +background-image(linear-gradient(bottom, rgba(228,247,253,.26) 0%, rgba(248,253,255,.26) 100%))
+        //background: rgba(250,248,248,.7)
         vertical-align: middle
         &:first-child
             text-align: center
             border-left: 0
+.table-result_main
+    td
+        +g(#fafbfb, #f5f9fb)
+    th
+        +g(#f8fdff, #e4f7fd)
+    tr
+        &:nth-child(2n)
+            td
+                +g(#fdfeff, #f8fdfe)
+.table-result_fixed
+    position: absolute
+    top: 0
+    left: 0
+    width: 27px
+    table-layout: auto
+    th
+        +g(rgba(#f8fdff, .9), rgba(#e4f7fd, .9))     
+    td
+        width: 27px
+        padding: 9px 0
+        +g(rgba(#fafbfb, .9), rgba(#f5f9fb, .9))
+    tr
+        &:nth-child(2n)
+            td
+                +g(rgba(#fdfeff, .9), rgba(#f8fdfe, .9))

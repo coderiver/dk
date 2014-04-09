@@ -10,6 +10,7 @@
 	<script src="js/jquery-ui-1.10.4.custom.js"></script>
 	<script src="js/jquery.cycle2.js"></script>
 	<script src="js/jquery.countdown.js"></script>
+
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -38,12 +39,12 @@
 		</div>
 	</header>
 	<!-- END header-->
-	<div class="main">
+	<div class="main js-tab">
 		<h1 class="page-title">личный кабинет партнера</h1>
-		<div class="sidebar js-tab">
+		<div class="sidebar">
 			<ul class="step step_nav step_vertical">   
-				<li class="step__item is-active">
-					<a href="ajax/ajax-tab1.html"><span>Статистика по зарегистрированным участникам</span></a>
+				<li class="step__item">
+					<a href="ajax/partner-cab1.html"><span>Статистика по зарегистрированным участникам</span></a>
 				</li>
 				<li class="step__item">
 					<a href="ajax/ajax-tab2.html"><span>Статистика по рекламному охвату</span></a>
@@ -62,133 +63,9 @@
 			<a href="#" class="btn btn_s">cкачать базу голосующих</a>
 		</div>
 		
-		<div class="graph-section">
-			<div class="graph-section__top">
-				<div class="choose-date">
-					<span>за период с</span>
-					<div class="input-date">
-						<input type="text" class="input js-date js-date-from">
-						<i></i>
-					</div>
-					<span>по</span>
-					<div class="input-date">
-						<input type="text" class="input js-date js-date-to">
-						<i></i>
-					</div>
-				</div>
-				<div class="graph-section__meta">
-					всего участников <span>286231</span>
-				</div>
-			</div>
-			<img src="img/graph4.png" alt="">
-			<div class="table-wrap">
-				<table class="table">
-					<thead>
-						<tr>
-							<th>откуда пришли регистрирующиеся</th>
-							<th>кол-во</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>http://dovolny.ru</td>
-							<td>180976</td>
-						</tr>
-						<tr>
-							<td>http://dovolny.ru</td>
-							<td>180976</td>
-						</tr>
-						<tr>
-							<td>http://dovolny.ru</td>
-							<td>180976</td>
-						</tr>
-						<tr>
-							<td>http://dovolny.ru</td>
-							<td>180976</td>
-						</tr>
-						<tr>
-							<td>http://dovolny.ru</td>
-							<td>180976</td>
-						</tr>
-						<tr>
-							<td>http://dovolny.ru</td>
-							<td>180976</td>
-						</tr>
-						<tr>
-							<td>http://dovolny.ru</td>
-							<td>180976</td>
-						</tr>
-						<tr>
-							<td>http://dovolny.ru</td>
-							<td>180976</td>
-						</tr>
-						<tr>
-							<td>http://dovolny.ru</td>
-							<td>180976</td>
-						</tr>
-					</tbody>
-				</table>
-				<button class="btn-full-table"><i></i></button>
-			</div>
-			<div class="graph">
-				<div class="graph__main">
-					<img src="img/graph5.png" alt="">
-				</div>
-				<div class="graph__table">
-					<table class="table">
-						<thead>
-							<tr>
-								<th>федеральный округ</th>
-								<th>кол-во участников</th>
-								<th>Региональный лидер</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td><i class="color is-azure"></i>Центральный федеральный округ</td>
-								<td>180976</td>
-								<td>ООО “Овощной Рай”</td>
-							</tr>
-							<tr>
-								<td><i class="color is-lime"></i>Центральный федеральный округ</td>
-								<td>180976</td>
-								<td>ООО “Овощной Рай”</td>
-							</tr>
-							<tr>
-								<td><i class="color is-orange"></i>Центральный федеральный округ</td>
-								<td>180976</td>
-								<td>ООО “Овощной Рай”</td>
-							</tr>
-							<tr>
-								<td><i class="color is-blue"></i>Центральный федеральный округ</td>
-								<td>180976</td>
-								<td>ООО “Овощной Рай”</td>
-							</tr>
-							<tr>
-								<td><i class="color is-green"></i>Центральный федеральный округ</td>
-								<td>180976</td>
-								<td>ООО “Овощной Рай”</td>
-							</tr>
-							<tr>
-								<td><i class="color is-pink"></i>Центральный федеральный округ</td>
-								<td>180976</td>
-								<td>ООО “Овощной Рай”</td>
-							</tr>
-							<tr>
-								<td><i class="color is-red"></i>Центральный федеральный округ</td>
-								<td>180976</td>
-								<td>ООО “Овощной Рай”</td>
-							</tr>
-							<tr>
-								<td><i class="color is-yellow"></i>Центральный федеральный округ</td>
-								<td>180976</td>
-								<td>ООО “Овощной Рай”</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-		</div>
+		
+
+
 	</div>
 	<!-- BEGIN  push-->
 	<div class="push"></div>

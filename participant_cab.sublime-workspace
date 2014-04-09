@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"re",
+				"removeClass"
+			],
+			[
 				"fi",
 				"first"
 			],
@@ -22,10 +26,6 @@
 			[
 				"td",
 				"tdHeight"
-			],
-			[
-				"re",
-				"return"
 			],
 			[
 				"ke",
@@ -184,50 +184,26 @@
 	"buffers":
 	[
 		{
-			"file": "js/common.js",
+			"contents": ".",
 			"settings":
 			{
-				"buffer_size": 6039,
+				"buffer_size": 1,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "participant_cab.html",
+			"file": "/M/Projects/sass/index.html",
 			"settings":
 			{
-				"buffer_size": 5235,
+				"buffer_size": 517,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/M/Projects/avox/js/common.js",
+			"file": "/M/Projects/sass/sass/_common.sass",
 			"settings":
 			{
-				"buffer_size": 20580,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "sass/_blocks.sass",
-			"settings":
-			{
-				"buffer_size": 13585,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "sass/_inner.sass",
-			"settings":
-			{
-				"buffer_size": 18679,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "sass/_graph.sass",
-			"settings":
-			{
-				"buffer_size": 4834,
+				"buffer_size": 1354,
 				"line_ending": "Windows"
 			}
 		}
@@ -264,10 +240,62 @@
 	},
 	"file_history":
 	[
+		"/M/Projects/retina/sass/lib/_mixins.sass",
+		"/M/Projects/retina/sass/lib/_sprites.scss",
+		"/M/Projects/sass/sass/screen.sass",
+		"/M/Projects/sass/sass/lib/_base.scss",
+		"/M/Projects/sass/sass/lib/_media.scss",
+		"/M/Projects/retina/index.html",
+		"/M/Projects/sass/index.html",
+		"/M/Projects/sass/sass/_common.sass",
+		"/M/Projects/sass/sass/lib/_mixins.sass",
+		"/M/Projects/retina/sass/lib/_sprites.sass",
+		"/M/Projects/sass/sass/lib/_sprites.scss",
+		"/M/Projects/retina/sass/_common.sass",
+		"/M/Projects/tim/sass/_common.sass",
+		"/M/Projects/tim/sass/_popup.sass",
+		"/M/Projects/flysoft/sass/_base.scss",
+		"/M/Projects/tim/index.html",
+		"/M/Projects/tim/sass/lib/_sprites.scss",
+		"/M/Projects/tim/sass/lib/_mixins.sass",
+		"/M/Projects/retina/README.md",
+		"/M/Projects/flysoft/index.html",
+		"/M/Projects/avox/clients_trunks.html",
+		"/M/Projects/avox/code-deck.html",
+		"/M/Projects/avox/invoices.html",
+		"/M/Projects/avox/alerts-list.html",
+		"/M/Projects/avox/sass/_rate-tables.sass",
+		"/M/Projects/avox/sass/_active-calls.sass",
+		"/M/Projects/avox/sass/_clients-list.sass",
+		"/M/Projects/avox/active-calls.html",
+		"/M/Projects/flysoft/sass/common.scss",
+		"/C/Users/Splinter/AppData/Local/Temp/fz3temp-1/common.js",
+		"/C/Users/Splinter/AppData/Local/Temp/fz3temp-1/ajax1.html",
+		"/C/Users/Splinter/AppData/Local/Temp/fz3temp-1/partner-cab.html",
+		"/M/Projects/tim/js/common.js",
+		"/M/Projects/dk/sass/_blocks.sass",
+		"/M/Projects/dk/sass/_common.sass",
+		"/M/Projects/dk/sass/_inner.sass",
+		"/M/Projects/dk/sass/_graph.sass",
+		"/C/Users/Splinter/AppData/Local/Temp/fz3temp-1/participant_cab.html",
 		"/M/Projects/dk/voter-cab.html",
-		"/M/Projects/dk/voting.html",
-		"/M/Projects/imexbank/anons.html",
 		"/M/Projects/dk/partner-cab.html",
+		"/M/Projects/dk/ajax/partner-cab1.html",
+		"/M/Projects/dk/js/common.js",
+		"/M/Projects/dk/ajax/ajax-tab2.html",
+		"/M/Projects/imexbank/js/common.js",
+		"/M/Projects/dk/ajax/partnera-cab1.html",
+		"/M/Projects/dk/sass/lib/_mixins.sass",
+		"/M/Projects/tim/sass/screen.sass",
+		"/M/Projects/dk/participant_cab.html",
+		"/M/Projects/dk/voting.html",
+		"/M/Projects/dk/sass/lib/_sprites.scss",
+		"/M/Projects/dk/ajax/ajax-tab6.html",
+		"/M/Projects/dk/sass/_jquery-ui-1.10.3.custom.sass",
+		"/M/Projects/dk/ajax/ajax-tab1.html",
+		"/M/Projects/dk/js/jsapi.js",
+		"/M/Projects/avox/js/common.js",
+		"/M/Projects/imexbank/anons.html",
 		"/M/Projects/gettable_bootstrap/sass/lib/_mixins.sass",
 		"/M/Projects/dk/knowlege-base.html",
 		"/M/SSD/Desktop/Chart.js-master/samples/doughnut.html",
@@ -279,19 +307,15 @@
 		"/M/SSD/Desktop/Chart.js-master/samples/bar.html",
 		"/M/Projects/dk/sass/_icons.sass",
 		"/M/Projects/dk/sass/screen.sass",
-		"/M/Projects/dk/sass/_common.sass",
 		"/M/Projects/belleville/js/src/common.js",
 		"/M/Projects/dk/sass/_index.sass",
 		"/M/Projects/belleville/menu_main.html",
 		"/M/Projects/belleville/js/src/jquery.fancybox.js",
-		"/M/Projects/dk/sass/_jquery-ui-1.10.3.custom.sass",
 		"/M/SSD/Desktop/jquery-ui-1.10.4.custom.css",
 		"/M/Projects/gfc/js/common.js",
-		"/M/Projects/dk/participant_cab.html",
 		"/M/Projects/imexbank/sass/_inner.sass",
 		"/M/Projects/imexbank/sass/_common.sass",
 		"/M/Projects/imexbank/sass/_blocks.sass",
-		"/M/Projects/dk/sass/lib/_mixins.sass",
 		"/M/Projects/gettable_bootstrap/sass/_common.sass",
 		"/M/Projects/gettable_bootstrap/sass/_blocks.sass",
 		"/M/Projects/gettable_bootstrap/sass/_index.sass",
@@ -326,12 +350,10 @@
 		"/M/Projects/podarkov/sass/_sidebar.scss",
 		"/M/Projects/podarkov/sass/_base.scss",
 		"/M/Projects/podarkov/sass/_inner.scss",
-		"/M/Projects/dk/sass/_blocks.sass",
 		"/M/Projects/dk/about - копия.html",
 		"/M/Projects/dk/sass/lib/_keyframes.sass",
 		"/M/Projects/d4f/sass/common.scss",
 		"/M/Projects/dk/js/jquery-ui-1.10.4.custom.js",
-		"/M/Projects/dk/sass/_inner.sass",
 		"/M/Projects/gettable_bootstrap/card.html",
 		"/M/Projects/gettable_bootstrap/search_result.html",
 		"/M/Projects/gettable_bootstrap/js/common.js",
@@ -345,57 +367,11 @@
 		"/M/Projects/gettable_bootstrap/index.html",
 		"/M/Projects/gettable_bootstrap/search.html",
 		"/M/Projects/gettable_bootstrap/search_error.html",
-		"/M/Projects/dobovo/index.html",
-		"/C/Users/Splinter/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/M/Projects/dk/js/common.js",
-		"/M/Projects/gettable_bootstrap/sass/lib/_sprites.scss",
-		"/M/SSD/Desktop/OrganicTabsReplaceState/index.html",
-		"/M/Projects/gfc/sass/_chosen.sass",
-		"/M/Projects/gfc/sass/_multiselect.sass",
-		"/M/Projects/dk/ajax/ajax-tab1.html",
-		"/M/SSD/Desktop/OrganicTabsReplaceState/tab1.html",
-		"/M/Projects/gettable_bootstrap/sass/bootstrap.sass",
-		"/M/SSD/Desktop/OrganicTabsReplaceState/index.php",
-		"/M/Projects/dk/ajax-tab5.html",
-		"/M/Projects/dk/ajax-tab6.html",
-		"/M/Projects/dk/ajax-tab4.html",
-		"/M/Projects/dk/ajax-tab3.html",
-		"/M/Projects/dk/ajax-tab2.html",
-		"/M/Projects/dk/ajax-tab1.html",
-		"/M/Projects/gettable_bootstrap/sass/lib/_base.scss",
-		"/C/Users/Splinter/YandexDisk/task5/index.html",
-		"/C/Users/Splinter/YandexDisk/task5/index.psd",
-		"/M/Projects/smart/popup_photo.html",
-		"/M/Projects/smart/search.html",
-		"/M/Projects/smart/popup_360.html",
-		"/M/Projects/smart/sass/_sidebar.sass",
-		"/M/Projects/smart/sass/_common.sass",
-		"/M/Projects/smart/sass/_index.sass",
-		"/M/Projects/smart/sass/_blocks.sass",
-		"/M/Projects/smart/sass/_popup.sass",
-		"/M/Projects/smart/basket.html",
-		"/M/Projects/smart/compare.html",
-		"/M/Projects/gettable_bootstrap/index_login2.html",
-		"/M/Projects/avox/js/chosen.js",
-		"/M/SSD/Desktop/text-pages/sass/screen.sass",
-		"/M/SSD/Desktop/text-pages/sass/_common.sass",
-		"/M/Projects/gettable_bootstrap/sass/screen.sass",
-		"/M/Projects/gettable_bootstrap/sass/_reset.sass",
-		"/M/SSD/Desktop/text-pages/offerta.html",
-		"/M/Projects/smart/index.html",
-		"/M/Projects/dk/reg.html",
-		"/M/Projects/smart/catalog.html",
-		"/M/Projects/smart/sass/_jquery-ui-1.10.3.custom.sass",
-		"/M/Projects/smart/sass/_layouts.sass",
-		"/M/Projects/avox/sass/_multiselect.sass",
-		"/M/Projects/avox/js/common.js",
-		"/M/Projects/avox/sass/_common.sass",
-		"/M/Projects/avox/sass/_chosen.sass",
-		"/M/Projects/avox/sass/_clients.sass"
+		"/M/Projects/dobovo/index.html"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -429,6 +405,49 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"  ",
+			"+s",
+			"sized-sprite",
+			"@mixin sized-sprite($map, $sprite){\n  background: sprite($map, $sprite) no-repeat;\n  @include image-size(sprite-file($map, $sprite));\n}",
+			"background-size",
+			" background-size",
+			"background-size",
+			" background-size",
+			"filter__top",
+			"js-table-simple",
+			"Alerts list",
+			"Code Deck",
+			"table",
+			"group js-table-group",
+			"spriter(",
+			"+s",
+			".icon-work",
+			"map",
+			"icon-work  ",
+			".chosen-single",
+			"background-size",
+			"target",
+			"selec",
+			"+g",
+			".select",
+			"+g",
+			"+gpu",
+			"+пзг",
+			"js-ta",
+			".chosen-single",
+			"gpu",
+			".chosen-single ",
+			".chosen-single",
+			".bg",
+			"js-tab",
+			"350",
+			"graph__main",
+			".ui-datepicker",
+			".graph-section__top",
+			"map",
+			"select__list",
+			".chosen-single",
+			".chosen-single ",
 			"table-wrap",
 			"0.2em",
 			"0.2",
@@ -513,50 +532,7 @@
 			"sear",
 			"item__ac",
 			".item__counter",
-			".input-group_metro",
-			"wind",
-			"checkbox",
-			"input-group_search",
-			".input-group_search ",
-			"ui-tabs-active",
-			"step",
-			".input-group_search",
-			"&:hover",
-			"soc",
-			"&:hover",
-			"file",
-			"footer__col",
-			"btn-group_metro",
-			".form-control",
-			"btn-group_metro",
-			"metr",
-			".form-control",
-			"sele",
-			"input-wrap",
-			".footer__feedback",
-			"file",
-			".step",
-			"soc",
-			"ating__right",
-			".btn",
-			"form",
-			"to-center",
-			"h2",
-			".page-title",
-			"is-no-basket",
-			"item-row__action",
-			"<div class=\"choose js-choose\" data-max-number=\"9\">\n								<button class=\"choose__minus js-minus\"></button>\n		                        <input type=\"text\" class=\"choose__input\" value=\"1\" readonly=\"\">\n		                        <button class=\"choose__plus js-plus\"></button>\n		                    </div>",
-			"item",
-			"gallery__slide",
-			"js-gallery",
-			"kitc",
-			"item",
-			"com",
-			"item",
-			"js-change-colo",
-			"js-color-group1",
-			"colors-wrap",
-			"drop-list"
+			".input-group_metro"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -564,6 +540,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"	",
+			"spriter($icons, ",
 			"	",
 			"<a class=\"speaker__name\" href=\"#\">Михаил Бамс</a>",
 			"<link rel=\"stylesheet\" media=\"screen\" href=\"css/screen.css\">",
@@ -609,124 +587,28 @@
 	"groups":
 	[
 		{
-			"sheets":
-			[
-			]
-		},
-		{
-			"selected": 5,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "js/common.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6039,
+						"buffer_size": 1,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4847,
-								4847
+								1,
+								1
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1997.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "participant_cab.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5235,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								395,
-								342
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1368.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/M/Projects/avox/js/common.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 20580,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								805,
-								805
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3477.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "sass/_blocks.sass",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 13585,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								166,
-								165
-							]
-						],
-						"settings":
-						{
-							"auto_indent": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -736,72 +618,73 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "sass/_inner.sass",
+					"buffer": 1,
+					"file": "/M/Projects/sass/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 18679,
+						"buffer_size": 517,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11964,
-								11765
+								477,
+								477
 							]
 						],
 						"settings":
 						{
-							"auto_indent": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 13491.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "sass/_graph.sass",
+					"buffer": 2,
+					"file": "/M/Projects/sass/sass/_common.sass",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4834,
+						"buffer_size": 1354,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4834,
-								4834
+								1354,
+								1354
 							]
 						],
 						"settings":
 						{
 							"auto_indent": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 3802.0,
+						"translation.y": 216.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				}
 			]
+		},
+		{
+			"sheets":
+			[
+			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -844,7 +727,7 @@
 	"project": "participant_cab.sublime-project",
 	"replace":
 	{
-		"height": 64.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":

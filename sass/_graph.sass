@@ -96,7 +96,7 @@ $yellow: #fff448
                 +g(rgba(#fdfeff, .9), rgba(#f8fdfe, .9))
             
 .graph-section__top
-    margin-bottom: 10px
+    margin: 25px 0 -25px
     overflow: hidden
 .choose-date
     float: left
@@ -139,10 +139,14 @@ $yellow: #fff448
     overflow: hidden
     margin: 20px 0 
 .graph__main
+    position: relative   
     float: left
+    overflow: hidden
     margin: 20px 35px 0 0
 .graph__table
     overflow: hidden
+    position: relative
+    z-index: 2
     .table
         width: 100%
         td
@@ -228,3 +232,34 @@ $yellow: #fff448
     &.is-yellow
         background: $yellow
  
+.donutchart-counter
+    position: absolute
+    top: 145px
+    left: 104px
+    width: 142px
+    text-align: center
+    color: #343434
+    text-transform: uppercase
+    font-size: 12px
+    span
+        display: block
+        +fbold
+        font-size: 36px
+        
+.map-svg
+    position: relative
+    width: 850px
+    height: 500px
+    +svgi(map, 860, 500)
+    &:before
+        content: ""
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        width: 51%
+        background: rgba(#fff, .2)  
+.map-marker
+    position: absolute
+    +s(marker)
+   

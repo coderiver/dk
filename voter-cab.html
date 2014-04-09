@@ -10,7 +10,7 @@
 	<script src="js/jquery.cycle2.js"></script>
 	<script src="js/jquery.countdown.js"></script>
 	<script src="js/jquery-ui-1.10.4.custom.js"></script>
-	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script src="js/jsapi.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -84,6 +84,10 @@
 		<div class="graph">
 			<div class="graph__main">
 				<div id="donutchart" style="width: 350px; height: 350px;"></div>
+				<div class="donutchart-counter">
+					<span>387564</span>
+					участников
+				</div>	
 				<script>
 					var 
 						azure = '#47c2eb';
@@ -103,16 +107,16 @@
 				          ['Eat',      2],
 				          ['Commute',  2],
 				          ['Watch TV', 2],
-				          ['Sleep',    7],
-				          ['Sleep',    7],
-				          ['Sleep',    7],
-				          ['Sleep',    7]
+				          ['Part6',    7],
+				          ['Part7',    7],
+				          ['Part8',    7],
+				          ['Part9',    7]
 				        ]);
 
 				        var options = {
-				          	//title: 'My Daily Activities',
 				          	pieHole: 0.7,
 				          	legend: 'none',
+				          	pieSliceText: 'none',
 				          	colors: [
 				          		azure,
 								lime,
@@ -123,6 +127,7 @@
 								red,
 								yellow
 							]
+
 				        };
 
 				        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
@@ -203,8 +208,49 @@
 			</div>
 		</div>
 		<div class="graph">
-			<div class="graph__main">
-				<img src="img/graph2.png" alt="">
+			<div class="graph__main" style="width:350px;height:350px">
+				<div id="chart_div" style="width: 500px; height: 350px;left:-67px;top:-31px"></div>
+				 <script type="text/javascript">
+				 var 
+						azure = '#47c2eb';
+						lime = '#79e89b';
+						orange = '#f77e35';
+						blue = '#5a8fe0';
+						green = '#aed852';
+						pink = '#ff74ac';
+						red = '#ff8686';
+						yellow = '#fff448';
+			      google.load("visualization", "1", {packages:["corechart"]});
+			      google.setOnLoadCallback(drawChart);
+			      function drawChart() {
+			        var data = google.visualization.arrayToDataTable([
+			          ['Year', 'Graph1', 'Graph2', 'Graph3', 'Graph4', 'Graph5', 'Graph6', 'Graph7', 'Graph8', 'Graph9'],
+			          ['2004',  50, 55, 45, 56, 20, 52, 55, 20, 22],
+			          ['2005',  60, 30, 55, 40, 30, 45, 40, 35, 32],
+			          ['2006',  40, 20, 45, 35, 40, 46, 30, 45, 50],
+			          ['2007',  60, 10, 15, 40, 50, 30, 10, 50, 55]
+			        ]);
+
+			        var options = {
+			        	//title: 'Company Performance',
+			        	legend: 'none',
+			        	curveType: 'function',
+		          		colors: [
+		          			azure,
+							lime,
+							orange,
+							blue,
+							green,
+							pink,
+							red,
+							yellow
+						]
+			        };
+
+			        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+			        chart.draw(data, options);
+			      }
+			    </script>
 			</div>
 			<div class="graph__table">
 				<table class="table">

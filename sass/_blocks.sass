@@ -118,13 +118,6 @@
 	cursor: pointer
 	+fmed
 	font-size: 14px
-	+scrollbar
-		border: 1px solid #d5d5d5
-		background: #ececec
-		width: 8px
-	+scrollbar-thumb
-		border: 1px solid #2694bf
-		background: #2babdb 
 	&.is-active
 		.select__text
 			border-color: #aaa
@@ -166,6 +159,13 @@
 	overflow: auto
 	border: 1px solid #aaa
 	border-top: 0 
+	+scrollbar
+		border: 1px solid #d5d5d5
+		background: #ececec
+		width: 8px
+	+scrollbar-thumb
+		border: 1px solid #2694bf
+		background: #2babdb 
 	background: #fff
 	+border-radius(0 0 1px 1px)  
 	+gpu
@@ -764,3 +764,31 @@
 		display: inline-block
 		margin-right: 9px
 		vertical-align: middle
+.tooltip
+	display: none
+	position: absolute
+	margin-top: 17px
+	z-index: 1000
+	padding: 10px 25px
+	background: #fff  
+	+flight
+	border: 1px solid rgba(#000, .19)
+	&:before
+		content: ""
+		position: absolute
+		bottom: 0
+		left: -15px
+		+arr(15,18,#efe9e9,tr) 
+.tooltip__title
+	margin-bottom: 5px
+	+fmed
+	text-align: center  
+.tooltip__info
+	span
+		display: inline-block
+		vertical-align: middle
+		min-width: 40px
+		text-align: right
+		color: #f44242
+		font-size: 16px
+		+fbold 

@@ -104,6 +104,8 @@ $(document).ready(function() {
 
         });  
     }
+
+    
         
     var overlay = $(".js-overlay");
     var popup = $(".js-popup");
@@ -177,5 +179,33 @@ $(document).ready(function() {
             }
         });
     }
+
+    $("body").prepend( '<div class="tooltip js-tooltip"><div class="tooltip__in"></div></div>' );
+    var tooltip = $(".js-tooltip");
+
+    $(".js-tooltip-key").hover(
+        function(){
+            var left = $(this).offset().left;
+            var top = $(this).offset().top + $(this).height();
+            var tooltip_html = $(this).attr("data-html");
+            tooltip.css({
+                left: left,
+                top: top
+            });
+            tooltip.find(".tooltip__in").html(tooltip_html).fadeIn("fast");
+            tooltip.fadeIn("fast");
+        },
+        function() {
+            tooltip.hide();
+        }
+    );
+    tooltip.hover(
+        function(){
+            tooltip.show();
+        },
+        function() {
+            tooltip.hide(); 
+        }
+    );
 
 });  

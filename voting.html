@@ -9,6 +9,7 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.cycle2.js"></script>
 	<script src="js/jquery.countdown.js"></script>
+	<script src="js/jsapi.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -40,7 +41,42 @@
 	<div class="main">
 		<h1 class="title title_h1 is-orange"><span>ХОД ГОЛОСОВАНИЯ</span></h1>
 		<div class="graph-section">
-			<img src="img/graph3.png" alt="">
+			<div class="map-interact">
+				<div class="map-svg"></div>
+				<div class="map-marker js-tooltip-key" style="top:300px;left:200px" data-html="
+					<div class='tooltip__title'>Дальневосточный федеральный округ</div> 
+					<div class='tooltip__info'>
+						<span>658</span>
+						Участников
+					</div> 
+					<div class='tooltip__info'>
+						<span>1256</span>
+						Проголосовавших
+					</div> 
+				"></div>
+				<div class="map-marker js-tooltip-key" style="top:200px;left:300px" data-html="
+					<div class='tooltip__title'>Дальневосточный федеральный округ</div> 
+					<div class='tooltip__info'>
+						<span>658</span>
+						Участников
+					</div> 
+					<div class='tooltip__info'>
+						<span>1256</span>
+						Проголосовавших
+					</div> 
+				"></div>
+				<div class="map-marker js-tooltip-key" style="top:400px;left:500px" data-html="
+					<div class='tooltip__title'>Дальневосточный федеральный округ</div> 
+					<div class='tooltip__info'>
+						<span>658</span>
+						Участников
+					</div> 
+					<div class='tooltip__info'>
+						<span>1256</span>
+						Проголосовавших
+					</div> 
+				"></div>
+			</div>
 		</div>
 		<div class="filter">
 			<div class="filter__row">
@@ -115,6 +151,114 @@
 						</ul>
 					</div>
 				</div>
+			</div>
+		</div>
+		<div class="graph">
+			<div class="graph__main">
+				<div id="donutchart2" style="width: 350px; height: 350px;"></div>
+				<div class="donutchart-counter">
+					<span>387564</span>
+					участников
+				</div>	
+				<script>
+					var 
+						azure = '#47c2eb';
+						lime = '#79e89b';
+						orange = '#f77e35';
+						blue = '#5a8fe0';
+						green = '#aed852';
+						pink = '#ff74ac';
+						red = '#ff8686';
+						yellow = '#fff448';
+				    google.load("visualization", "1", {packages:["corechart"]});
+				    google.setOnLoadCallback(drawChart);
+				    function drawChart() {
+				        var data = google.visualization.arrayToDataTable([
+				          ['Task', 'Hours per Day'],
+				          ['Work',     11],
+				          ['Eat',      2],
+				          ['Commute',  2],
+				          ['Watch TV', 2],
+				          ['Part6',    7],
+				          ['Part7',    7],
+				          ['Part8',    7],
+				          ['Part9',    7]
+				        ]);
+
+				        var options = {
+				          	pieHole: 0.7,
+				          	legend: 'none',
+				          	pieSliceText: 'none',
+				          	colors: [
+				          		azure,
+								lime,
+								orange,
+								blue,
+								green,
+								pink,
+								red,
+								yellow
+							]
+
+				        };
+
+				        var chart = new google.visualization.PieChart(document.getElementById('donutchart2'));
+				        chart.draw(data, options);
+				    }
+				</script>
+			</div>
+			<div class="graph__table">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>федеральный округ</th>
+							<th>кол-во участников</th>
+							<th>Региональный лидер</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><i class="color is-azure"></i>Центральный федеральный округ</td>
+							<td>180976</td>
+							<td>ООО “Овощной Рай”</td>
+						</tr>
+						<tr>
+							<td><i class="color is-lime"></i>Центральный федеральный округ</td>
+							<td>180976</td>
+							<td>ООО “Овощной Рай”</td>
+						</tr>
+						<tr>
+							<td><i class="color is-orange"></i>Центральный федеральный округ</td>
+							<td>180976</td>
+							<td>ООО “Овощной Рай”</td>
+						</tr>
+						<tr>
+							<td><i class="color is-blue"></i>Центральный федеральный округ</td>
+							<td>180976</td>
+							<td>ООО “Овощной Рай”</td>
+						</tr>
+						<tr>
+							<td><i class="color is-green"></i>Центральный федеральный округ</td>
+							<td>180976</td>
+							<td>ООО “Овощной Рай”</td>
+						</tr>
+						<tr>
+							<td><i class="color is-pink"></i>Центральный федеральный округ</td>
+							<td>180976</td>
+							<td>ООО “Овощной Рай”</td>
+						</tr>
+						<tr>
+							<td><i class="color is-red"></i>Центральный федеральный округ</td>
+							<td>180976</td>
+							<td>ООО “Овощной Рай”</td>
+						</tr>
+						<tr>
+							<td><i class="color is-yellow"></i>Центральный федеральный округ</td>
+							<td>180976</td>
+							<td>ООО “Овощной Рай”</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
 		<h2 class="title title_h2 to-left is-red"><span>Сводная таблица результатов</span></h2>

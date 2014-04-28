@@ -1,0 +1,241 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Popup voting</title>
+	<link rel="stylesheet" media="screen" href="css/screen.css">
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.cycle2.js"></script>
+	<script src="js/jquery.countdown.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body class="has-open-popup">
+<!-- BEGIN  l-layout-->
+<div class="l-layout">
+	<!-- BEGIN  header-->
+	<header class="header">
+		<div class="l-container">
+			<a href="#" class="logo"></a>
+			<div class="search-form">
+				<input type="submit" class="search-form__btn">
+				<input type="text" class="search-form__text">
+				<div class="user-enter"><a href="#" class="user-enter__img"></a></div>
+			</div>
+			<ul class="menu">
+				<li class="is-active"><a href="#">Главная</a></li>
+				<li><a href="#">О премии</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Ход голосования</a></li>
+				<li><a href="#">Каталог участников</a></li>
+				<li><a href="#">База знаний</a></li>
+				<li><a href="#">Пресс рум</a></li>
+			</ul>
+			
+		</div>
+	</header>
+	<!-- END header-->
+	<div class="slider">
+		<div class="cycle-slideshow" 
+		    data-cycle-fx="scrollHorz"
+		    data-cycle-speed="500"
+		    data-cycle-timeout="5000"
+		    data-cycle-slides=".js-slider-item"
+		    data-cycle-pager=".js-slider-pager"
+		    data-cycle-pager-template="<button></button>"
+		    data-cycle-pager-active-class="is-active"
+		    >
+		    <div class="slider__item js-slider-item">
+		    	<div><img src="img/slide1.png" alt=""></div>
+		    </div>
+		    <div class="slider__item js-slider-item">
+		    	<div><img src="img/slide2.png" alt=""></div>
+		    </div>
+		    <div class="slider__item js-slider-item">
+		    	<div><img src="img/slide3.png" alt=""></div>
+		    </div>
+		    <div class="slider__item js-slider-item">
+		    	<div><img src="img/slide4.png" alt=""></div>
+		    </div>
+		    <div class="slider__item js-slider-item">
+		    	<div><img src="img/slide5.png" alt=""></div>
+		    </div>
+		    <div class="slider__item js-slider-item">
+		    	<div><img src="img/slide6.png" alt=""></div>
+		    </div>
+		</div>
+		<div class="l-container">
+			<div class="pager js-slider-pager"></div>
+			<div class="reg-form">
+				<div class="reg-form__title">РЕГИСТРАЦИЯ УЧАСТНИКА</div>
+				<form action="">
+					<div class="input-wrap">
+						<input type="text" class="input" placeholder="Название организации">
+					</div>
+					<div class="input-wrap">
+						<input type="tel" class="input" placeholder="Телефон">
+					</div>
+					<div class="input-wrap">
+						<input type="email" class="input" placeholder="Email">
+					</div>
+					<div class="input-wrap">
+						<input type="text" class="input" placeholder="ИНН">
+					</div>
+					<input type="submit" class="btn" value="ВЫДВИНУТЬ КОМПАНИЮ">
+				</form>
+				<div class="reg-form__soc">
+					<div class="reg-form__line">
+						<span><i></i></span>
+					</div>
+					<div class="reg-form__title">ВОЙТИ И ПРОГОЛОСОВАТЬ</div>
+					<div class="soc-enter">
+						<a href="#" class="soc-enter__fb"><i></i></a>
+						<a href="#" class="soc-enter__vk"><i></i></a>
+						<a href="#" class="soc-enter__od"><i></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="start">
+			<div class="start__in">
+				<div class="start__img"><img src="img/start.png" alt=""></div>
+				<div class="counter">
+					<div class="counter__digit js-counter"></div>
+					<div class="counter__wrap">
+						<span class="counter__label">Дней</span>
+						<span class="counter__label">Часов</span>
+						<span class="counter__label">минут</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h2 class="title title_h2 is-red"><span>ОРГАНИЗАТОРЫ</span></h2>
+		<div class="org">
+			<a href="#"><img src="img/org1.png" alt=""></a>
+			<a href="#"><img src="img/org2.png" alt=""></a>
+			<a href="#"><img src="img/org3.png" alt=""></a>
+			<a href="#"><img src="img/org4.png" alt=""></a>
+		</div>
+		<h2 class="title title_h2 title_570 is-orange"><span>НОВОСТИ</span></h2>
+		<div class="wrapper">
+			<div class="post-item-wrap">
+				<div class="post-item">
+					<a href="#" class="post-item__title">ТОРГОВЛЯ КАК УСЛУГА </a>
+					<div class="post-item__descr">Значит, главное  для  нас  - не  уподобляться овцам,  которые всегда бегут вслед  за стадом, направляясь не туда, куда  нужно, а  туда,  куда все идут. Нет на свете вещи, навлекающей  на нас больше зол и бед,  чем привычка сообразовываться   с общественным</div>
+					<div class="post-item__more"><a href="#">Читать дальше ...</a></div>
+				</div>	
+				<div class="post-item">
+					<a href="#" class="post-item__title">ТОРГОВЛЯ КАК УСЛУГА </a>
+					<div class="post-item__descr">Значит, главное  для  нас  - не  уподобляться овцам,  которые всегда бегут вслед</div>
+					<div class="post-item__more"><a href="#">Читать дальше ...</a></div>
+				</div>	
+				<div class="post-item">
+					<a href="#" class="post-item__title">ТОРГОВЛЯ КАК УСЛУГА </a>
+					<div class="post-item__descr">Значит, главное  для  нас  - не  уподобляться овцам,  которые всегда бегут вслед  за стадом, направляясь не туда, куда  нужно, а  туда,  куда все идут. Нет на свете вещи, навлекающей  на нас больше зол и бед,  чем привычка сообразовываться   с общественным</div>
+					<div class="post-item__more"><a href="#">Читать дальше ...</a></div>
+				</div>
+				<div class="post-item">
+					<a href="#" class="post-item__title">ТОРГОВЛЯ КАК УСЛУГА </a>
+					<div class="post-item__descr">Значит, главное  для  нас  - не  уподобляться овцам,  которые всегда бегут вслед  за стадом, направляясь не туда, куда  нужно, а  туда,  куда все идут. Нет на свете вещи, навлекающей  на нас больше зол и бед,  чем привычка сообразовываться   с общественным</div>
+					<div class="post-item__more"><a href="#">Читать дальше ...</a></div>
+				</div>	
+				<div class="post-item">
+					<a href="#" class="post-item__title">ТОРГОВЛЯ КАК УСЛУГА </a>
+					<div class="post-item__descr">Значит, главное  для  нас  - не  уподобляться овцам,  которые всегда бегут вслед  за стадом, направляясь не туда, куда  нужно, а  туда,  куда все идут. Нет на свете вещи, навлекающей  на нас больше зол и бед,  чем привычка сообразовываться   с общественным</div>
+					<div class="post-item__more"><a href="#">Читать дальше ...</a></div>
+				</div>	
+				<div class="post-item">
+					<a href="#" class="post-item__title">ТОРГОВЛЯ КАК УСЛУГА </a>
+					<div class="post-item__descr">Значит, главное  для  нас  - не  уподобляться овцам,  которые всегда бегут вслед  за стадом, направляясь не туда, куда  нужно, а  туда,  куда все идут. Нет на свете вещи, навлекающей  на нас больше зол и бед,  чем привычка сообразовываться   с общественным</div>
+					<div class="post-item__more"><a href="#">Читать дальше ...</a></div>
+				</div>	
+			</div>
+		</div>
+		<div class="banner">
+			<a href="#"><img src="http://lorempixel.com/728/90/food/" alt=""></a>
+		</div>
+		<div class="partners">
+			<h4 class="title title_h4 is-green"><span>партнеры</span></h4>
+			<div class="partners__in">
+				<a href="#"><img src="img/partner1.png" alt=""></a>
+				<a href="#"><img src="img/partner2.png" alt=""></a>
+				<a href="#"><img src="img/partner3.png" alt=""></a>
+				<a href="#"><img src="img/partner4.png" alt=""></a>
+				<a href="#"><img src="img/partner5.png" alt=""></a>
+				<a href="#"><img src="img/partner6.png" alt=""></a>
+			</div>
+		</div>
+	</div>
+	<!-- BEGIN  push-->
+	<div class="push"></div>
+	<!-- END push-->
+</div>
+<!-- END l-layout-->
+<footer class="footer">
+	<div class="l-container">
+		<div class="wrap">
+			<div class="footer__col footer__cont">
+				<div class="footer__title">КОНТАКТНАЯ ИНФОРМАЦИЯ</div>
+				<div>
+					<p>Paseo de las Illetas, 7 </p>
+					<p>Majorca - Illetas 07184</p>
+				</div>
+				<div>
+					<p>Тел: (044) 971 402511 </p>
+					<p>Факс: (044) 971 405852</p>
+				</div>
+			</div>
+			<div class="footer__col footer__soc">
+				<div class="footer__title">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</div>
+				<div class="soc-counter">
+					<a href="#" class="soc-counter__fb"><i></i><span>2564</span></a>
+					<a href="#" class="soc-counter__vk"><i></i><span>2564</span></a>
+					<a href="#" class="soc-counter__od"><i></i><span>2564</span></a>
+				</div>
+			</div>
+			<div class="footer__col footer__feedback">
+				<div class="footer__title">ОБРАТНАЯ СВЯЗЬ</div>
+				<div class="input-wrap">
+					<input type="email" class="input input_s" placeholder="Email">
+				</div>
+				<div class="input-wrap">
+					<textarea class="input input_s input_textarea"></textarea>
+				</div>
+				<input type="submit" class="btn-action" value="ОТПРАВИТЬ">
+			</div>
+		</div>
+		<div class="footer__copy">
+			&copy; 2014 Все права защищены
+		</div> 
+	</div>
+</footer>
+<div class="overlay js-overlay" style="display:block">
+	<div class="popup js-popup">
+		<div class="popup__title">
+			<i></i>
+			<span>Войти</span>
+		</div>
+		<div class="input-wrap has-valid-error">
+			<label class="input-label">
+				<input type="email" class="input" placeholder="email" value="arkadiy#ukupnik.com">
+			</label>
+			<div class="input-error" style="display:block">
+				<span>Некоректный Email</span>
+			</div>
+		</div>
+		<div class="input-wrap">
+			<label class="input-label">
+				<input type="password" class="input" placeholder="password">
+			</label>
+		</div>
+		<input type="submit" class="btn" value="ВОЙТИ">
+		<div class="soc-enter soc-enter_width">
+			<a href="#" class="soc-enter__fb">ВОЙТИ через facebook</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>

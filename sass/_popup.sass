@@ -1,0 +1,69 @@
+.overlay
+    display: none
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 10000
+    overflow-y: auto
+    overflow-x: hidden
+    background: rgba(#0b597d,.95) 
+.popup
+    position: absolute
+    top: 50%
+    left: 50%
+    margin-left: -288px
+    width: 576px
+    z-index: 20000
+    padding: 17px 45px 38px
+    background: #fffcf4 
+    +box
+    +box-shadow(0 0 0 1px rgba(0,0,0,.19))
+    &:before
+        content: ""
+        position: absolute
+        left: -20px
+        top: 0
+        +arr(20,20,#ffd053,br)
+    &:after
+        content: ""
+        position: absolute
+        right: -20px
+        bottom: 0
+        +arr(20,20,#ffd053,tl)
+$popup_enter_height: 392px
+$popup_enter_width: 374px
+.popup_enter
+    margin: (-($popup_enter_height/2)) 0 0 (-($popup_enter_width/2))
+    height: $popup_enter_height
+    width: $popup_enter_width 
+    background: #fff
+    &:before
+        +arr(20,20,#ff7800,br)
+    &:after
+        +arr(20,20,#ff7800,tl)
+    .btn
+        display: block
+        margin: 27px auto 18px
+        width: 264px
+        +box
+    .soc-enter_width
+        position: relative
+        margin: 18px auto 0
+        padding-top: 20px
+        width: 264px
+        background: url(../img/wave-orange.png) 0 0 repeat-x 
+    .popup__title
+        i
+            display: block
+            margin: 0 auto 21px
+            +s(rocket-full)
+.popup__title
+    margin: 0 0 19px 
+    +fbold
+    font-size: 18px
+    text-transform: uppercase
+    text-align: center
+    color: #313131
+    

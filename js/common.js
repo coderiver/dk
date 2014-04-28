@@ -7,7 +7,7 @@ $(document).ready(function() {
 
     if ($(".js-counter").length) {
         $(".js-counter").countdown({
-            until: new Date(2014, 3, 22, 23, 55),
+            until: new Date(2014, 5, 22, 23, 55),
             format: 'dhm',
             compact: true,
             layout: '{d<}<div class="counter__d"><span>{dn} {dl}</span></div>{d>}{h<}<div class="counter__h"><span>{hn} {hl}</span></div>{h>}' + 
@@ -90,7 +90,7 @@ $(document).ready(function() {
     // }
     // tab();
 
-    $(".js-edit-news").on("click", function(){
+    $("body").on("click",".js-edit-news", function(){
         $(this).hide();
         $(this).parents(".js-news").find(".js-news-text").attr("contenteditable","true").addClass("input input_textarea");
         $(this).parents(".js-news").find(".js-news-title").attr("contenteditable","true").addClass("input");

@@ -11,7 +11,7 @@
     background: rgba(#0b597d,.95) 
 .popup
     position: absolute
-    top: 50%
+    top: 188px
     left: 50%
     margin-left: -288px
     width: 576px
@@ -19,6 +19,9 @@
     padding: 17px 45px 38px
     background: #fffcf4 
     +box
+    font-size: 16px
+    text-align: center
+    +fmed
     +box-shadow(0 0 0 1px rgba(0,0,0,.19))
     &:before
         content: ""
@@ -32,9 +35,23 @@
         right: -20px
         bottom: 0
         +arr(20,20,#ffd053,tl)
+    p
+        margin-bottom: 17px
+        &:last-child
+            margin-bottom: 0
+        &:first-child
+            margin-bottom: 17px
+    i
+        +fmedit
+    strong
+        font-weight: normal
+        +fbold
+    a
+        color: #43baff
 $popup_enter_height: 392px
 $popup_enter_width: 374px
 .popup_enter
+    top: 50%
     margin: (-($popup_enter_height/2)) 0 0 (-($popup_enter_width/2))
     height: $popup_enter_height
     width: $popup_enter_width 
@@ -55,15 +72,60 @@ $popup_enter_width: 374px
         width: 264px
         background: url(../img/wave-orange.png) 0 0 repeat-x 
     .popup__title
+        //margin: 0 0 19px 
         i
             display: block
             margin: 0 auto 21px
             +s(rocket-full)
+.popup_small
+    padding: 23px 45px 17px 
+    width: 325px
+    margin-left: -162px
+    background: #fff
+.popup_error
+    &:before
+        +arr(20,20,#ff4d4d,br)
+    &:after
+        +arr(20,20,#ff4d4d,tl)
+.popup__main-text
+    font-size: 20px
+.popup__tel
+    color: $red 
 .popup__title
-    margin: 0 0 19px 
+    margin-bottom: 19px
     +fbold
     font-size: 18px
     text-transform: uppercase
     text-align: center
     color: #313131
-    
+.icon-crown
+    display: inline-block
+    margin: 38px 0 0 
+    +s(crown)
+.icon-cup-big
+    display: inline-block
+    margin: 20px 0 -20px
+    +s(cup-big)
+.icon-window
+    display: inline-block
+    margin: 2px 0 -10px
+    +s(window)
+.icon-list
+    display: inline-block
+    margin: 10px 0 0
+    +s(list)
+.icon-horn
+    display: inline-block
+    margin: 10px 0 -10px
+    +s(horn)
+.icon-rocket-down
+    display: inline-block
+    margin: 3px 0 0
+    +s(rocket-down)  
+.icon-rocket-top
+    display: inline-block
+    margin: 0 0 14px
+    +s(rocket-top)
+.popup__note
+    font-size: 12px
+    +fitalic

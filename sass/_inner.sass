@@ -1,3 +1,4 @@
+@charset "utf-8"
 .article
 	padding-right: 15px
 	letter-spacing: .4px 
@@ -805,7 +806,8 @@ $cat: cat-car,cat-store,cat-food,cat-cosmetics,cat-clothes,cat-home,cat-service,
 		position: relative
 		padding-left: 7px
 		&:before
-			content: "•" 
+			//!!!!!!!!
+			content: "•"
 			position: absolute
 			left: 0
 			top: 0
@@ -1103,5 +1105,15 @@ $cat: cat-car,cat-store,cat-food,cat-cosmetics,cat-clothes,cat-home,cat-service,
 		margin-bottom: 11px
 		padding: 11px 0 10px 
 		width: 100%  	
-		
+	&.sidebar_tabs1
+		width: auto 
+		float: none
+		.step
+			float: left
+			width: 212px 
+			margin-right: 44px 
+		.ui-tabs-panel 
+			overflow: hidden
+.panels
+	overflow: hidden
 		

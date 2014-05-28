@@ -245,7 +245,9 @@ $yellow: #fff448
         display: block
         +fbold
         font-size: 36px
-        
+     
+.map-interact
+    position: relative   
 .map-svg
     position: relative
     width: 850px
@@ -259,6 +261,11 @@ $yellow: #fff448
         left: 0
         width: 51%
         background: rgba(#fff, .2)  
+.map-interact_middle
+    .map-svg
+        width: 710px
+        height: 410px
+        +svgi(map, 710, 410)
 .map-marker
     position: absolute
     +s(marker)

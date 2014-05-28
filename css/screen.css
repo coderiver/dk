@@ -917,7 +917,9 @@ a:hover { text-decoration: underline; }
 .sidebar.sidebar_tabs1 .step { float: left; width: 212px; margin-right: 44px; }
 .sidebar.sidebar_tabs1 .ui-tabs-panel { overflow: hidden; }
 
-.panels { overflow: hidden; }
+.panels .table-result-wrap:after { display: none; }
+
+.panels__in { overflow: hidden; }
 
 .table-result-wrap { position: relative; padding-bottom: 33px; z-index: 2; }
 .table-result-wrap:after { content: ""; position: absolute; bottom: -7px; left: 0; right: 0; height: 7px; background: url(../img/section-bg2.png) 0 0 repeat; }
@@ -998,8 +1000,12 @@ a:hover { text-decoration: underline; }
 .donutchart-counter { position: absolute; top: 145px; left: 104px; width: 142px; text-align: center; color: #343434; text-transform: uppercase; font-size: 12px; }
 .donutchart-counter span { display: block; font-family: "roboto-bold", Arial, sans-serif; font-size: 36px; }
 
+.map-interact { position: relative; }
+
 .map-svg { position: relative; width: 850px; height: 500px; background: url("../img/svg/map.svg") no-repeat 0 0; -webkit-background-size: 860px 500px; -moz-background-size: 860px 500px; -o-background-size: 860px 500px; background-size: 860px 500px; }
 .map-svg:before { content: ""; position: absolute; top: 0; bottom: 0; left: 0; width: 51%; background: rgba(255, 255, 255, 0.2); }
+
+.map-interact_middle .map-svg { width: 710px; height: 410px; background: url("../img/svg/map.svg") no-repeat 0 0; -webkit-background-size: 710px 410px; -moz-background-size: 710px 410px; -o-background-size: 710px 410px; background-size: 710px 410px; }
 
 .map-marker { position: absolute; background: url('../img/icons-s0f7da0f80c.png') 0 -441px no-repeat; width: 41px; height: 62px; }
 

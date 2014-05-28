@@ -46,7 +46,7 @@
 		<div class="sidebar sidebar_tabs">
 			<ul class="step step_nav step_vertical">   
 				<li class="step__item">
-					<a href="#mygraph"><span>Статистика по зарегистрированным участникам</span></a>
+					<a href="#graph1"><span>Статистика по зарегистрированным участникам</span></a>
 				</li>
 				<li class="step__item">
 					<a href="ajax/ajax-tab2.html"><span>Статистика по рекламному охвату</span></a>
@@ -67,130 +67,126 @@
 
 </div>
 <!-- end sidebar -->
-
-
-
 <div class="panels">
-		<!-- ======================================= -->
-	<div class="partner-cab1" id="mygraph" hidden>	
-	<div class="graph-section">
-		<div class="graph-section__top">
-			<div class="choose-date">
-				<span>за период с</span>
-				<div class="input-date">
-					<input type="text" class="input js-date js-date-from">
-					<i></i>
+<!-- ======================================= -->
+	<div class="partner-cab1" id="graph1" hidden>	
+		<div class="graph-section">
+			<div class="graph-section__top">
+				<div class="choose-date">
+					<span>за период с</span>
+					<div class="input-date">
+						<input type="text" class="input js-date js-date-from">
+						<i></i>
+					</div>
+					<span>по</span>
+					<div class="input-date">
+						<input type="text" class="input js-date js-date-to">
+						<i></i>
+					</div>
 				</div>
-				<span>по</span>
-				<div class="input-date">
-					<input type="text" class="input js-date js-date-to">
-					<i></i>
+				<div class="graph-section__meta">
+					всего участников <span>286231</span>
 				</div>
 			</div>
-			<div class="graph-section__meta">
-				всего участников <span>286231</span>
+			<div class="graph">
+				<div class="graph__main">
+					<div id="chart_div" style="width: 940px; height: 350px;left:-94px"></div>
+					<script>
+					 var 
+							azure = '#47c2eb';
+							lime = '#79e89b';
+							orange = '#f77e35';
+							blue = '#5a8fe0';
+							green = '#aed852';
+							pink = '#ff74ac';
+							red = '#ff8686';
+							yellow = '#fff448';
+				      google.load("visualization", "1", {packages:["corechart"]});
+				      google.setOnLoadCallback(drawChart);
+				      function drawChart() {
+				        var data = google.visualization.arrayToDataTable([
+				          ['Year', 'Graph1'],
+				          ['1',  900],
+				          ['8',  1500],
+				          ['15',  100],
+				          ['22',  2000],
+				          ['29',  1500]
+				        ]);
+
+				        var options = {
+				        	legend: 'none',
+			          		colors: [
+			          			'#da4453',
+								lime,
+								orange,
+								blue,
+								green,
+								pink,
+								azure,
+								yellow
+							]
+				        };
+
+				        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+				        chart.draw(data, options);
+				      }
+
+
+				    </script>
+
+				</div>
+			</div>
+			<div class="table-wrap">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>откуда пришли регистрирующиеся</th>
+							<th>кол-во</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>http://dovolny.ru</td>
+							<td>180976</td>
+						</tr>
+						<tr>
+							<td>http://dovolny.ru</td>
+							<td>180976</td>
+						</tr>
+						<tr>
+							<td>http://dovolny.ru</td>
+							<td>180976</td>
+						</tr>
+						<tr>
+							<td>http://dovolny.ru</td>
+							<td>180976</td>
+						</tr>
+						<tr>
+							<td>http://dovolny.ru</td>
+							<td>180976</td>
+						</tr>
+						<tr>
+							<td>http://dovolny.ru</td>
+							<td>180976</td>
+						</tr>
+						<tr>
+							<td>http://dovolny.ru</td>
+							<td>180976</td>
+						</tr>
+						<tr>
+							<td>http://dovolny.ru</td>
+							<td>180976</td>
+						</tr>
+						<tr>
+							<td>http://dovolny.ru</td>
+							<td>180976</td>
+						</tr>
+					</tbody>
+				</table>
+				<button class="btn-full-table"><i></i></button>
 			</div>
 		</div>
-		<div class="graph">
-			<div class="graph__main">
-				<div id="chart_div" style="width: 940px; height: 350px;left:-94px"></div>
-				<script>
-				 var 
-						azure = '#47c2eb';
-						lime = '#79e89b';
-						orange = '#f77e35';
-						blue = '#5a8fe0';
-						green = '#aed852';
-						pink = '#ff74ac';
-						red = '#ff8686';
-						yellow = '#fff448';
-			      google.load("visualization", "1", {packages:["corechart"]});
-			      google.setOnLoadCallback(drawChart);
-			      function drawChart() {
-			        var data = google.visualization.arrayToDataTable([
-			          ['Year', 'Graph1'],
-			          ['1',  900],
-			          ['8',  1500],
-			          ['15',  100],
-			          ['22',  2000],
-			          ['29',  1500]
-			        ]);
-
-			        var options = {
-			        	legend: 'none',
-		          		colors: [
-		          			'#da4453',
-							lime,
-							orange,
-							blue,
-							green,
-							pink,
-							azure,
-							yellow
-						]
-			        };
-
-			        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
-			        chart.draw(data, options);
-			      }
-
-
-			    </script>
-
-			</div>
-		</div>
-		<div class="table-wrap">
-			<table class="table">
-				<thead>
-					<tr>
-						<th>откуда пришли регистрирующиеся</th>
-						<th>кол-во</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>http://dovolny.ru</td>
-						<td>180976</td>
-					</tr>
-					<tr>
-						<td>http://dovolny.ru</td>
-						<td>180976</td>
-					</tr>
-					<tr>
-						<td>http://dovolny.ru</td>
-						<td>180976</td>
-					</tr>
-					<tr>
-						<td>http://dovolny.ru</td>
-						<td>180976</td>
-					</tr>
-					<tr>
-						<td>http://dovolny.ru</td>
-						<td>180976</td>
-					</tr>
-					<tr>
-						<td>http://dovolny.ru</td>
-						<td>180976</td>
-					</tr>
-					<tr>
-						<td>http://dovolny.ru</td>
-						<td>180976</td>
-					</tr>
-					<tr>
-						<td>http://dovolny.ru</td>
-						<td>180976</td>
-					</tr>
-					<tr>
-						<td>http://dovolny.ru</td>
-						<td>180976</td>
-					</tr>
-				</tbody>
-			</table>
-			<button class="btn-full-table"><i></i></button>
-		</div>
-	
 	</div>
-</div>
 <!-- ============================================ -->
 </div>
 	

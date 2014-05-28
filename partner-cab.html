@@ -49,16 +49,19 @@
 					<a href="#graph1"><span>Статистика по зарегистрированным участникам</span></a>
 				</li>
 				<li class="step__item">
-					<a href="ajax/ajax-tab2.html"><span>Статистика по рекламному охвату</span></a>
+					<a href="#graph2"><span>Статистика по голосованию</span></a>
 				</li>
 				<li class="step__item">
-					<a href="ajax/ajax-tab3.html"><span>Статистика по баннеру премии с логотипом партнера</span></a>
+					<a href="#graph3"><span>Статистика по рекламному охвату</span></a>
 				</li>
 				<li class="step__item">
-					<a href="ajax/ajax-tab4.html"><span>Статистика по переходам по брендированным ссылкам</span></a>
+					<a href="#graph4"><span>Статистика по баннеру премии с логотипом партнера</span></a>
 				</li>
 				<li class="step__item">
-					<a href="ajax/ajax-tab5.html"><span>Статистика по продажам</span></a>
+					<a href="#graph5"><span>Статистика по переходам по брендированным ссылкам</span></a>
+				</li>
+				<li class="step__item">
+					<a href="#graph6"><span>Статистика по продажам</span></a>
 				</li>
 
 			</ul>
@@ -69,124 +72,1085 @@
 <!-- end sidebar -->
 <div class="panels">
 <!-- ======================================= -->
-	<div class="partner-cab1" id="graph1" hidden>	
-		<div class="graph-section">
-			<div class="graph-section__top">
-				<div class="choose-date">
-					<span>за период с</span>
-					<div class="input-date">
-						<input type="text" class="input js-date js-date-from">
-						<i></i>
+	<div id="graph1" hidden>
+		<div class="panels__in">
+			<div class="graph-section">
+				<div class="graph-section__top">
+					<div class="choose-date">
+						<span>за период с</span>
+						<div class="input-date">
+							<input type="text" class="input js-date js-date-from">
+							<i></i>
+						</div>
+						<span>по</span>
+						<div class="input-date">
+							<input type="text" class="input js-date js-date-to">
+							<i></i>
+						</div>
 					</div>
-					<span>по</span>
-					<div class="input-date">
-						<input type="text" class="input js-date js-date-to">
-						<i></i>
+					<div class="graph-section__meta">
+						всего участников <span>286231</span>
 					</div>
 				</div>
-				<div class="graph-section__meta">
-					всего участников <span>286231</span>
+				<div class="graph">
+					<div class="graph__main">
+						<div id="chart_div" style="width: 940px; height: 350px;left:-94px"></div>
+						<script>
+						 var 
+								azure = '#47c2eb';
+								lime = '#79e89b';
+								orange = '#f77e35';
+								blue = '#5a8fe0';
+								green = '#aed852';
+								pink = '#ff74ac';
+								red = '#ff8686';
+								yellow = '#fff448';
+					      google.load("visualization", "1", {packages:["corechart"]});
+					      google.setOnLoadCallback(drawChart);
+					      function drawChart() {
+					        var data = google.visualization.arrayToDataTable([
+					          ['Year', 'Graph1'],
+					          ['1',  900],
+					          ['8',  1500],
+					          ['15',  100],
+					          ['22',  2000],
+					          ['29',  1500]
+					        ]);
+
+					        var options = {
+					        	legend: 'none',
+				          		colors: [
+				          			'#da4453',
+									lime,
+									orange,
+									blue,
+									green,
+									pink,
+									azure,
+									yellow
+								]
+					        };
+
+					        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+					        chart.draw(data, options);
+					      }
+
+
+					    </script>
+
+					</div>
+				</div>
+				<div class="table-wrap">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>откуда пришли регистрирующиеся</th>
+								<th>кол-во</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>http://dovolny.ru</td>
+								<td>180976</td>
+							</tr>
+							<tr>
+								<td>http://dovolny.ru</td>
+								<td>180976</td>
+							</tr>
+							<tr>
+								<td>http://dovolny.ru</td>
+								<td>180976</td>
+							</tr>
+							<tr>
+								<td>http://dovolny.ru</td>
+								<td>180976</td>
+							</tr>
+							<tr>
+								<td>http://dovolny.ru</td>
+								<td>180976</td>
+							</tr>
+							<tr>
+								<td>http://dovolny.ru</td>
+								<td>180976</td>
+							</tr>
+							<tr>
+								<td>http://dovolny.ru</td>
+								<td>180976</td>
+							</tr>
+							<tr>
+								<td>http://dovolny.ru</td>
+								<td>180976</td>
+							</tr>
+							<tr>
+								<td>http://dovolny.ru</td>
+								<td>180976</td>
+							</tr>
+						</tbody>
+					</table>
+					<button class="btn-full-table"><i></i></button>
 				</div>
 			</div>
-			<div class="graph">
-				<div class="graph__main">
-					<div id="chart_div" style="width: 940px; height: 350px;left:-94px"></div>
-					<script>
-					 var 
-							azure = '#47c2eb';
-							lime = '#79e89b';
-							orange = '#f77e35';
-							blue = '#5a8fe0';
-							green = '#aed852';
-							pink = '#ff74ac';
-							red = '#ff8686';
-							yellow = '#fff448';
-				      google.load("visualization", "1", {packages:["corechart"]});
-				      google.setOnLoadCallback(drawChart);
-				      function drawChart() {
+		</div>
+		<div class="graph">
+			<div class="graph__main">
+				<div id="donutchart0" style="width: 350px; height: 350px;"></div>
+				<div class="donutchart-counter">
+					<span>387564</span>
+					участников
+				</div>	
+				<script>
+					var 
+						azure = '#47c2eb';
+						lime = '#79e89b';
+						orange = '#f77e35';
+						blue = '#5a8fe0';
+						green = '#aed852';
+						pink = '#ff74ac';
+						red = '#ff8686';
+						yellow = '#fff448';
+				    google.load("visualization", "1", {packages:["corechart"]});
+				    google.setOnLoadCallback(drawChart);
+				    function drawChart() {
 				        var data = google.visualization.arrayToDataTable([
-				          ['Year', 'Graph1'],
-				          ['1',  900],
-				          ['8',  1500],
-				          ['15',  100],
-				          ['22',  2000],
-				          ['29',  1500]
+				          ['Task', 'Hours per Day'],
+				          ['Work',     11],
+				          ['Eat',      2],
+				          ['Commute',  2],
+				          ['Watch TV', 2],
+				          ['Part6',    7],
+				          ['Part7',    7],
+				          ['Part8',    7],
+				          ['Part9',    7]
 				        ]);
 
 				        var options = {
-				        	legend: 'none',
-			          		colors: [
-			          			'#da4453',
+				          	pieHole: 0.7,
+				          	legend: 'none',
+				          	pieSliceText: 'none',
+				          	colors: [
+				          		azure,
 								lime,
 								orange,
 								blue,
 								green,
 								pink,
-								azure,
+								red,
 								yellow
 							]
+
 				        };
 
-				        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+				        var chart = new google.visualization.PieChart(document.getElementById('donutchart0'));
 				        chart.draw(data, options);
-				      }
-
-
-				    </script>
-
-				</div>
+				    }
+				</script>
 			</div>
-			<div class="table-wrap">
+			<div class="graph__table">
 				<table class="table">
 					<thead>
 						<tr>
-							<th>откуда пришли регистрирующиеся</th>
-							<th>кол-во</th>
+							<th>федеральный округ</th>
+							<th>кол-во участников</th>
+							<th>Региональный лидер</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>http://dovolny.ru</td>
+							<td><i class="color is-azure"></i>Центральный федеральный округ</td>
 							<td>180976</td>
+							<td>ООО “Овощной Рай”</td>
 						</tr>
 						<tr>
-							<td>http://dovolny.ru</td>
+							<td><i class="color is-lime"></i>Центральный федеральный округ</td>
 							<td>180976</td>
+							<td>ООО “Овощной Рай”</td>
 						</tr>
 						<tr>
-							<td>http://dovolny.ru</td>
+							<td><i class="color is-orange"></i>Центральный федеральный округ</td>
 							<td>180976</td>
+							<td>ООО “Овощной Рай”</td>
 						</tr>
 						<tr>
-							<td>http://dovolny.ru</td>
+							<td><i class="color is-blue"></i>Центральный федеральный округ</td>
 							<td>180976</td>
+							<td>ООО “Овощной Рай”</td>
 						</tr>
 						<tr>
-							<td>http://dovolny.ru</td>
+							<td><i class="color is-green"></i>Центральный федеральный округ</td>
 							<td>180976</td>
+							<td>ООО “Овощной Рай”</td>
 						</tr>
 						<tr>
-							<td>http://dovolny.ru</td>
+							<td><i class="color is-pink"></i>Центральный федеральный округ</td>
 							<td>180976</td>
+							<td>ООО “Овощной Рай”</td>
 						</tr>
 						<tr>
-							<td>http://dovolny.ru</td>
+							<td><i class="color is-red"></i>Центральный федеральный округ</td>
 							<td>180976</td>
+							<td>ООО “Овощной Рай”</td>
 						</tr>
 						<tr>
-							<td>http://dovolny.ru</td>
+							<td><i class="color is-yellow"></i>Центральный федеральный округ</td>
 							<td>180976</td>
-						</tr>
-						<tr>
-							<td>http://dovolny.ru</td>
-							<td>180976</td>
+							<td>ООО “Овощной Рай”</td>
 						</tr>
 					</tbody>
 				</table>
-				<button class="btn-full-table"><i></i></button>
 			</div>
 		</div>
 	</div>
+	<div id="graph2" hidden>
+		<div class="panels__in">
+			<div class="graph-section">
+				<div class="map-interact map-interact_middle">
+					<div class="map-svg"></div>
+					<div class="map-marker js-tooltip-key" style="top:150px;left:200px" data-html="
+						<div class='tooltip__title'>Дальневосточный федеральный округ</div> 
+						<div class='tooltip__info'>
+							<span>658</span>
+							Участников
+						</div> 
+						<div class='tooltip__info'>
+							<span>1256</span>
+							Проголосовавших
+						</div> 
+					"></div>
+					<div class="map-marker js-tooltip-key" style="top:200px;left:300px" data-html="
+						<div class='tooltip__title'>Дальневосточный федеральный округ</div> 
+						<div class='tooltip__info'>
+							<span>658</span>
+							Участников
+						</div> 
+						<div class='tooltip__info'>
+							<span>1256</span>
+							Проголосовавших
+						</div> 
+					"></div>
+					<div class="map-marker js-tooltip-key" style="top:100px;left:500px" data-html="
+						<div class='tooltip__title'>Дальневосточный федеральный округ</div> 
+						<div class='tooltip__info'>
+							<span>658</span>
+							Участников
+						</div> 
+						<div class='tooltip__info'>
+							<span>1256</span>
+							Проголосовавших
+						</div> 
+					"></div>
+				</div>
+			</div>
+			<div class="filter">
+				<div class="filter__row">
+					<div class="filter__left">
+						<div class="filter__icon"><i class="icon-cup"></i></div>
+						<div class="filter__name">номинации</div>
+					</div>  
+					<div class="filter__right">
+						<div class="select js-select">
+							<span class="select__text js-select-text">РОЗНИЦА: ПРОДУКТЫ</span>
+							<input type="hidden" class="js-select-input" value="0">
+							<ul class="select__list js-select-list">
+								<li data-id="0">РОЗНИЦА: ПРОДУКТЫ</li>
+								<li data-id="1">Форма собственности1</li>
+								<li data-id="2">Форма собственности2</li>
+								<li data-id="3">Форма собственности3</li>
+								<li data-id="3">Форма собственности3</li>
+								<li data-id="3">Форма собственности3</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="filter__row">
+					<div class="filter__left">
+						<div class="filter__icon"><i class="icon-pointer"></i></div>
+						<div class="filter__name">Размеру населенного пункта</div>
+					</div>  
+					<div class="filter__right">
+						<div class="select js-select">
+							<span class="select__text js-select-text">ВСЕ</span>
+							<input type="hidden" class="js-select-input" value="0">
+							<ul class="select__list js-select-list">
+								<li data-id="0">ВСЕ</li>
+								<li data-id="1">Форма собственности1</li>
+								<li data-id="2">Форма собственности2</li>
+								<li data-id="3">Форма собственности3</li>
+								<li data-id="3">Форма собственности3</li>
+								<li data-id="3">Форма собственности3</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="filter__row">
+					<div class="filter__left">
+						<div class="filter__icon"><i class="icon-diamond"></i></div>
+						<div class="filter__name">Размеру Предприятия</div>
+					</div>  
+					<div class="filter__right">
+						<div class="select js-select">
+							<span class="select__text js-select-text">ВСЕ</span>
+							<input type="hidden" class="js-select-input" value="0">
+							<ul class="select__list js-select-list">
+								<li data-id="0">ВСЕ</li>
+								<li data-id="1">Форма собственности1</li>
+								<li data-id="2">Форма собственности2</li>
+								<li data-id="3">Форма собственности3</li>
+								<li data-id="3">Форма собственности3</li>
+								<li data-id="3">Форма собственности3</li>
+								<li data-id="3">Форма собственности3</li>
+								<li data-id="3">Форма собственности3</li>
+								<li data-id="3">Форма собственности3</li>
+								<li data-id="3">Форма собственности3</li>
+								<li data-id="3">Форма собственности3</li>
+								<li data-id="3">Форма собственности3</li>
+								<li data-id="3">Форма собственности3</li>
+								<li data-id="3">Форма собственности3</li>
+								<li data-id="3">Форма собственности3</li>
+								<li data-id="3">Форма собственности3</li>
+								<li data-id="3">Форма собственности3</li>
+								<li data-id="3">Форма собственности3</li>
+								<li data-id="3">Форма собственности3</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="graph">
+			<div class="graph__main">
+				<div id="donutchart3" style="width: 350px; height: 350px;"></div>
+				<div class="donutchart-counter">
+					<span>387564</span>
+					участников
+				</div>	
+				<script>
+					var 
+						azure = '#47c2eb';
+						lime = '#79e89b';
+						orange = '#f77e35';
+						blue = '#5a8fe0';
+						green = '#aed852';
+						pink = '#ff74ac';
+						red = '#ff8686';
+						yellow = '#fff448';
+				    google.load("visualization", "1", {packages:["corechart"]});
+				    google.setOnLoadCallback(drawChart);
+				    function drawChart() {
+				        var data = google.visualization.arrayToDataTable([
+				          ['Task', 'Hours per Day'],
+				          ['Work',     11],
+				          ['Eat',      2],
+				          ['Commute',  2],
+				          ['Watch TV', 2],
+				          ['Part6',    7],
+				          ['Part7',    7],
+				          ['Part8',    7],
+				          ['Part9',    7]
+				        ]);
+
+				        var options = {
+				          	pieHole: 0.7,
+				          	legend: 'none',
+				          	pieSliceText: 'none',
+				          	colors: [
+				          		azure,
+								lime,
+								orange,
+								blue,
+								green,
+								pink,
+								red,
+								yellow
+							]
+
+				        };
+
+				        var chart = new google.visualization.PieChart(document.getElementById('donutchart3'));
+				        chart.draw(data, options);
+				    }
+				</script>
+			</div>
+			<div class="graph__table">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>федеральный округ</th>
+							<th>кол-во участников</th>
+							<th>Региональный лидер</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><i class="color is-azure"></i>Центральный федеральный округ</td>
+							<td>180976</td>
+							<td>ООО “Овощной Рай”</td>
+						</tr>
+						<tr>
+							<td><i class="color is-lime"></i>Центральный федеральный округ</td>
+							<td>180976</td>
+							<td>ООО “Овощной Рай”</td>
+						</tr>
+						<tr>
+							<td><i class="color is-orange"></i>Центральный федеральный округ</td>
+							<td>180976</td>
+							<td>ООО “Овощной Рай”</td>
+						</tr>
+						<tr>
+							<td><i class="color is-blue"></i>Центральный федеральный округ</td>
+							<td>180976</td>
+							<td>ООО “Овощной Рай”</td>
+						</tr>
+						<tr>
+							<td><i class="color is-green"></i>Центральный федеральный округ</td>
+							<td>180976</td>
+							<td>ООО “Овощной Рай”</td>
+						</tr>
+						<tr>
+							<td><i class="color is-pink"></i>Центральный федеральный округ</td>
+							<td>180976</td>
+							<td>ООО “Овощной Рай”</td>
+						</tr>
+						<tr>
+							<td><i class="color is-red"></i>Центральный федеральный округ</td>
+							<td>180976</td>
+							<td>ООО “Овощной Рай”</td>
+						</tr>
+						<tr>
+							<td><i class="color is-yellow"></i>Центральный федеральный округ</td>
+							<td>180976</td>
+							<td>ООО “Овощной Рай”</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<h2 class="title title_h2 to-left is-red"><span>Сводная таблица результатов</span></h2>
+		<div class="table-result-wrap">
+			<div class="l-container">
+				<table class="table-result table-result_fixed js-table-fixed">
+					<thead class="table-result__head">
+						<tr>
+							<th>#</th>
+						</tr>
+					</thead>
+					<tbody class="table-result__body">
+						<tr>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>1</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="table-result-wrap__in">
+					<table class="table-result table-result_main js-table">
+						<thead class="table-result__head">
+							<tr>
+								<th>Номинация</th>
+								<th>кол-во участников</th>
+								<th>Претендент на GrandPrix</th>
+								<th>кол-во участников в ЦФО</th>
+								<th>Региональный лидер в ЦФО</th>
+								<th>кол-во участников ЮФО</th>
+								<th>Региональный лидер в ЮФО</th>
+								<th>Номинация</th>
+								<th>кол-во участников</th>
+								<th>Претендент на GrandPrix</th>
+								<th>кол-во участников в ЦФО</th>
+								<th>Региональный лидер в ЦФО</th>
+								<th>кол-во участников ЮФО</th>
+								<th>Региональный лидер в ЮФО</th>
+								<th>Номинация</th>
+								<th>кол-во участников</th>
+								<th>Претендент на GrandPrix</th>
+								<th>кол-во участников в ЦФО</th>
+								<th>Региональный лидер в ЦФО</th>
+								<th>кол-во участников ЮФО</th>
+								<th>Региональный лидер в ЮФО</th>
+							</tr>
+						</thead>
+						<tbody class="table-result__body">
+							<tr>
+								<td>Автомобили: продажи и обслуживание</td>
+								<td>14567</td>
+								<td>ООо “Ноль”</td>
+								<td>1234</td>
+								<td> ЧП “Ойл”</td>
+								<td>234</td>
+								<td>ЧП “угар”</td>
+								<td>Автомобили: продажи и обслуживание</td>
+								<td>14567</td>
+								<td>ООо “Ноль”</td>
+								<td>1234</td>
+								<td> ЧП “Ойл”</td>
+								<td>234</td>
+								<td>ЧП “угар”</td>
+								<td>Автомобили: продажи и обслуживание</td>
+								<td>14567</td>
+								<td>ООо “Ноль”</td>
+								<td>1234</td>
+								<td> ЧП “Ойл”</td>
+								<td>234</td>
+								<td>ЧП “угар”</td>
+							</tr>
+							<tr>
+								<td>Автомобили: продажи и обслуживание</td>
+								<td>14567</td>
+								<td>ООо “Ноль”</td>
+								<td>1234</td>
+								<td> ЧП “Ойл”</td>
+								<td>234</td>
+								<td>ЧП “угар”</td>
+								<td>Автомобили: продажи и обслуживание</td>
+								<td>14567</td>
+								<td>ООо “Ноль”</td>
+								<td>1234</td>
+								<td> ЧП “Ойл”</td>
+								<td>234</td>
+								<td>ЧП “угар”</td>
+								<td>Автомобили: продажи и обслуживание</td>
+								<td>14567</td>
+								<td>ООо “Ноль”</td>
+								<td>1234</td>
+								<td> ЧП “Ойл”</td>
+								<td>234</td>
+								<td>ЧП “угар”</td>
+							</tr>
+							<tr>
+								<td>Автомобили: продажи и обслуживание</td>
+								<td>14567</td>
+								<td>ООо “Ноль”</td>
+								<td>1234</td>
+								<td> ЧП “Ойл”</td>
+								<td>234</td>
+								<td>ЧП “угар”</td>
+								<td>Автомобили: продажи и обслуживание</td>
+								<td>14567</td>
+								<td>ООо “Ноль”</td>
+								<td>1234</td>
+								<td> ЧП “Ойл”</td>
+								<td>234</td>
+								<td>ЧП “угар”</td>
+								<td>Автомобили: продажи и обслуживание</td>
+								<td>14567</td>
+								<td>ООо “Ноль”</td>
+								<td>1234</td>
+								<td> ЧП “Ойл”</td>
+								<td>234</td>
+								<td>ЧП “угар”</td>
+							</tr>
+							<tr>
+								<td>Автомобили: продажи и обслуживание</td>
+								<td>14567</td>
+								<td>ООо “Ноль”</td>
+								<td>1234</td>
+								<td> ЧП “Ойл”</td>
+								<td>234</td>
+								<td>ЧП “угар”</td>
+								<td>Автомобили: продажи и обслуживание</td>
+								<td>14567</td>
+								<td>ООо “Ноль”</td>
+								<td>1234</td>
+								<td> ЧП “Ойл”</td>
+								<td>234</td>
+								<td>ЧП “угар”</td>
+								<td>Автомобили: продажи и обслуживание</td>
+								<td>14567</td>
+								<td>ООо “Ноль”</td>
+								<td>1234</td>
+								<td> ЧП “Ойл”</td>
+								<td>234</td>
+								<td>ЧП “угар”</td>
+							</tr>
+							<tr>
+								<td>Автомобили: продажи и обслуживание</td>
+								<td>14567</td>
+								<td>ООо “Ноль”</td>
+								<td>1234</td>
+								<td> ЧП “Ойл”</td>
+								<td>234</td>
+								<td>ЧП “угар”</td>
+								<td>Автомобили: продажи и обслуживание</td>
+								<td>14567</td>
+								<td>ООо “Ноль”</td>
+								<td>1234</td>
+								<td> ЧП “Ойл”</td>
+								<td>234</td>
+								<td>ЧП “угар”</td>
+								<td>Автомобили: продажи и обслуживание</td>
+								<td>14567</td>
+								<td>ООо “Ноль”</td>
+								<td>1234</td>
+								<td> ЧП “Ойл”</td>
+								<td>234</td>
+								<td>ЧП “угар”</td>
+							</tr>
+							<tr>
+								<td>Автомобили: продажи и обслуживание</td>
+								<td>14567</td>
+								<td>ООо “Ноль”</td>
+								<td>1234</td>
+								<td> ЧП “Ойл”</td>
+								<td>234</td>
+								<td>ЧП “угар”</td>
+								<td>Автомобили: продажи и обслуживание</td>
+								<td>14567</td>
+								<td>ООо “Ноль”</td>
+								<td>1234</td>
+								<td> ЧП “Ойл”</td>
+								<td>234</td>
+								<td>ЧП “угар”</td>
+								<td>Автомобили: продажи и обслуживание</td>
+								<td>14567</td>
+								<td>ООо “Ноль”</td>
+								<td>1234</td>
+								<td> ЧП “Ойл”</td>
+								<td>234</td>
+								<td>ЧП “угар”</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="graph3" hidden>
+		<div class="panels__in">
+			<div class="graph-section">
+				<div class="graph-section__top">
+					<div class="choose-date">
+						<span>за период с</span>
+						<div class="input-date">
+							<input type="text" class="input js-date js-date-from">
+							<i></i>
+						</div>
+						<span>по</span>
+						<div class="input-date">
+							<input type="text" class="input js-date js-date-to">
+							<i></i>
+						</div>
+					</div>
+					<div class="graph-section__meta">
+						всего участников <span>286231</span>
+					</div>
+				</div>
+				<div class="graph">
+					<div class="graph__main">
+						<div id="chart_div1" style="width: 940px; height: 350px;left:-94px"></div>
+						<script>
+						 var 
+								azure = '#47c2eb';
+								lime = '#79e89b';
+								orange = '#f77e35';
+								blue = '#5a8fe0';
+								green = '#aed852';
+								pink = '#ff74ac';
+								red = '#ff8686';
+								yellow = '#fff448';
+					      google.load("visualization", "1", {packages:["corechart"]});
+					      google.setOnLoadCallback(drawChart);
+					      function drawChart() {
+					        var data = google.visualization.arrayToDataTable([
+					          ['Year', 'Graph1'],
+					          ['1',  900],
+					          ['8',  1500],
+					          ['15',  100],
+					          ['22',  2000],
+					          ['29',  1500]
+					        ]);
+
+					        var options = {
+					        	legend: 'none',
+				          		colors: [
+				          			'#da4453',
+									lime,
+									orange,
+									blue,
+									green,
+									pink,
+									azure,
+									yellow
+								]
+					        };
+
+					        var chart = new google.visualization.LineChart(document.getElementById('chart_div1'));
+					        chart.draw(data, options);
+					      }
+
+
+					    </script>
+
+					</div>
+				</div>
+				<div class="graph-section__top">
+					<div class="choose-date">
+						<span>за период с</span>
+						<div class="input-date">
+							<input type="text" class="input js-date js-date-from">
+							<i></i>
+						</div>
+						<span>по</span>
+						<div class="input-date">
+							<input type="text" class="input js-date js-date-to">
+							<i></i>
+						</div>
+					</div>
+					<div class="graph-section__meta">
+						всего участников <span>286231</span>
+					</div>
+				</div>
+				<div class="graph">
+					<div class="graph__main">
+						<div id="chart_div2" style="width: 940px; height: 350px;left:-94px"></div>
+						<script>
+						 var 
+								azure = '#47c2eb';
+								lime = '#79e89b';
+								orange = '#f77e35';
+								blue = '#5a8fe0';
+								green = '#aed852';
+								pink = '#ff74ac';
+								red = '#ff8686';
+								yellow = '#fff448';
+					      google.load("visualization", "1", {packages:["corechart"]});
+					      google.setOnLoadCallback(drawChart);
+					      function drawChart() {
+					        var data = google.visualization.arrayToDataTable([
+					          ['Year', 'Graph1'],
+					          ['1',  900],
+					          ['8',  1500],
+					          ['15',  100],
+					          ['22',  2000],
+					          ['29',  1500]
+					        ]);
+
+					        var options = {
+					        	legend: 'none',
+				          		colors: [
+				          			azure,
+									lime,
+									orange,
+									blue,
+									green,
+									pink,
+									yellow
+								]
+					        };
+
+					        var chart = new google.visualization.LineChart(document.getElementById('chart_div2'));
+					        chart.draw(data, options);
+					      }
+
+
+					    </script>
+
+					</div>
+				</div>
+				<div class="graph-section__top">
+					<div class="choose-date">
+						<span>за период с</span>
+						<div class="input-date">
+							<input type="text" class="input js-date js-date-from">
+							<i></i>
+						</div>
+						<span>по</span>
+						<div class="input-date">
+							<input type="text" class="input js-date js-date-to">
+							<i></i>
+						</div>
+					</div>
+					<div class="graph-section__meta">
+						всего участников <span>286231</span>
+					</div>
+				</div>
+				<div class="graph">
+					<div class="graph__main">
+						<div id="chart_div3" style="width: 940px; height: 350px;left:-94px"></div>
+						<script>
+						 var 
+								azure = '#47c2eb';
+								lime = '#79e89b';
+								orange = '#f77e35';
+								blue = '#5a8fe0';
+								green = '#aed852';
+								pink = '#ff74ac';
+								red = '#ff8686';
+								yellow = '#fff448';
+					      google.load("visualization", "1", {packages:["corechart"]});
+					      google.setOnLoadCallback(drawChart);
+					      function drawChart() {
+					        var data = google.visualization.arrayToDataTable([
+					          ['Year', 'Graph1'],
+					          ['1',  900],
+					          ['8',  1500],
+					          ['15',  100],
+					          ['22',  2000],
+					          ['29',  1500]
+					        ]);
+
+					        var options = {
+					        	legend: 'none',
+				          		colors: [
+									lime,
+									orange,
+									blue,
+									green,
+									pink,
+									azure,
+									yellow
+								]
+					        };
+
+					        var chart = new google.visualization.LineChart(document.getElementById('chart_div3'));
+					        chart.draw(data, options);
+					      }
+
+
+					    </script>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="graph4" hidden>
+		<div class="panels__in">
+			<div class="graph-section">
+				<div class="graph-section__top">
+					<div class="choose-date">
+						<span>за период с</span>
+						<div class="input-date">
+							<input type="text" class="input js-date js-date-from">
+							<i></i>
+						</div>
+						<span>по</span>
+						<div class="input-date">
+							<input type="text" class="input js-date js-date-to">
+							<i></i>
+						</div>
+					</div>
+				</div>
+				<div class="graph">
+					<div class="graph__main">
+						<div id="chart_div4" style="width: 940px; height: 350px;left:-94px"></div>
+						<script>
+						 var 
+								azure = '#47c2eb';
+								lime = '#79e89b';
+								orange = '#f77e35';
+								blue = '#5a8fe0';
+								green = '#aed852';
+								pink = '#ff74ac';
+								red = '#ff8686';
+								yellow = '#fff448';
+					      google.load("visualization", "1", {packages:["corechart"]});
+					      google.setOnLoadCallback(drawChart);
+					      function drawChart() {
+					        var data = google.visualization.arrayToDataTable([
+					          ['Year', 'Graph1'],
+					          ['1',  900],
+					          ['8',  1500],
+					          ['15',  100],
+					          ['22',  2000],
+					          ['29',  1500]
+					        ]);
+
+					        var options = {
+					        	legend: 'none',
+				          		colors: [
+				          			'#da4453',
+									lime,
+									orange,
+									blue,
+									green,
+									pink,
+									azure,
+									yellow
+								]
+					        };
+
+					        var chart = new google.visualization.LineChart(document.getElementById('chart_div4'));
+					        chart.draw(data, options);
+					      }
+
+
+					    </script>
+
+					</div>
+				</div>
+				<p>Невероятно важная среднестатистическая информация о том, почему по баннеру кликают и почему именно сегодня кликать по баннеру - первостепенная задача каждого, уважающего себя, гражданина, человека, товарища в конце концов.</p>
+			</div>
+		</div>
+	</div>
+	<div id="graph5" hidden>
+		<div class="panels__in">
+			<div class="filter">
+				<div class="filter__row">
+					<div class="filter__left">
+						<div class="filter__name">переходы</div>
+					</div>  
+					<div class="filter__right">
+						<div class="select js-select">
+							<span class="select__text js-select-text">с рекламных баннеров</span>
+							<input type="hidden" class="js-select-input" value="0">
+							<ul class="select__list js-select-list">
+								<li data-id="0">РОЗНИЦА: ПРОДУКТЫ</li>
+								<li data-id="1">Форма собственности1</li>
+								<li data-id="2">Форма собственности2</li>
+								<li data-id="3">Форма собственности3</li>
+								<li data-id="3">Форма собственности3</li>
+								<li data-id="3">Форма собственности3</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="graph-section">
+				<div class="graph-section__top">
+					<div class="choose-date">
+						<span>за период с</span>
+						<div class="input-date">
+							<input type="text" class="input js-date js-date-from">
+							<i></i>
+						</div>
+						<span>по</span>
+						<div class="input-date">
+							<input type="text" class="input js-date js-date-to">
+							<i></i>
+						</div>
+					</div>
+				</div>
+				<div class="graph">
+					<div class="graph__main">
+						<div id="chart_div5" style="width: 940px; height: 350px;left:-94px"></div>
+						<script>
+						 var 
+								azure = '#47c2eb';
+								lime = '#79e89b';
+								orange = '#f77e35';
+								blue = '#5a8fe0';
+								green = '#aed852';
+								pink = '#ff74ac';
+								red = '#ff8686';
+								yellow = '#fff448';
+					      google.load("visualization", "1", {packages:["corechart"]});
+					      google.setOnLoadCallback(drawChart);
+					      function drawChart() {
+					        var data = google.visualization.arrayToDataTable([
+					          ['Year', 'Graph1'],
+					          ['1',  900],
+					          ['8',  1500],
+					          ['15',  100],
+					          ['22',  2000],
+					          ['29',  1500]
+					        ]);
+
+					        var options = {
+					        	legend: 'none',
+				          		colors: [
+				          			azure,
+									lime,
+									orange,
+									blue,
+									green,
+									pink,
+									yellow
+								]
+					        };
+
+					        var chart = new google.visualization.LineChart(document.getElementById('chart_div5'));
+					        chart.draw(data, options);
+					      }
+
+
+					    </script>
+
+					</div>
+				</div>
+				<p>Невероятно важная среднестатистическая информация о том, почему по баннеру кликают и почему именно сегодня кликать по баннеру - первостепенная задача каждого, уважающего себя, гражданина, человека, товарища в конце концов.</p>
+			</div>
+		</div>
+	</div>
+	<div id="graph6" hidden>
+		<div class="panels__in">
+			<div class="graph-section">
+				<div class="graph-section__top">
+					<div class="choose-date">
+						<span>за период с</span>
+						<div class="input-date">
+							<input type="text" class="input js-date js-date-from">
+							<i></i>
+						</div>
+						<span>по</span>
+						<div class="input-date">
+							<input type="text" class="input js-date js-date-to">
+							<i></i>
+						</div>
+					</div>
+				</div>
+				<div class="graph">
+					<div class="graph__main">
+						<div id="chart_div6" style="width: 940px; height: 350px;left:-94px"></div>
+						<script>
+						 var 
+								azure = '#47c2eb';
+								lime = '#79e89b';
+								orange = '#f77e35';
+								blue = '#5a8fe0';
+								green = '#aed852';
+								pink = '#ff74ac';
+								red = '#ff8686';
+								yellow = '#fff448';
+					      google.load("visualization", "1", {packages:["corechart"]});
+					      google.setOnLoadCallback(drawChart);
+					      function drawChart() {
+					        var data = google.visualization.arrayToDataTable([
+					          ['Year', 'Graph1'],
+					          ['1',  900],
+					          ['8',  1500],
+					          ['15',  100],
+					          ['22',  2000],
+					          ['29',  1500]
+					        ]);
+
+					        var options = {
+					        	legend: 'none',
+				          		colors: [
+				          			lime,
+									orange,
+									blue,
+									green,
+									pink,
+									yellow
+								]
+					        };
+
+					        var chart = new google.visualization.LineChart(document.getElementById('chart_div6'));
+					        chart.draw(data, options);
+					      }
+
+
+					    </script>
+
+					</div>
+				</div>
+				<p>Невероятно важная среднестатистическая информация о том, почему по баннеру кликают и почему именно сегодня кликать по баннеру - первостепенная задача каждого, уважающего себя, гражданина, человека, товарища в конце концов.</p>
+			</div>
+		</div>
+	</div>
+
 <!-- ============================================ -->
 </div>
 	

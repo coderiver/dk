@@ -29,19 +29,20 @@ $blue: #1d72bd
 =fintro
 	font-family: "intro", Arial, sans-serif
 html
-	+scrollbar
-		width: 8px
-		height: 8px
-		overflow: hidden
-		background: #ececec
-	+scrollbar-thumb
-		border: 1px solid #2694bf
-		background: #2babdb
-	+scrollbar-track-piece 
-		width: 8px 
-		height: 8px
+	&.desktop
+		+scrollbar
+			width: 8px
+			height: 8px
+			overflow: hidden
+			background: #ececec
+		+scrollbar-thumb
+			border: 1px solid #2694bf
+			background: #2babdb
+		+scrollbar-track-piece 
+			width: 8px 
+			height: 8px
 body
-	min-width: 1020px
+	min-width: 320px
 	font-weight: normal
 	font-size: 14px
 	line-height: 1.3
@@ -70,6 +71,7 @@ a
 	min-height: 100%
 	height: auto !important
 	height: 100% 
+	overflow: hidden
 .section
 	position: relative
 	margin-bottom: 43px
@@ -96,28 +98,51 @@ a
 	+clr
 .l-container
 	position: relative
-	width: 940px
+	max-width: 940px
 	margin: 0 auto 
-   
+	+r(940)
+		+box
+		padding: 0 10px 
 .header
 	position: relative
 	min-height: 135px
 	background: url("../img/blue-bg.jpg") 0 0 repeat
-
+	+r(940)
+		padding-bottom: 10px
+	+r(480)
+		padding: 10px 0
 .logo
 	position: absolute
 	left: 21px
 	top: 25px
 	+s(logo)
 	z-index: 300
+	+r(940)
+		position: static
+		float: left
+		margin: 10px 0 20px
+	+r(480)
+		float: none
+		display: block
+		margin: 0 auto 10px 
 .search-form
 	position: absolute
 	top: 20px
 	right: 0
 	white-space: nowrap
+	+r(940)
+		position: static
+		margin: 35px 0 0
+		float: right
+	+r(480)
+		float: none
+		margin: 10px 60px 10px 0
+		position: relative
+		top: 0
 	input
 		display: inline-block
 		vertical-align: middle
+
 .search-form__text
 	margin-left: 4px
 	padding: 0 4px 
@@ -129,9 +154,18 @@ a
 	background: rgba(255,255,255,.2)
 	&:focus
 		background: rgba(255,255,255,.5)
+	+r(480)
+		display: block
+		margin-left: 0
+		width: 100%
+		height: 35px
 .search-form__btn
 	+s(glass)
 	+hide-text
+	+r(480)
+		position: absolute
+		top: 10px
+		right: 0
 .user-enter
 	display: inline-block
 	margin: 0 0 0 8px
@@ -142,6 +176,10 @@ a
 		display: inline-block
 		margin-left: 5px
 		+fbold
+	+r(480)
+		position: absolute
+		top: 8px
+		right: -53px
 .user-enter__img
 	display: inline-block
 	margin-right: 6px
@@ -157,25 +195,44 @@ a
 	white-space: nowrap
 	background: rgb(117,209,154)
 	background: rgba(117,209,154,.65)
+	+r(940)
+		position: relative
+		left: 0
+		top: 0
+		right: 0
+		clear: both
+		padding: 0 
+		white-space: normal
+		+justify
+	+r(760)
+		text-align: center
 	&:before
 		content: ""
 		position: absolute
 		top: 3px
 		left: -33px
 		+s(menu-left) 
+		+r(940)
+			display: none
 	&:after
 		content: ""
 		position: absolute
 		top: 3px
 		right: -33px
 		+s(menu-right)   
+		+r(940)
+			position: static
+			width: 100%
+			height: 0
+		+r(760)
+			display: none
 	li
 		display: inline-block
 	a
 		display: block
 		padding: 0 8px 
 		height: 32px
-		color: #fff
+		color: #fff 
 		font-size: 12px
 		text-transform: uppercase
 		+fbold
@@ -191,6 +248,8 @@ a
 	+box
 	overflow: hidden
 	background: #47c3eb url(../img/blue-bg.jpg) 0 0 repeat 
+	+r(640)
+		padding-top: 30px
 	&:after
 		content: ""
 		position: absolute
@@ -204,6 +263,8 @@ a
 		z-index: 2  
 		+box
 		padding-bottom: 51px
+		+r(940)
+			padding: 0 0 51px
 .partners
 	margin-bottom: 53px
 	text-align: center
@@ -225,22 +286,53 @@ a
 	height: 176px
 	+box-shadow(inset -1px 0 0 #fff)   
 	border-right: 1px solid #ececec 
+	+r(1024)
+		+box
+		margin: 0 !important
+		width: 33% !important
+		padding: 0 20px
+	+r(640)	
+		padding: 0 10px 
+		height: auto
+		margin-bottom: 40px !important
 .footer__cont
 	margin-right: 38px
 	border-left: 0
 	width: 230px
+	+r(640)
+		width: 50% !important
+	+r(480)	
+		float: none
+		text-align: center
+		width: 100% !important 
 	.footer__title
 		margin-bottom: 6px
 	div
 		margin-bottom: 22px
+		&:last-child
+			+r(640)
+				margin-bottom: 0
+
+
 .footer__soc
 	width: 340px
+	+r(640)
+		width: 50% !important
+	+r(480)	
+		float: none
+		text-align: center
+		width: 100% !important 
 .footer__feedback
 	float: left
 	margin-left: 43px
 	width: 186px
 	border-right: 0 
 	+box-shadow(none)
+	+r(640)
+		width: 100% !important
+	+r(480)	
+		float: none
+		width: 100% !important 
 	.input-wrap
 		margin-bottom: 7px
 	.input
@@ -263,4 +355,8 @@ a
 	left: 0
 	color: #fff
 	font-size: 12px 
+	+r(1024)
+		padding: 0 10px 
+	+r(640)
+		bottom: 10px
 	

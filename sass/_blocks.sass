@@ -18,6 +18,8 @@
 	font-size: 14px
 	+border-radius(1px)
 	color: #000 	
+	+r(760)
+		padding: 8px
 	+placeholder
 		color: #a9a9a9 
 		+fitalic
@@ -89,6 +91,8 @@
 .input_s
 	padding: 3px 9px 4px 
 	font-size: 12px
+	+r(760)
+		padding: 6px 9px 
 .input_textarea
 	padding: 4px 9px
 	resize: vertical
@@ -367,6 +371,13 @@
 		color: #fff
 		+flight 
 		margin-left: 1px
+		+r(760)
+			float: none
+			display: block
+			width: 100px
+			margin: 0 0 3px
+		+r(480)
+			margin: 0 auto 3px 
 		i
 			margin-right: 16px
 		i,span
@@ -375,6 +386,8 @@
 			line-height: 1
 		&:first-child
 			margin-left: 0
+			+r(480)
+				margin: 0 auto 3px 
 .soc-counter__fb
 	background: #3b5997 
 	i
@@ -609,6 +622,8 @@
 .title_h1
 	margin: 0 auto 
 	max-width: 745px
+	+r(745)
+		margin: 0 10px 0
 	span
 		font-size: 30px
 		&:before,
@@ -621,6 +636,8 @@
 	
 .title_h2
 	margin: 25px auto 15px
+	+r(940)
+		margin: 25px 10px 15px
 	span
 		font-size: 20px
 		&:before,
@@ -654,6 +671,8 @@
 .title_h3
 	margin: 25px auto 15px
 	padding-left: 36px
+	+r(940)
+		margin: 25px 10px 15px
 	span
 		font-size: 16px
 		&:before,
@@ -667,6 +686,8 @@
 		padding-left: 0
 .title_h4
 	max-width: 340px
+	+r(340)
+		margin: 0 10px
 	span
 		font-size: 14px
 		&:before,
@@ -678,13 +699,19 @@
 			right: -1022px
 .title_570
 	max-width: 570px
+	+r(570)
+		margin: 0 10px
 .title_370
 	max-width: 370px
-	margin-top: 35px	
+	margin-top: 35px
+	+r(370)
+		margin: 35px 10px 0
 .title_740
 	max-width: 740px
 	margin-left: 0
 	+box
+	+r(740)
+		margin: 0 10px
 .banner
 	margin-bottom: 19px
 	text-align: center

@@ -817,6 +817,9 @@ $cat: cat-car,cat-store,cat-food,cat-cosmetics,cat-clothes,cat-home,cat-service,
 .post-item-wrap
 	margin: 23px -155px 36px 0
 	+clr
+	+r(940)
+		font-size: 0
+		margin: 23px 0 36px
 .post-item
 	float: left  
 	height: 237px
@@ -827,6 +830,19 @@ $cat: cat-car,cat-store,cat-food,cat-cosmetics,cat-clothes,cat-home,cat-service,
 	border-right: 1px solid #ededed
 	+box
 	font-size: 12px
+	+r(940)
+		float: none
+		display: inline-block
+		margin: 0 0 30px
+		padding: 0 10px 10px
+		vertical-align: top
+		width: 33%
+		height: auto
+	+r(640)
+		width: 50%
+	+r(320)
+		width: 100%
+		border: 0
 .post-item__img
 	position: relative
 	display: block
@@ -840,10 +856,14 @@ $cat: cat-car,cat-store,cat-food,cat-cosmetics,cat-clothes,cat-home,cat-service,
 	color: $gray
 	font-size: 24px
 	+flight 
+	+r(940)
+		font-size: 18px
 .post-item__descr  
 	margin: 4px 0 10px
 	height: 120px
 	overflow: hidden
+	+r(940)
+		height: auto
 .post-item__more
 	text-align: right
 	a
@@ -878,8 +898,6 @@ $cat: cat-car,cat-store,cat-food,cat-cosmetics,cat-clothes,cat-home,cat-service,
 		width: 220px
 .post-item_project
 	width: 300px
-.post-item_video
-
 .google-map
 	position: relative
 	margin-top: -200px

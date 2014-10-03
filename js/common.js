@@ -7,7 +7,7 @@ $(document).ready(function() {
 
     if ($(".js-counter").length) {
         $(".js-counter").countdown({
-            until: new Date(2014, 5, 22, 23, 55),
+            until: new Date(2014, 11, 22, 23, 55),
             format: 'dhm',
             compact: true,
             layout: '{d<}<div class="counter__d"><span>{dn} {dl}</span></div>{d>}{h<}<div class="counter__h"><span>{hn} {hl}</span></div>{h>}' + 

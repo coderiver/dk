@@ -2,9 +2,13 @@
 	position: relative
 	height: 370px
 	background: url("../img/blue-bg.jpg") 0 0 repeat
+	+r(940)
+		height: auto
 	.l-container
 		+clr
 		height: 372px
+		+r(940)
+			height: auto
 		&:before
 			content: ""
 			position: absolute
@@ -13,17 +17,23 @@
 			width: 652px
 			height: 429px
 			background: url("../img/slider-glow.png") 0 0 repeat
+			+r(940)
+				display: none
 	.cycle-slideshow
 		position: absolute
 		left: 0
 		right: 0
 		top: 0
 		bottom: 0
+		+r(940)
+			display: none
 	.pager
 		position: absolute
 		left: 380px
 		bottom: 23px
 		z-index: 300
+		+r(940)
+			display: none
 .slider__item
 	width: 100%
 	div
@@ -45,6 +55,16 @@
 	width: 326px
 	background: #fff
 	+box-shadow(0 0 0 1px rgba(0,0,0,.19))
+	+r(940)
+		float: none
+		margin: 0 auto 10px
+		width: 80%
+	+r(480)
+		width: 100%
+		padding: 20px 
+		&:before,
+		&:after
+			display: none
 	&:before
 		content: ""
 		position: absolute
@@ -61,6 +81,10 @@
 		background: #d9d3d3  
 	.btn
 		margin-top: 12px
+		+r(940)
+			display: block
+			width: 100%
+			text-align: center
 .reg-form__title
 	margin-bottom: 15px
 	text-align: center
@@ -100,7 +124,7 @@
 .main
 	position: relative
 	margin: 0 auto 
-	width: 940px
+	max-width: 940px
 	> .title
 		margin-top: 28px
 .start-wrap
@@ -127,6 +151,8 @@
 	margin-bottom: 22px
 	padding: 41px 0 82px 
 	background: #f9fadf 
+	+r(940)
+		padding: 40px 10px 
 	&:before
 		content: ""
 		position: absolute
@@ -136,17 +162,31 @@
 	.counter
 		float: right
 		margin-top: 48px  
+		+r(640)
+			float: none
+			text-align: center
 	.counter__digit
 		div
 			float: none
 			display: inline-block
 			vertical-align: middle
+	.counter__label
+		+r(640)
+			float: none
+			margin-left: 22px
+			display: inline-block
+		&:first-child
+			+r(640)
+				margin-left: 0
 .start__in
 	margin: 0 auto 
 	+clr
-	width: 740px
+	max-width: 740px
 .start__img
 	float: left
+	+r(640)
+		float: none
+		text-align: center
 .start_began
 	padding: 23px 0 27px
 	.start__img

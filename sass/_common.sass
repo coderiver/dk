@@ -41,6 +41,10 @@ html
 		+scrollbar-track-piece 
 			width: 8px 
 			height: 8px
+	&.has-open-popup
+		overflow: hidden
+		body
+			overflow: hidden
 body
 	min-width: 320px
 	font-weight: normal
@@ -52,8 +56,7 @@ body
 	+selection
 		background: #b8e2ff
 	
-	&.has-open-popup
-		overflow: hidden
+	
 a
 	text-decoration: none
 	+fmed  
@@ -65,6 +68,14 @@ a
 	+column-gap(18px)
 	+gpu
 	+column-width(300px)
+	+r(940)
+		padding: 0 10px
+		+column-width(auto)
+	+r(640)
+		padding: 0 10px
+		+column-count(2)
+	+r(320)
+		+column-count(1)
 .l-layout	   
 	margin: 0 auto -250px
 	position: relative
@@ -136,7 +147,7 @@ a
 		float: right
 	+r(480)
 		float: none
-		margin: 10px 60px 10px 0
+		margin: 10px 0
 		position: relative
 		top: 0
 	input
@@ -158,6 +169,7 @@ a
 		display: block
 		margin-left: 0
 		width: 100%
+		+box
 		height: 35px
 .search-form__btn
 	+s(glass)
@@ -165,7 +177,7 @@ a
 	+r(480)
 		position: absolute
 		top: 10px
-		right: 0
+		right: 10px
 .user-enter
 	display: inline-block
 	margin: 0 0 0 8px
@@ -177,9 +189,11 @@ a
 		margin-left: 5px
 		+fbold
 	+r(480)
-		position: absolute
-		top: 8px
-		right: -53px
+		display: block
+		position: static
+		margin: 10px 0 
+		text-align: center
+		
 .user-enter__img
 	display: inline-block
 	margin-right: 6px
@@ -338,10 +352,15 @@ a
 	.input
 		width: 156px
 		font-size: 12px
+		+r(640)
+			width: 100%
 	.input_textarea
 		resize: none
 		height: 53px
 		width: 100%
+	.btn-action
+		+r(640)
+			width: 100%
 .footer__title
 	margin-bottom: 11px
 	font-size: 14px

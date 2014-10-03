@@ -108,6 +108,8 @@
 	font-size: 14px
 	white-space: nowrap
 	+fmed
+	+r(760)
+		white-space: normal
 	sup
 		display: inline-block
 		position: relative
@@ -268,6 +270,8 @@
 	background: #45c1e9
 	+box-shadow(inset 0 2px 0 rgba(255,255,255,.26))
 	+background-image(linear-gradient(bottom, #45c1e9 -25%, #45c1e9 5.07%, #9ad9ee 125%))
+	+r(640)
+		padding: 9px 13px 8px  
 	&:hover
 		text-decoration: none
 		color: #97d9ef
@@ -371,13 +375,13 @@
 		color: #fff
 		+flight 
 		margin-left: 1px
-		+r(760)
-			float: none
-			display: block
-			width: 100px
-			margin: 0 0 3px
-		+r(480)
-			margin: 0 auto 3px 
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis 
+		+r(640)
+			width: 33%
+			margin: 0
+			min-width: 50px
 		i
 			margin-right: 16px
 		i,span
@@ -386,8 +390,6 @@
 			line-height: 1
 		&:first-child
 			margin-left: 0
-			+r(480)
-				margin: 0 auto 3px 
 .soc-counter__fb
 	background: #3b5997 
 	i
@@ -558,6 +560,8 @@
 	&:first-child  
 		margin-left: 0
 .counter_stat
+	+r(640)
+		height: auto
 	.counter__label	
 		position: absolute
 		bottom: -26px
@@ -568,9 +572,16 @@
 		width: auto
 		font-style: normal	
 	.counter__digit
+		+r(640)
+			padding: 0 10px 
 		span
 			padding: 0 22px 
 			width: auto
+		div
+			+r(640)
+				display: block
+				width: 100%
+				margin: 0 0 40px 
 .title
 	position: relative
 	margin: 0 auto 
@@ -637,7 +648,7 @@
 .title_h2
 	margin: 25px auto 15px
 	+r(940)
-		margin: 25px 10px 15px
+		margin: 25px auto 15px
 	span
 		font-size: 20px
 		&:before,
@@ -790,6 +801,8 @@
 	font-size: 16px
 	color: $gray
 	text-transform: uppercase
+	+r(940)
+		margin-left: 10px
 	&:hover
 		text-decoration: none
 	i

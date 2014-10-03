@@ -134,7 +134,9 @@
 	z-index: 100
 	overflow: hidden
 	.l-container
-		background: #fff 
+		background: #fff
+		+r(940)
+			padding: 0  
 		&:after
 			content: ""
 			position: absolute
@@ -201,10 +203,15 @@
 .org
 	margin: 31px 0 34px 
 	text-align: center
+	+r(760)
+		margin-bottom: 0
 	a
 		display: inline-block
 		margin-left: 50px
 		vertical-align: middle
+		+r(760)
+			margin-left: 25px
+			vertical-align: top
 		&:first-child
 			margin-left: 0
 		&:hover

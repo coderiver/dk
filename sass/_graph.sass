@@ -10,6 +10,8 @@ $yellow: #fff448
     position: relative
     padding-bottom: 33px
     z-index: 2
+    +r(960)
+        padding: 0 10px 
     &:after
         content: ""
         position: absolute
@@ -98,6 +100,8 @@ $yellow: #fff448
 .graph-section__top
     margin: 25px 0 -25px
     overflow: hidden
+    +r(960)
+        padding: 0 10px 
 .choose-date
     float: left
     margin-bottom: 10px
@@ -138,11 +142,16 @@ $yellow: #fff448
 .graph
     overflow: hidden
     margin: 20px 0 
+    +r(960)
+        padding: 0 10px 
 .graph__main
     position: relative   
     float: left
     overflow: hidden
     margin: 20px 35px 0 0
+    +r(960)
+        float: none
+        margin: 20px 0
 .graph__table
     overflow: hidden
     position: relative
@@ -248,11 +257,14 @@ $yellow: #fff448
      
 .map-interact
     position: relative   
+    +r(860)
+        display: none
 .map-svg
     position: relative
     width: 850px
     height: 500px
     +svgi(map, 860, 500)
+   
     &:before
         content: ""
         position: absolute
